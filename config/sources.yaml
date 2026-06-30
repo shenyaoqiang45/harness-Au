@@ -1,0 +1,155 @@
+# Data source registry for live fetching
+lookback_days: 400
+
+sources:
+  yahoo:
+    enabled: true
+    indicators:
+      lme_gold_price:
+        ticker: "GC=F"
+        unit: USD/oz
+        frequency: daily
+        source: Yahoo Finance
+        source_url: https://finance.yahoo.com/quote/GC=F
+        confidence: B
+        note: "COMEX front-month proxy for London gold (USD/troy oz)"
+      dxy:
+        ticker: "DX-Y.NYB"
+        unit: index
+        frequency: daily
+        source: Yahoo Finance
+        source_url: https://finance.yahoo.com/quote/DX-Y.NYB
+        confidence: B
+
+  fred:
+    enabled: true
+    indicators:
+      us_10y_real_rate:
+        series_id: DFII10
+        unit: pct
+        frequency: daily
+        source: FRED
+        source_url: https://fred.stlouisfed.org/series/DFII10
+        confidence: A
+      us_cpi_yoy:
+        series_id: CPIAUCSL
+        transform: yoy_pct
+        unit: pct
+        frequency: monthly
+        source: FRED
+        source_url: https://fred.stlouisfed.org/series/CPIAUCSL
+        confidence: A
+        note: "US CPI YoY derived from FRED CPIAUCSL index"
+
+  eastmoney:
+    enabled: true
+    indicators:
+      china_pmi:
+        report: RPT_ECONOMY_PMI
+        date_col: REPORT_DATE
+        value_col: MAKE_INDEX
+        unit: index
+        frequency: monthly
+        source: 东方财富-国家统计局
+        source_url: https://data.eastmoney.com/cjsj/pmi.html
+        confidence: A
+      lme_inventory:
+        report: RPT_METAL_LME
+        transform: lme_gold_stock
+        unit: ton
+        frequency: daily
+        source: 东方财富-LME
+        source_url: https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stock-reports
+        confidence: A
+        note: "LME gold warehouse stocks (metric ton); Eastmoney mirror of LME official daily report"
+
+  akshare:
+    enabled: true
+    indicators:
+      china_new_orders_pmi:
+        func: index_pmi_man_cx
+        date_col: 日期
+        value_col: 制造业PMI
+        unit: index
+        frequency: monthly
+        source: 财新网
+        source_url: https://www.caixin.com/
+        confidence: C
+        note: "Caixin manufacturing PMI as new-orders proxy until NBS sub-index is wired"
+      shfe_inventory:
+        func: futures_inventory_em
+        kwargs: { symbol: "沪金" }
+        date_col: 日期
+        value_col: 库存
+        unit: ton
+        frequency: daily
+        source: 东方财富-SHFE
+        source_url: https://www.shfe.com.cn/reports/businessdata/prmsummary/
+        confidence: A
+        note: "SHFE gold warehouse receipt / inventory daily (ton); Eastmoney mirror of SHFE official"
+      social_financing:
+        func: macro_china_new_financial_credit
+        date_col: 月份
+        value_col: 当月
+        transform: parse_cn_month
+        unit: CNY_bn
+        frequency: monthly
+        source: 东方财富-社融
+        source_url: https://data.eastmoney.com/cjsj/xzxd.html
+        confidence: A
+      m1:
+        func: macro_china_money_supply
+        date_col: 月份
+        value_col: 货币(M1)-数量(亿元)
+        transform: parse_cn_month
+        unit: CNY_bn
+        frequency: monthly
+        source: 东方财富-货币供应
+        source_url: https://data.eastmoney.com/cjsj/hbgyl.html
+        confidence: A
+  cme:
+    enabled: true
+    indicators:
+      comex_inventory:
+        unit: ton
+        frequency: daily
+        source: CME Group
+        source_url: https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls
+        confidence: A
+        note: "COMEX gold warehouse stocks; official report in troy oz, stored as metric ton"
+
+  derived:
+    enabled: true
+    indicators:
+      spot_premium:
+        func: shfe_lme_premium
+        unit: USD/oz
+        frequency: daily
+        source: derived
+        source_url: ""
+        confidence: C
+      term_structure:
+        func: premium_to_curve
+        unit: label
+        frequency: daily
+        source: derived
+        source_url: ""
+        confidence: C
+
+unwired:
+  central_bank_gold_net_buy:
+    expected_source: WGC
+    source_url: https://www.gold.org/
+    note: "World Gold Council central bank demand report; no automated fetcher yet"
+  gold_jewelry_demand_yoy:
+    expected_source: WGC
+    source_url: https://www.gold.org/
+    note: "World Gold Council jewelry demand statistics; no automated fetcher yet"
+  gold_etf_holdings_chg:
+    expected_source: WGC
+    source_url: https://www.gold.org/
+    note: "World Gold Council ETF holdings tracker; no automated fetcher yet"
+  spec_net_long_gold:
+    expected_source: CFTC
+    source_url: https://www.cftc.gov/
+    note: "CFTC Commitments of Traders managed-money net long; no automated fetcher yet"

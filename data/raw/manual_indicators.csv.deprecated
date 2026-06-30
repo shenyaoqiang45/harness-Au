@@ -1,0 +1,9 @@
+# DEPRECATED — no longer merged into live.csv
+# Missing indicators are recorded in data/audit/missing_sources.json instead.
+# Keep this file only as a reference for future fetcher implementation.
+date,indicator,value,unit,source,source_url,updated_at,frequency,confidence,note
+2026-05-01,central_bank_gold_net_buy,12.5,ton,WGC,https://www.gold.org/,2026-06-29T00:00:00,monthly,A,Global central bank net purchases (example)
+2026-05-01,gold_jewelry_demand_yoy,3.2,pct,WGC,https://www.gold.org/,2026-06-29T00:00:00,quarterly,B,China+India jewelry demand YoY proxy
+2026-06-08,gold_etf_holdings_chg,8.2,ton,WGC,https://www.gold.org/,2026-06-29T00:00:00,weekly,B,Weekly change in global gold ETF holdings
+2026-06-08,spec_net_long_gold,185000,contracts,CFTC,https://www.cftc.gov/,2026-06-29T00:00:00,weekly,B,Managed money net long COMEX gold
+2026-05-28,us_ism_manufacturing,48.5,index,ISM,https://www.ismworld.org/,2026-06-29T00:00:00,monthly,A,

@@ -1,0 +1,46 @@
+# Mid-term configuration weights (gold: macro/liquidity heavier than industrial copper)
+modules:
+  macro_liquidity: 0.40
+  financial_flow: 0.20
+  physical_demand: 0.15
+  trend: 0.15
+  inventory: 0.10
+
+# Horizon-specific weights: for 1-month evaluation, macro/price momentum dominates.
+horizon_weights:
+  month:
+    modules:
+      macro_liquidity: 0.45
+      trend: 0.25
+      financial_flow: 0.15
+      inventory: 0.10
+      physical_demand: 0.05
+
+direction_thresholds:
+  strong_bullish: 0.50
+  bullish: 0.20
+  bearish: -0.20
+  strong_bearish: -0.50
+
+module_active_threshold: 0.20
+
+confidence:
+  data_quality_weights:
+    source: 0.4
+    freshness: 0.3
+    cross_check: 0.2
+    completeness: 0.1
+
+cross_validation:
+  groups:
+    A_fundamental_spot:
+      label: 基本面/现货组
+      modules:
+        - physical_demand
+        - inventory
+        - financial_flow
+    B_macro_price:
+      label: 宏观/价格组
+      modules:
+        - macro_liquidity
+        - trend

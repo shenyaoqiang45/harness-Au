@@ -1,0 +1,68 @@
+# Indicator → module mapping and metadata
+modules:
+  trend:
+    indicators:
+      - lme_gold_price
+  inventory:
+    indicators:
+      - lme_inventory
+      - shfe_inventory
+      - comex_inventory
+      - spot_premium
+      - term_structure
+  physical_demand:
+    indicators:
+      - china_pmi
+      - china_new_orders_pmi
+      - social_financing
+      - m1
+      - central_bank_gold_net_buy
+      - gold_jewelry_demand_yoy
+  macro_liquidity:
+    indicators:
+      - dxy
+      - us_10y_real_rate
+      - us_cpi_yoy
+  financial_flow:
+    indicators:
+      - gold_etf_holdings_chg
+      - spec_net_long_gold
+    events_file: data/raw/market_events.csv
+
+units:
+  lme_gold_price: USD/oz
+  lme_inventory: ton
+  shfe_inventory: ton
+  comex_inventory: ton
+  spot_premium: USD/oz
+  term_structure: label
+  china_pmi: index
+  china_new_orders_pmi: index
+  social_financing: CNY_bn
+  m1: CNY_bn
+  central_bank_gold_net_buy: ton
+  gold_jewelry_demand_yoy: pct
+  dxy: index
+  us_10y_real_rate: pct
+  us_cpi_yoy: pct
+  gold_etf_holdings_chg: ton
+  spec_net_long_gold: contracts
+
+frequencies:
+  lme_gold_price: daily
+  lme_inventory: daily
+  shfe_inventory: daily
+  comex_inventory: daily
+  spot_premium: daily
+  term_structure: daily
+  china_pmi: monthly
+  china_new_orders_pmi: monthly
+  social_financing: monthly
+  m1: monthly
+  central_bank_gold_net_buy: monthly
+  gold_jewelry_demand_yoy: quarterly
+  dxy: daily
+  us_10y_real_rate: daily
+  us_cpi_yoy: monthly
+  gold_etf_holdings_chg: weekly
+  spec_net_long_gold: weekly

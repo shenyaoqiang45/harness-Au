@@ -1,0 +1,62 @@
+required_columns:
+  - date
+  - indicator
+  - value
+  - unit
+  - source
+  - source_url
+  - updated_at
+  - frequency
+  - confidence
+
+source_confidence_map:
+  A: 1.0
+  B: 0.8
+  C: 0.6
+  D: 0.4
+
+anomaly_rules:
+  - indicator: lme_gold_price
+    rule: daily_pct_change
+    threshold: 0.05
+    message: "Gold price daily change > 5%"
+  - indicator: lme_inventory
+    rule: daily_pct_change
+    threshold: 0.20
+    message: "LME gold inventory daily change > 20%"
+  - indicator: dxy
+    rule: daily_pct_change
+    threshold: 0.03
+    message: "DXY daily change > 3%"
+  - indicator: us_cpi_yoy
+    rule: range
+    min: -5
+    max: 15
+    message: "US CPI YoY outside -5% to 15% range"
+  - indicator: china_pmi
+    rule: range
+    min: 35
+    max: 65
+    message: "PMI outside 35-65 range"
+  - indicator: china_new_orders_pmi
+    rule: range
+    min: 35
+    max: 65
+    message: "New orders PMI outside 35-65 range"
+  - indicator: lme_gold_price
+    rule: range
+    min: 800
+    max: 5000
+    message: "Gold price outside 800-5000 USD/oz range"
+
+non_negative:
+  - lme_gold_price
+  - lme_inventory
+  - shfe_inventory
+  - comex_inventory
+  - central_bank_gold_net_buy
+
+term_structure_values:
+  - backwardation
+  - contango
+  - flat

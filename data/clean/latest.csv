@@ -1,0 +1,1504 @@
+date,indicator,value,unit,source,source_url,updated_at,frequency,confidence,status
+2025-05-31,china_new_orders_pmi,48.3,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.539300,monthly,C,confirmed
+2025-06-30,china_new_orders_pmi,50.4,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.539300,monthly,C,confirmed
+2025-07-31,china_new_orders_pmi,49.5,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.539300,monthly,C,confirmed
+2025-08-31,china_new_orders_pmi,50.5,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.539300,monthly,C,confirmed
+2025-09-30,china_new_orders_pmi,51.2,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.539300,monthly,C,confirmed
+2025-10-31,china_new_orders_pmi,50.6,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.539300,monthly,C,confirmed
+2025-11-30,china_new_orders_pmi,49.9,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.540298,monthly,C,confirmed
+2025-12-31,china_new_orders_pmi,50.1,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.540298,monthly,C,confirmed
+2026-01-31,china_new_orders_pmi,50.3,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.540298,monthly,C,confirmed
+2026-02-28,china_new_orders_pmi,52.1,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.540298,monthly,C,confirmed
+2026-03-31,china_new_orders_pmi,50.8,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.540298,monthly,C,confirmed
+2026-04-30,china_new_orders_pmi,52.2,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.540298,monthly,C,confirmed
+2026-05-31,china_new_orders_pmi,51.8,index,财新网,https://www.caixin.com/,2026-06-30T14:59:50.541300,monthly,C,confirmed
+2025-06-01,china_pmi,49.7,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2025-07-01,china_pmi,49.3,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2025-08-01,china_pmi,49.4,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2025-09-01,china_pmi,49.8,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2025-10-01,china_pmi,49.0,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2025-11-01,china_pmi,49.2,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2025-12-01,china_pmi,50.1,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2026-01-01,china_pmi,49.3,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2026-02-01,china_pmi,49.0,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2026-03-01,china_pmi,50.4,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.725284,monthly,A,confirmed
+2026-04-01,china_pmi,50.3,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.724285,monthly,A,confirmed
+2026-05-01,china_pmi,50.0,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.724285,monthly,A,confirmed
+2026-06-01,china_pmi,50.3,index,东方财富-国家统计局,https://data.eastmoney.com/cjsj/pmi.html,2026-06-30T14:59:42.724285,monthly,A,confirmed
+2025-05-26,dxy,98.93,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-05-27,dxy,99.52,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-05-28,dxy,99.88,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-05-29,dxy,99.28,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-05-30,dxy,99.33,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-02,dxy,98.7,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-03,dxy,99.25,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-04,dxy,98.79,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-05,dxy,98.74,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-06,dxy,99.19,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-09,dxy,98.94,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-10,dxy,99.05,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.986874,daily,B,confirmed
+2025-06-11,dxy,98.63,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-12,dxy,97.92,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-13,dxy,98.18,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-16,dxy,98.0,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-17,dxy,98.82,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-18,dxy,98.91,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-20,dxy,98.71,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-23,dxy,98.42,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-24,dxy,97.86,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-25,dxy,97.68,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-26,dxy,97.15,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-27,dxy,97.4,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.987876,daily,B,confirmed
+2025-06-30,dxy,96.88,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-01,dxy,96.82,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-02,dxy,96.78,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-03,dxy,97.18,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-07,dxy,97.48,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-08,dxy,97.51,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-09,dxy,97.47,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-10,dxy,97.65,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-11,dxy,97.85,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-14,dxy,98.08,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-15,dxy,98.62,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.988877,daily,B,confirmed
+2025-07-16,dxy,98.39,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-17,dxy,98.73,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-18,dxy,98.48,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-21,dxy,97.85,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-22,dxy,97.39,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-23,dxy,97.21,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-24,dxy,97.38,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-25,dxy,97.65,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-28,dxy,98.66,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-29,dxy,98.91,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-30,dxy,99.94,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-07-31,dxy,100.03,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-08-01,dxy,98.69,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.989876,daily,B,confirmed
+2025-08-04,dxy,98.78,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-05,dxy,98.78,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-06,dxy,98.18,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-07,dxy,98.4,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-08,dxy,98.18,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-11,dxy,98.52,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-12,dxy,98.1,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-13,dxy,97.84,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-14,dxy,98.25,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-15,dxy,97.85,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-18,dxy,98.17,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-19,dxy,98.27,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.990875,daily,B,confirmed
+2025-08-20,dxy,98.22,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-08-21,dxy,98.62,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-08-22,dxy,97.72,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-08-25,dxy,98.43,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-08-26,dxy,98.23,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-08-27,dxy,98.23,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-08-28,dxy,97.81,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-08-29,dxy,97.77,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-09-02,dxy,98.4,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-09-03,dxy,98.14,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-09-04,dxy,98.35,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-09-05,dxy,97.77,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-09-08,dxy,97.45,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.991875,daily,B,confirmed
+2025-09-09,dxy,97.79,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-10,dxy,97.78,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-11,dxy,97.54,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-12,dxy,97.55,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-15,dxy,97.3,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-16,dxy,96.63,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-17,dxy,96.87,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-18,dxy,97.35,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-19,dxy,97.64,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-22,dxy,97.33,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-23,dxy,97.26,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-24,dxy,97.87,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.992877,daily,B,confirmed
+2025-09-25,dxy,98.55,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.993877,daily,B,confirmed
+2025-09-26,dxy,98.15,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.993877,daily,B,confirmed
+2025-09-29,dxy,97.91,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.993877,daily,B,confirmed
+2025-09-30,dxy,97.77,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.993877,daily,B,confirmed
+2025-10-01,dxy,97.71,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.993877,daily,B,confirmed
+2025-10-02,dxy,97.85,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994304,daily,B,confirmed
+2025-10-03,dxy,97.72,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994304,daily,B,confirmed
+2025-10-06,dxy,98.11,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994304,daily,B,confirmed
+2025-10-07,dxy,98.58,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994304,daily,B,confirmed
+2025-10-08,dxy,98.85,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994304,daily,B,confirmed
+2025-10-09,dxy,99.54,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994304,daily,B,confirmed
+2025-10-10,dxy,98.98,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994814,daily,B,confirmed
+2025-10-13,dxy,99.27,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994814,daily,B,confirmed
+2025-10-14,dxy,99.05,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994814,daily,B,confirmed
+2025-10-15,dxy,98.79,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994814,daily,B,confirmed
+2025-10-16,dxy,98.39,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.994814,daily,B,confirmed
+2025-10-17,dxy,98.43,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995186,daily,B,confirmed
+2025-10-20,dxy,98.59,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995186,daily,B,confirmed
+2025-10-21,dxy,98.93,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995186,daily,B,confirmed
+2025-10-22,dxy,98.9,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995186,daily,B,confirmed
+2025-10-23,dxy,98.94,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995186,daily,B,confirmed
+2025-10-24,dxy,98.95,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995186,daily,B,confirmed
+2025-10-27,dxy,98.78,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-10-28,dxy,98.69,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-10-29,dxy,99.22,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-10-30,dxy,99.53,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-10-31,dxy,99.8,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-03,dxy,99.87,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-04,dxy,100.22,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-05,dxy,100.2,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-06,dxy,99.73,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-07,dxy,99.6,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-10,dxy,99.62,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-11,dxy,99.46,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-12,dxy,99.48,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.995693,daily,B,confirmed
+2025-11-13,dxy,99.18,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-14,dxy,99.27,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-17,dxy,99.59,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-18,dxy,99.55,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-19,dxy,100.23,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-20,dxy,100.16,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-21,dxy,100.18,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-24,dxy,100.14,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-25,dxy,99.66,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-26,dxy,99.6,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-11-28,dxy,99.46,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.996703,daily,B,confirmed
+2025-12-01,dxy,99.41,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-02,dxy,99.36,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-03,dxy,98.85,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-04,dxy,98.99,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-05,dxy,98.99,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-08,dxy,99.09,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-09,dxy,99.22,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-10,dxy,98.79,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-11,dxy,98.35,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-12,dxy,98.4,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-15,dxy,98.15,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-16,dxy,98.15,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.997703,daily,B,confirmed
+2025-12-17,dxy,98.37,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-18,dxy,98.43,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-19,dxy,98.6,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-22,dxy,98.29,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-23,dxy,97.94,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-24,dxy,97.98,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-26,dxy,98.02,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-29,dxy,98.04,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-30,dxy,98.24,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2025-12-31,dxy,98.28,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2026-01-02,dxy,98.42,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2026-01-05,dxy,98.27,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.998701,daily,B,confirmed
+2026-01-06,dxy,98.58,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-07,dxy,98.68,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-08,dxy,98.93,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-09,dxy,99.13,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-12,dxy,98.86,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-13,dxy,99.13,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-14,dxy,99.13,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-15,dxy,99.32,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-16,dxy,99.39,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-20,dxy,98.64,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-21,dxy,98.76,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-22,dxy,98.36,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-23,dxy,97.6,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:37.999700,daily,B,confirmed
+2026-01-26,dxy,97.04,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-01-27,dxy,96.22,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-01-28,dxy,96.45,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-01-29,dxy,96.28,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-01-30,dxy,96.99,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-02,dxy,97.61,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-03,dxy,97.44,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-04,dxy,97.62,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-05,dxy,97.82,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-06,dxy,97.63,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-09,dxy,96.82,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-10,dxy,96.8,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.000701,daily,B,confirmed
+2026-02-11,dxy,96.83,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-12,dxy,96.93,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-13,dxy,96.88,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-17,dxy,97.16,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-18,dxy,97.7,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-19,dxy,97.93,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-20,dxy,97.8,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-23,dxy,97.7,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-24,dxy,97.88,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-25,dxy,97.7,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-26,dxy,97.79,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-02-27,dxy,97.61,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-03-02,dxy,98.38,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.001701,daily,B,confirmed
+2026-03-03,dxy,99.05,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-04,dxy,98.77,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-05,dxy,99.32,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-06,dxy,98.99,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-09,dxy,99.18,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-10,dxy,98.83,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-11,dxy,99.23,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-12,dxy,99.74,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-13,dxy,100.36,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-16,dxy,99.71,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-17,dxy,99.58,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-18,dxy,100.09,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.002700,daily,B,confirmed
+2026-03-19,dxy,99.23,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-20,dxy,99.65,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-23,dxy,98.95,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-24,dxy,99.43,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-25,dxy,99.6,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-26,dxy,99.9,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-27,dxy,100.15,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-30,dxy,100.51,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-03-31,dxy,99.96,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-04-01,dxy,99.65,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-04-02,dxy,100.03,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-04-06,dxy,99.98,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-04-07,dxy,99.64,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.003703,daily,B,confirmed
+2026-04-08,dxy,99.13,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-09,dxy,98.82,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-10,dxy,98.65,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-13,dxy,98.37,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-14,dxy,98.12,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-15,dxy,98.06,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-16,dxy,98.22,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-17,dxy,98.1,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-20,dxy,98.05,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-21,dxy,98.41,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-22,dxy,98.59,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.004701,daily,B,confirmed
+2026-04-23,dxy,98.8,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.005701,daily,B,confirmed
+2026-04-24,dxy,98.51,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.005701,daily,B,confirmed
+2026-04-27,dxy,98.48,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.005701,daily,B,confirmed
+2026-04-28,dxy,98.62,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.005701,daily,B,confirmed
+2026-04-29,dxy,98.92,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.005701,daily,B,confirmed
+2026-04-30,dxy,98.08,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006080,daily,B,confirmed
+2026-05-01,dxy,98.21,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006080,daily,B,confirmed
+2026-05-04,dxy,98.47,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006080,daily,B,confirmed
+2026-05-05,dxy,98.48,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006080,daily,B,confirmed
+2026-05-06,dxy,98.02,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006080,daily,B,confirmed
+2026-05-07,dxy,98.25,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006080,daily,B,confirmed
+2026-05-08,dxy,97.84,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006589,daily,B,confirmed
+2026-05-11,dxy,97.94,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006589,daily,B,confirmed
+2026-05-12,dxy,98.29,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006589,daily,B,confirmed
+2026-05-13,dxy,98.48,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006839,daily,B,confirmed
+2026-05-14,dxy,98.88,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006839,daily,B,confirmed
+2026-05-15,dxy,99.27,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006839,daily,B,confirmed
+2026-05-18,dxy,98.97,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006839,daily,B,confirmed
+2026-05-19,dxy,99.3,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006839,daily,B,confirmed
+2026-05-20,dxy,99.11,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006839,daily,B,confirmed
+2026-05-21,dxy,99.19,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.006839,daily,B,confirmed
+2026-05-22,dxy,99.32,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-05-26,dxy,99.17,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-05-27,dxy,99.21,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-05-28,dxy,99.02,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-05-29,dxy,98.91,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-01,dxy,99.2,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-02,dxy,99.22,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-03,dxy,99.53,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-04,dxy,99.41,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-05,dxy,100.07,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-08,dxy,100.05,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-09,dxy,99.91,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.007345,daily,B,confirmed
+2026-06-10,dxy,99.95,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-11,dxy,99.86,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-12,dxy,99.75,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-15,dxy,99.63,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-16,dxy,99.54,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-17,dxy,100.09,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-18,dxy,100.85,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-22,dxy,101.02,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-23,dxy,101.41,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-24,dxy,101.61,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-25,dxy,101.43,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-26,dxy,101.36,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-29,dxy,101.11,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.008355,daily,B,confirmed
+2026-06-30,dxy,101.318,index,Yahoo Finance,https://finance.yahoo.com/quote/DX-Y.NYB,2026-06-30T14:59:38.009354,daily,B,confirmed
+2025-06-01,global_manufacturing_pmi,49.7,index,derived,,2026-06-30T08:37:50.635219,monthly,C,confirmed
+2025-07-01,global_manufacturing_pmi,49.3,index,derived,,2026-06-30T08:37:50.635729,monthly,C,confirmed
+2025-08-01,global_manufacturing_pmi,49.4,index,derived,,2026-06-30T08:37:50.635729,monthly,C,confirmed
+2025-09-01,global_manufacturing_pmi,49.8,index,derived,,2026-06-30T08:37:50.635729,monthly,C,confirmed
+2025-10-01,global_manufacturing_pmi,49.0,index,derived,,2026-06-30T08:37:50.635729,monthly,C,confirmed
+2025-11-01,global_manufacturing_pmi,49.2,index,derived,,2026-06-30T08:37:50.635729,monthly,C,confirmed
+2025-12-01,global_manufacturing_pmi,50.1,index,derived,,2026-06-30T08:37:50.635729,monthly,C,confirmed
+2026-01-01,global_manufacturing_pmi,49.3,index,derived,,2026-06-30T08:37:50.635729,monthly,C,confirmed
+2026-02-01,global_manufacturing_pmi,49.0,index,derived,,2026-06-30T08:37:50.635757,monthly,C,confirmed
+2026-03-01,global_manufacturing_pmi,50.4,index,derived,,2026-06-30T08:37:50.635757,monthly,C,confirmed
+2026-04-01,global_manufacturing_pmi,50.3,index,derived,,2026-06-30T08:37:50.635757,monthly,C,confirmed
+2026-05-01,global_manufacturing_pmi,50.0,index,derived,,2026-06-30T08:37:50.635757,monthly,C,confirmed
+2023-05-01,korea_exports_yoy,-13.7287,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513472,monthly,B,confirmed
+2023-06-01,korea_exports_yoy,-8.0316,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513472,monthly,B,confirmed
+2023-07-01,korea_exports_yoy,-14.3229,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513472,monthly,B,confirmed
+2023-08-01,korea_exports_yoy,-9.7536,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513472,monthly,B,confirmed
+2023-09-01,korea_exports_yoy,-3.8221,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2023-10-01,korea_exports_yoy,4.6599,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2023-11-01,korea_exports_yoy,6.9869,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2023-12-01,korea_exports_yoy,5.6036,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-01-01,korea_exports_yoy,16.8579,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-02-01,korea_exports_yoy,5.1364,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-03-01,korea_exports_yoy,2.6275,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-04-01,korea_exports_yoy,14.1598,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-05-01,korea_exports_yoy,10.8621,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-06-01,korea_exports_yoy,6.2383,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-07-01,korea_exports_yoy,13.4761,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-08-01,korea_exports_yoy,10.7318,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.513982,monthly,B,confirmed
+2024-09-01,korea_exports_yoy,7.2924,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2024-10-01,korea_exports_yoy,3.6778,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2024-11-01,korea_exports_yoy,3.0168,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2024-12-01,korea_exports_yoy,3.9963,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-01-01,korea_exports_yoy,-7.9279,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-02-01,korea_exports_yoy,-1.284,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-03-01,korea_exports_yoy,4.2524,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-04-01,korea_exports_yoy,2.4122,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-05-01,korea_exports_yoy,-0.7033,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-06-01,korea_exports_yoy,4.4383,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-07-01,korea_exports_yoy,4.8994,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-08-01,korea_exports_yoy,2.3809,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-09-01,korea_exports_yoy,10.5162,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.514993,monthly,B,confirmed
+2025-10-01,korea_exports_yoy,5.2605,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.515991,monthly,B,confirmed
+2025-11-01,korea_exports_yoy,6.5676,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.515991,monthly,B,confirmed
+2025-12-01,korea_exports_yoy,14.3945,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.515991,monthly,B,confirmed
+2026-01-01,korea_exports_yoy,32.3036,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.515991,monthly,B,confirmed
+2026-02-01,korea_exports_yoy,30.696,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.515991,monthly,B,confirmed
+2026-03-01,korea_exports_yoy,48.8649,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.515991,monthly,B,confirmed
+2026-04-01,korea_exports_yoy,48.8037,pct,FRED,https://fred.stlouisfed.org/series/XTEXVA01KRM667S,2026-06-30T08:37:46.515991,monthly,B,confirmed
+2025-05-27,lme_gold_price,3299.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-05-28,lme_gold_price,3293.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-05-29,lme_gold_price,3317.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-05-30,lme_gold_price,3288.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-02,lme_gold_price,3370.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-03,lme_gold_price,3350.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-04,lme_gold_price,3373.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-05,lme_gold_price,3350.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-06,lme_gold_price,3322.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-09,lme_gold_price,3332.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-10,lme_gold_price,3320.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-11,lme_gold_price,3321.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.665741,daily,B,confirmed
+2025-06-12,lme_gold_price,3380.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-13,lme_gold_price,3431.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-16,lme_gold_price,3396.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-17,lme_gold_price,3386.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-18,lme_gold_price,3389.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-20,lme_gold_price,3368.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-23,lme_gold_price,3377.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-24,lme_gold_price,3317.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-25,lme_gold_price,3327.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-26,lme_gold_price,3333.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-27,lme_gold_price,3273.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-06-30,lme_gold_price,3294.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-07-01,lme_gold_price,3336.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.666741,daily,B,confirmed
+2025-07-02,lme_gold_price,3348.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.667738,daily,B,confirmed
+2025-07-03,lme_gold_price,3331.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.667841,daily,B,confirmed
+2025-07-04,lme_gold_price,3332.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.667841,daily,B,confirmed
+2025-07-07,lme_gold_price,3332.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.667841,daily,B,confirmed
+2025-07-08,lme_gold_price,3307.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.667841,daily,B,confirmed
+2025-07-09,lme_gold_price,3311.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.667841,daily,B,confirmed
+2025-07-10,lme_gold_price,3317.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.667841,daily,B,confirmed
+2025-07-11,lme_gold_price,3356.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-14,lme_gold_price,3351.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-15,lme_gold_price,3329.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-16,lme_gold_price,3352.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-17,lme_gold_price,3340.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-18,lme_gold_price,3353.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-21,lme_gold_price,3401.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-22,lme_gold_price,3439.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-23,lme_gold_price,3394.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-24,lme_gold_price,3371.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-25,lme_gold_price,3334.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-28,lme_gold_price,3309.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-29,lme_gold_price,3323.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.668351,daily,B,confirmed
+2025-07-30,lme_gold_price,3295.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-07-31,lme_gold_price,3293.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-01,lme_gold_price,3347.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-04,lme_gold_price,3374.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-05,lme_gold_price,3381.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-06,lme_gold_price,3380.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-07,lme_gold_price,3400.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-08,lme_gold_price,3439.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-11,lme_gold_price,3353.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-12,lme_gold_price,3348.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-13,lme_gold_price,3358.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-14,lme_gold_price,3335.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.669359,daily,B,confirmed
+2025-08-15,lme_gold_price,3336.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-18,lme_gold_price,3331.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-19,lme_gold_price,3313.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-20,lme_gold_price,3343.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-21,lme_gold_price,3336.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-22,lme_gold_price,3374.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-25,lme_gold_price,3373.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-26,lme_gold_price,3388.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-27,lme_gold_price,3404.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-28,lme_gold_price,3431.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-08-29,lme_gold_price,3473.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-09-02,lme_gold_price,3549.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.670361,daily,B,confirmed
+2025-09-03,lme_gold_price,3593.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-04,lme_gold_price,3565.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-05,lme_gold_price,3613.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-08,lme_gold_price,3638.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-09,lme_gold_price,3643.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-10,lme_gold_price,3643.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-11,lme_gold_price,3636.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-12,lme_gold_price,3649.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-15,lme_gold_price,3682.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-16,lme_gold_price,3688.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-17,lme_gold_price,3681.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-18,lme_gold_price,3643.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.671359,daily,B,confirmed
+2025-09-19,lme_gold_price,3671.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-09-22,lme_gold_price,3740.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-09-23,lme_gold_price,3780.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-09-24,lme_gold_price,3732.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-09-25,lme_gold_price,3736.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-09-26,lme_gold_price,3775.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-09-29,lme_gold_price,3820.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-09-30,lme_gold_price,3840.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-10-01,lme_gold_price,3867.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-10-02,lme_gold_price,3839.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-10-03,lme_gold_price,3880.8,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-10-06,lme_gold_price,3948.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.672358,daily,B,confirmed
+2025-10-07,lme_gold_price,3976.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-08,lme_gold_price,4043.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-09,lme_gold_price,3946.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-10,lme_gold_price,3975.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-13,lme_gold_price,4108.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-14,lme_gold_price,4138.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-15,lme_gold_price,4176.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-16,lme_gold_price,4280.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-17,lme_gold_price,4189.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-20,lme_gold_price,4336.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-22,lme_gold_price,4044.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-23,lme_gold_price,4125.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.673361,daily,B,confirmed
+2025-10-24,lme_gold_price,4118.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-10-27,lme_gold_price,4001.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-10-28,lme_gold_price,3966.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-10-29,lme_gold_price,3983.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-10-30,lme_gold_price,4001.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-10-31,lme_gold_price,3982.2,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-11-03,lme_gold_price,4000.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-11-04,lme_gold_price,3947.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-11-05,lme_gold_price,3980.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-11-06,lme_gold_price,3979.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-11-07,lme_gold_price,3999.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-11-10,lme_gold_price,4111.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.674359,daily,B,confirmed
+2025-11-11,lme_gold_price,4106.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-12,lme_gold_price,4204.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-13,lme_gold_price,4186.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-14,lme_gold_price,4087.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-17,lme_gold_price,4068.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-18,lme_gold_price,4061.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-19,lme_gold_price,4077.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-20,lme_gold_price,4056.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-21,lme_gold_price,4076.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-24,lme_gold_price,4091.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-25,lme_gold_price,4139.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-26,lme_gold_price,4165.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.675359,daily,B,confirmed
+2025-11-28,lme_gold_price,4218.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676362,daily,B,confirmed
+2025-12-01,lme_gold_price,4239.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-02,lme_gold_price,4186.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-03,lme_gold_price,4199.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-04,lme_gold_price,4211.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-05,lme_gold_price,4212.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-08,lme_gold_price,4187.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-09,lme_gold_price,4206.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-10,lme_gold_price,4196.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-11,lme_gold_price,4285.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-12,lme_gold_price,4300.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-15,lme_gold_price,4306.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-16,lme_gold_price,4304.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.676420,daily,B,confirmed
+2025-12-17,lme_gold_price,4347.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-18,lme_gold_price,4339.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-19,lme_gold_price,4361.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-22,lme_gold_price,4444.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-23,lme_gold_price,4482.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-24,lme_gold_price,4480.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-26,lme_gold_price,4529.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-29,lme_gold_price,4325.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-30,lme_gold_price,4370.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2025-12-31,lme_gold_price,4325.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2026-01-02,lme_gold_price,4314.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2026-01-05,lme_gold_price,4436.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.677359,daily,B,confirmed
+2026-01-06,lme_gold_price,4482.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.678361,daily,B,confirmed
+2026-01-07,lme_gold_price,4449.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.678361,daily,B,confirmed
+2026-01-08,lme_gold_price,4449.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.678619,daily,B,confirmed
+2026-01-09,lme_gold_price,4490.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.678619,daily,B,confirmed
+2026-01-12,lme_gold_price,4604.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.678619,daily,B,confirmed
+2026-01-13,lme_gold_price,4589.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.678619,daily,B,confirmed
+2026-01-14,lme_gold_price,4626.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679129,daily,B,confirmed
+2026-01-15,lme_gold_price,4616.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679160,daily,B,confirmed
+2026-01-16,lme_gold_price,4588.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679160,daily,B,confirmed
+2026-01-20,lme_gold_price,4759.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679160,daily,B,confirmed
+2026-01-21,lme_gold_price,4831.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679160,daily,B,confirmed
+2026-01-22,lme_gold_price,4908.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679160,daily,B,confirmed
+2026-01-23,lme_gold_price,4976.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679160,daily,B,confirmed
+2026-01-30,lme_gold_price,4970.45,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.679694,daily,B,confirmed
+2026-02-04,lme_gold_price,4920.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.680225,daily,B,confirmed
+2026-02-05,lme_gold_price,4861.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.680225,daily,B,confirmed
+2026-02-06,lme_gold_price,4951.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.680225,daily,B,confirmed
+2026-02-12,lme_gold_price,4923.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.680748,daily,B,confirmed
+2026-02-17,lme_gold_price,4882.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.680748,daily,B,confirmed
+2026-02-18,lme_gold_price,4986.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.680748,daily,B,confirmed
+2026-02-19,lme_gold_price,4975.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.680748,daily,B,confirmed
+2026-03-16,lme_gold_price,4994.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682332,daily,B,confirmed
+2026-03-18,lme_gold_price,4889.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682332,daily,B,confirmed
+2026-03-20,lme_gold_price,4570.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682837,daily,B,confirmed
+2026-03-23,lme_gold_price,4404.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682855,daily,B,confirmed
+2026-03-24,lme_gold_price,4399.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682855,daily,B,confirmed
+2026-03-25,lme_gold_price,4549.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682855,daily,B,confirmed
+2026-03-26,lme_gold_price,4375.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682855,daily,B,confirmed
+2026-03-27,lme_gold_price,4492.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682855,daily,B,confirmed
+2026-03-30,lme_gold_price,4526.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.682855,daily,B,confirmed
+2026-03-31,lme_gold_price,4647.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683384,daily,B,confirmed
+2026-04-01,lme_gold_price,4783.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683384,daily,B,confirmed
+2026-04-02,lme_gold_price,4651.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683384,daily,B,confirmed
+2026-04-06,lme_gold_price,4656.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683384,daily,B,confirmed
+2026-04-07,lme_gold_price,4657.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683384,daily,B,confirmed
+2026-04-08,lme_gold_price,4749.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683384,daily,B,confirmed
+2026-04-09,lme_gold_price,4792.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683901,daily,B,confirmed
+2026-04-10,lme_gold_price,4761.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683901,daily,B,confirmed
+2026-04-13,lme_gold_price,4742.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683901,daily,B,confirmed
+2026-04-14,lme_gold_price,4825.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683901,daily,B,confirmed
+2026-04-15,lme_gold_price,4800.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683901,daily,B,confirmed
+2026-04-16,lme_gold_price,4785.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683901,daily,B,confirmed
+2026-04-17,lme_gold_price,4857.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.683901,daily,B,confirmed
+2026-04-20,lme_gold_price,4806.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684429,daily,B,confirmed
+2026-04-21,lme_gold_price,4698.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684429,daily,B,confirmed
+2026-04-22,lme_gold_price,4732.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684429,daily,B,confirmed
+2026-04-23,lme_gold_price,4705.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684429,daily,B,confirmed
+2026-04-24,lme_gold_price,4722.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684429,daily,B,confirmed
+2026-04-27,lme_gold_price,4675.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684429,daily,B,confirmed
+2026-04-28,lme_gold_price,4591.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684952,daily,B,confirmed
+2026-04-29,lme_gold_price,4545.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684952,daily,B,confirmed
+2026-04-30,lme_gold_price,4614.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684952,daily,B,confirmed
+2026-05-01,lme_gold_price,4629.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684952,daily,B,confirmed
+2026-05-04,lme_gold_price,4519.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684952,daily,B,confirmed
+2026-05-05,lme_gold_price,4555.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.684952,daily,B,confirmed
+2026-05-06,lme_gold_price,4681.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.685460,daily,B,confirmed
+2026-05-07,lme_gold_price,4699.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.685481,daily,B,confirmed
+2026-05-08,lme_gold_price,4720.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.685481,daily,B,confirmed
+2026-05-11,lme_gold_price,4718.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.685481,daily,B,confirmed
+2026-05-12,lme_gold_price,4677.6001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.685481,daily,B,confirmed
+2026-05-13,lme_gold_price,4697.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.685481,daily,B,confirmed
+2026-05-14,lme_gold_price,4678.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.685481,daily,B,confirmed
+2026-05-15,lme_gold_price,4555.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686004,daily,B,confirmed
+2026-05-18,lme_gold_price,4552.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686004,daily,B,confirmed
+2026-05-19,lme_gold_price,4506.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686004,daily,B,confirmed
+2026-05-20,lme_gold_price,4531.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686004,daily,B,confirmed
+2026-05-21,lme_gold_price,4539.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686004,daily,B,confirmed
+2026-05-22,lme_gold_price,4521.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686004,daily,B,confirmed
+2026-05-26,lme_gold_price,4500.3999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686529,daily,B,confirmed
+2026-05-27,lme_gold_price,4447.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686529,daily,B,confirmed
+2026-05-28,lme_gold_price,4499.2998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686529,daily,B,confirmed
+2026-05-29,lme_gold_price,4560.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686529,daily,B,confirmed
+2026-06-01,lme_gold_price,4475.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686529,daily,B,confirmed
+2026-06-02,lme_gold_price,4489.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686529,daily,B,confirmed
+2026-06-03,lme_gold_price,4436.7002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.686529,daily,B,confirmed
+2026-06-04,lme_gold_price,4475.7998,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687049,daily,B,confirmed
+2026-06-05,lme_gold_price,4337.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687049,daily,B,confirmed
+2026-06-08,lme_gold_price,4335.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687049,daily,B,confirmed
+2026-06-09,lme_gold_price,4260.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687049,daily,B,confirmed
+2026-06-10,lme_gold_price,4108.2002,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687049,daily,B,confirmed
+2026-06-11,lme_gold_price,4090.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687049,daily,B,confirmed
+2026-06-12,lme_gold_price,4215.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687574,daily,B,confirmed
+2026-06-15,lme_gold_price,4328.0,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687574,daily,B,confirmed
+2026-06-16,lme_gold_price,4330.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687574,daily,B,confirmed
+2026-06-17,lme_gold_price,4358.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687574,daily,B,confirmed
+2026-06-18,lme_gold_price,4224.1001,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687574,daily,B,confirmed
+2026-06-22,lme_gold_price,4181.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687574,daily,B,confirmed
+2026-06-23,lme_gold_price,4129.8999,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.687574,daily,B,confirmed
+2026-06-24,lme_gold_price,3990.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.688094,daily,B,confirmed
+2026-06-25,lme_gold_price,4030.5,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.688094,daily,B,confirmed
+2026-06-26,lme_gold_price,4078.7,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.688094,daily,B,confirmed
+2026-06-29,lme_gold_price,4022.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.688094,daily,B,confirmed
+2026-06-30,lme_gold_price,4046.3,USD/oz,Yahoo Finance,https://finance.yahoo.com/quote/GC=F,2026-06-30T14:59:37.688094,daily,B,confirmed
+2025-05-28,m1,1089147.65,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2025-06-28,m1,1139494.08,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2025-07-28,m1,1110586.92,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2025-08-28,m1,1112255.7,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2025-09-28,m1,1131455.07,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2025-10-28,m1,1119962.73,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2025-11-28,m1,1128866.64,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2025-12-28,m1,1155146.5,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2026-01-28,m1,1179680.52,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2026-02-28,m1,1159258.82,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.231053,monthly,A,confirmed
+2026-03-28,m1,1193202.99,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.230546,monthly,A,confirmed
+2026-04-28,m1,1145833.73,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.230546,monthly,A,confirmed
+2026-05-28,m1,1148891.41,CNY_bn,东方财富-货币供应,https://data.eastmoney.com/cjsj/hbgyl.html,2026-06-30T14:59:58.230546,monthly,A,confirmed
+2026-03-23,shfe_inventory,106746.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124303,daily,A,confirmed
+2026-03-24,shfe_inventory,106743.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124303,daily,A,confirmed
+2026-03-25,shfe_inventory,106743.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124811,daily,A,confirmed
+2026-03-26,shfe_inventory,106743.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124811,daily,A,confirmed
+2026-03-27,shfe_inventory,106644.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124811,daily,A,confirmed
+2026-03-30,shfe_inventory,106644.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124811,daily,A,confirmed
+2026-03-31,shfe_inventory,106644.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124811,daily,A,confirmed
+2026-04-01,shfe_inventory,106644.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.124811,daily,A,confirmed
+2026-04-02,shfe_inventory,107643.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.125818,daily,A,confirmed
+2026-04-03,shfe_inventory,108153.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.125818,daily,A,confirmed
+2026-04-07,shfe_inventory,108663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.125818,daily,A,confirmed
+2026-04-08,shfe_inventory,108663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.125818,daily,A,confirmed
+2026-04-09,shfe_inventory,108663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.125818,daily,A,confirmed
+2026-04-10,shfe_inventory,108663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.125818,daily,A,confirmed
+2026-04-13,shfe_inventory,108663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.126821,daily,A,confirmed
+2026-04-14,shfe_inventory,108663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.126821,daily,A,confirmed
+2026-04-15,shfe_inventory,108663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.126821,daily,A,confirmed
+2026-04-16,shfe_inventory,108657.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.126821,daily,A,confirmed
+2026-04-17,shfe_inventory,108648.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.126821,daily,A,confirmed
+2026-04-20,shfe_inventory,108636.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.126821,daily,A,confirmed
+2026-04-21,shfe_inventory,109143.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.126821,daily,A,confirmed
+2026-04-22,shfe_inventory,109143.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.127822,daily,A,confirmed
+2026-04-23,shfe_inventory,109143.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.127822,daily,A,confirmed
+2026-04-24,shfe_inventory,109143.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.127822,daily,A,confirmed
+2026-04-27,shfe_inventory,109143.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.127822,daily,A,confirmed
+2026-04-28,shfe_inventory,109653.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.127822,daily,A,confirmed
+2026-04-29,shfe_inventory,109653.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.127822,daily,A,confirmed
+2026-04-30,shfe_inventory,109653.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.128822,daily,A,confirmed
+2026-05-06,shfe_inventory,109653.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.128822,daily,A,confirmed
+2026-05-07,shfe_inventory,109653.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.128822,daily,A,confirmed
+2026-05-08,shfe_inventory,109653.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.128822,daily,A,confirmed
+2026-05-11,shfe_inventory,109653.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.128822,daily,A,confirmed
+2026-05-12,shfe_inventory,110673.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.128822,daily,A,confirmed
+2026-05-13,shfe_inventory,110673.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.129819,daily,A,confirmed
+2026-05-14,shfe_inventory,110673.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.129819,daily,A,confirmed
+2026-05-15,shfe_inventory,110673.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.129819,daily,A,confirmed
+2026-05-18,shfe_inventory,110673.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.129819,daily,A,confirmed
+2026-05-19,shfe_inventory,110649.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.129819,daily,A,confirmed
+2026-05-20,shfe_inventory,110649.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.129819,daily,A,confirmed
+2026-05-21,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.129819,daily,A,confirmed
+2026-05-22,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.130819,daily,A,confirmed
+2026-05-25,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.130819,daily,A,confirmed
+2026-05-26,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.130819,daily,A,confirmed
+2026-05-27,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.130819,daily,A,confirmed
+2026-05-28,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.130819,daily,A,confirmed
+2026-05-29,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.130819,daily,A,confirmed
+2026-06-01,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.131819,daily,A,confirmed
+2026-06-02,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.131819,daily,A,confirmed
+2026-06-03,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.131819,daily,A,confirmed
+2026-06-04,shfe_inventory,111669.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.131819,daily,A,confirmed
+2026-06-05,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.131819,daily,A,confirmed
+2026-06-08,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.131819,daily,A,confirmed
+2026-06-09,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.131819,daily,A,confirmed
+2026-06-10,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.132819,daily,A,confirmed
+2026-06-11,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.132819,daily,A,confirmed
+2026-06-12,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.132819,daily,A,confirmed
+2026-06-15,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.132819,daily,A,confirmed
+2026-06-16,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.132819,daily,A,confirmed
+2026-06-17,shfe_inventory,111663.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.132819,daily,A,confirmed
+2026-06-18,shfe_inventory,111639.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.133819,daily,A,confirmed
+2026-06-22,shfe_inventory,111633.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.133819,daily,A,confirmed
+2026-06-23,shfe_inventory,111633.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.133819,daily,A,confirmed
+2026-06-24,shfe_inventory,111642.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.133819,daily,A,confirmed
+2026-06-25,shfe_inventory,111642.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.133819,daily,A,confirmed
+2026-06-26,shfe_inventory,111648.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.133819,daily,A,confirmed
+2026-06-29,shfe_inventory,111648.0,ton,东方财富-SHFE,https://www.shfe.com.cn/reports/businessdata/prmsummary/,2026-06-30T14:59:54.134818,daily,A,confirmed
+2025-05-28,social_financing,5923.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2025-06-28,social_financing,23600.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2025-07-28,social_financing,-4296.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2025-08-28,social_financing,6253.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2025-09-28,social_financing,16081.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2025-10-28,social_financing,-154.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2025-11-28,social_financing,4096.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2025-12-28,social_financing,9804.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2026-01-28,social_financing,49016.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707633,monthly,A,confirmed
+2026-02-28,social_financing,8458.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707126,monthly,A,confirmed
+2026-03-28,social_financing,31522.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707126,monthly,A,confirmed
+2026-04-28,social_financing,-4006.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707126,monthly,A,confirmed
+2026-05-28,social_financing,4965.0,CNY_bn,东方财富-社融,https://data.eastmoney.com/cjsj/xzxd.html,2026-06-30T14:59:55.707126,monthly,A,confirmed
+2025-05-27,spot_premium,242.78,USD/oz,derived,,2026-06-30T15:00:02.451743,daily,C,confirmed
+2025-05-28,spot_premium,251.4,USD/oz,derived,,2026-06-30T15:00:02.451743,daily,C,confirmed
+2025-05-29,spot_premium,191.37,USD/oz,derived,,2026-06-30T15:00:02.451743,daily,C,confirmed
+2025-05-30,spot_premium,253.9,USD/oz,derived,,2026-06-30T15:00:02.451743,daily,C,confirmed
+2025-06-03,spot_premium,244.47,USD/oz,derived,,2026-06-30T15:00:02.451743,daily,C,confirmed
+2025-06-04,spot_premium,218.05,USD/oz,derived,,2026-06-30T15:00:02.451743,daily,C,confirmed
+2025-06-05,spot_premium,246.82,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-06,spot_premium,272.61,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-09,spot_premium,224.1,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-10,spot_premium,236.87,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-11,spot_premium,247.85,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-12,spot_premium,223.23,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-13,spot_premium,215.16,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-16,spot_premium,240.5,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-17,spot_premium,217.16,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-18,spot_premium,215.52,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-19,spot_premium,196.33,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-20,spot_premium,205.82,USD/oz,derived,,2026-06-30T15:00:02.452741,daily,C,confirmed
+2025-06-23,spot_premium,208.71,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-06-24,spot_premium,225.68,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-06-25,spot_premium,225.52,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-06-26,spot_premium,225.28,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-06-27,spot_premium,254.6,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-06-30,spot_premium,229.03,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-01,spot_premium,225.84,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-02,spot_premium,214.26,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-03,spot_premium,254.72,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-04,spot_premium,234.45,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-07,spot_premium,208.31,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-08,spot_premium,256.09,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-09,spot_premium,208.34,USD/oz,derived,,2026-06-30T15:00:02.453740,daily,C,confirmed
+2025-07-10,spot_premium,232.29,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-11,spot_premium,194.88,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-14,spot_premium,235.37,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-15,spot_premium,252.48,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-16,spot_premium,212.61,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-17,spot_premium,223.27,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-18,spot_premium,213.76,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-21,spot_premium,186.34,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-22,spot_premium,163.46,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-23,spot_premium,245.56,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-24,spot_premium,203.66,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-25,spot_premium,234.14,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-28,spot_premium,247.38,USD/oz,derived,,2026-06-30T15:00:02.454741,daily,C,confirmed
+2025-07-29,spot_premium,217.75,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-07-30,spot_premium,256.09,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-07-31,spot_premium,242.62,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-01,spot_premium,190.14,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-04,spot_premium,212.56,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-05,spot_premium,210.02,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-06,spot_premium,217.33,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-07,spot_premium,203.18,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-08,spot_premium,177.15,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-11,spot_premium,224.95,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-12,spot_premium,213.36,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-13,spot_premium,211.28,USD/oz,derived,,2026-06-30T15:00:02.455740,daily,C,confirmed
+2025-08-14,spot_premium,239.27,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-15,spot_premium,225.16,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-18,spot_premium,238.0,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-19,spot_premium,244.37,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-20,spot_premium,203.44,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-21,spot_premium,221.14,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-22,spot_premium,175.75,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-25,spot_premium,202.88,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-26,spot_premium,196.98,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-27,spot_premium,181.17,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-28,spot_premium,163.42,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-08-29,spot_premium,140.8,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-09-01,spot_premium,208.65,USD/oz,derived,,2026-06-30T15:00:02.456740,daily,C,confirmed
+2025-09-02,spot_premium,151.22,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-03,spot_premium,155.52,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-04,spot_premium,174.93,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-05,spot_premium,139.47,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-08,spot_premium,149.73,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-09,spot_premium,199.25,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-10,spot_premium,194.17,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-11,spot_premium,186.09,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-12,spot_premium,191.31,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-15,spot_premium,146.58,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-16,spot_premium,187.98,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-17,spot_premium,163.23,USD/oz,derived,,2026-06-30T15:00:02.457743,daily,C,confirmed
+2025-09-18,spot_premium,151.66,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-19,spot_premium,141.03,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-22,spot_premium,145.0,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-23,spot_premium,146.13,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-24,spot_premium,215.57,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-25,spot_premium,186.53,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-26,spot_premium,154.28,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-29,spot_premium,156.69,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-09-30,spot_premium,172.97,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-10-09,spot_premium,250.71,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-10-10,spot_premium,162.54,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-10-13,spot_premium,149.19,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-10-14,spot_premium,171.51,USD/oz,derived,,2026-06-30T15:00:02.458741,daily,C,confirmed
+2025-10-15,spot_premium,231.36,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-16,spot_premium,155.97,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-17,spot_premium,399.49,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-20,spot_premium,117.67,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-21,spot_premium,475.34,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-22,spot_premium,328.15,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-23,spot_premium,199.86,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-24,spot_premium,187.77,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-27,spot_premium,286.09,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-28,spot_premium,171.41,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-29,spot_premium,197.52,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-30,spot_premium,185.8,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-10-31,spot_premium,249.7,USD/oz,derived,,2026-06-30T15:00:02.459740,daily,C,confirmed
+2025-11-03,spot_premium,234.63,USD/oz,derived,,2026-06-30T15:00:02.460741,daily,C,confirmed
+2025-11-04,spot_premium,255.1,USD/oz,derived,,2026-06-30T15:00:02.460741,daily,C,confirmed
+2025-11-05,spot_premium,207.26,USD/oz,derived,,2026-06-30T15:00:02.460741,daily,C,confirmed
+2025-11-06,spot_premium,233.09,USD/oz,derived,,2026-06-30T15:00:02.460741,daily,C,confirmed
+2025-11-07,spot_premium,229.47,USD/oz,derived,,2026-06-30T15:00:02.460741,daily,C,confirmed
+2025-11-10,spot_premium,184.64,USD/oz,derived,,2026-06-30T15:00:02.460741,daily,C,confirmed
+2025-11-11,spot_premium,248.85,USD/oz,derived,,2026-06-30T15:00:02.460741,daily,C,confirmed
+2025-11-12,spot_premium,136.93,USD/oz,derived,,2026-06-30T15:00:02.461311,daily,C,confirmed
+2025-11-13,spot_premium,237.33,USD/oz,derived,,2026-06-30T15:00:02.461311,daily,C,confirmed
+2025-11-14,spot_premium,301.29,USD/oz,derived,,2026-06-30T15:00:02.461311,daily,C,confirmed
+2025-11-17,spot_premium,211.34,USD/oz,derived,,2026-06-30T15:00:02.461311,daily,C,confirmed
+2025-11-18,spot_premium,167.94,USD/oz,derived,,2026-06-30T15:00:02.461311,daily,C,confirmed
+2025-11-19,spot_premium,237.47,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-11-20,spot_premium,237.55,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-11-21,spot_premium,178.24,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-11-24,spot_premium,178.56,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-11-25,spot_premium,205.53,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-11-26,spot_premium,180.54,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-11-27,spot_premium,182.56,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-11-28,spot_premium,160.49,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-12-01,spot_premium,182.45,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-12-02,spot_premium,212.84,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-12-03,spot_premium,192.25,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-12-04,spot_premium,164.69,USD/oz,derived,,2026-06-30T15:00:02.461741,daily,C,confirmed
+2025-12-05,spot_premium,198.57,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-08,spot_premium,213.53,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-09,spot_premium,161.16,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-10,spot_premium,193.77,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-11,spot_premium,111.56,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-12,spot_premium,155.53,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-15,spot_premium,206.31,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-16,spot_premium,154.62,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-17,spot_premium,149.72,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-18,spot_premium,161.3,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-19,spot_premium,136.64,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-22,spot_premium,149.66,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-23,spot_premium,172.88,USD/oz,derived,,2026-06-30T15:00:02.462740,daily,C,confirmed
+2025-12-24,spot_premium,177.1,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2025-12-25,spot_premium,149.92,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2025-12-26,spot_premium,136.03,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2025-12-29,spot_premium,298.17,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2025-12-30,spot_premium,150.62,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2025-12-31,spot_premium,161.7,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-05,spot_premium,130.46,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-06,spot_premium,130.97,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-07,spot_premium,135.96,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-08,spot_premium,131.15,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-09,spot_premium,129.75,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-12,spot_premium,106.64,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-13,spot_premium,140.84,USD/oz,derived,,2026-06-30T15:00:02.463743,daily,C,confirmed
+2026-01-14,spot_premium,164.06,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-15,spot_premium,148.26,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-16,spot_premium,164.87,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-19,spot_premium,239.69,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-20,spot_premium,106.86,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-21,spot_premium,182.2,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-22,spot_premium,83.53,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-23,spot_premium,144.93,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-26,spot_premium,168.49,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-27,spot_premium,191.52,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-28,spot_premium,143.42,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-29,spot_premium,415.45,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-01-30,spot_premium,617.38,USD/oz,derived,,2026-06-30T15:00:02.464741,daily,C,confirmed
+2026-02-02,spot_premium,7.29,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-03,spot_premium,117.09,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-04,spot_premium,320.36,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-05,spot_premium,214.38,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-06,spot_premium,52.79,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-09,spot_premium,117.51,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-10,spot_premium,142.95,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-11,spot_premium,117.29,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-12,spot_premium,245.54,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-13,spot_premium,73.7,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-24,spot_premium,125.35,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-25,spot_premium,77.32,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-26,spot_premium,86.2,USD/oz,derived,,2026-06-30T15:00:02.465739,daily,C,confirmed
+2026-02-27,spot_premium,38.72,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-02,spot_premium,201.21,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-03,spot_premium,318.35,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-04,spot_premium,172.7,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-05,spot_premium,222.74,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-06,spot_premium,90.52,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-09,spot_premium,141.45,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-10,spot_premium,63.66,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-11,spot_premium,136.79,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-12,spot_premium,170.03,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-13,spot_premium,161.63,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-16,spot_premium,154.03,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-17,spot_premium,136.29,USD/oz,derived,,2026-06-30T15:00:02.466742,daily,C,confirmed
+2026-03-18,spot_premium,236.37,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-19,spot_premium,289.17,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-20,spot_premium,212.79,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-23,spot_premium,-76.36,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-24,spot_premium,98.29,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-25,spot_premium,104.59,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-26,spot_premium,196.36,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-27,spot_premium,92.16,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-30,spot_premium,132.61,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-03-31,spot_premium,34.97,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-04-01,spot_premium,51.22,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-04-02,spot_premium,47.97,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-04-03,spot_premium,90.29,USD/oz,derived,,2026-06-30T15:00:02.467740,daily,C,confirmed
+2026-04-07,spot_premium,90.57,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-08,spot_premium,125.41,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-09,spot_premium,-12.22,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-10,spot_premium,50.4,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-13,spot_premium,47.13,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-14,spot_premium,7.77,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-15,spot_premium,57.65,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-16,spot_premium,87.21,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-17,spot_premium,-19.32,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-20,spot_premium,35.99,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-21,spot_premium,129.23,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-22,spot_premium,93.75,USD/oz,derived,,2026-06-30T15:00:02.468742,daily,C,confirmed
+2026-04-23,spot_premium,69.1,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-04-24,spot_premium,15.45,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-04-27,spot_premium,95.86,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-04-28,spot_premium,100.26,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-04-29,spot_premium,99.64,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-04-30,spot_premium,49.6,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-06,spot_premium,39.14,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-07,spot_premium,78.62,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-08,spot_premium,45.35,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-11,spot_premium,-5.37,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-12,spot_premium,50.97,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-13,spot_premium,32.89,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-14,spot_premium,48.08,USD/oz,derived,,2026-06-30T15:00:02.469740,daily,C,confirmed
+2026-05-15,spot_premium,54.62,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-18,spot_premium,36.89,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-19,spot_premium,94.02,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-20,spot_premium,-2.32,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-21,spot_premium,29.3,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-22,spot_premium,49.85,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-25,spot_premium,75.74,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-26,spot_premium,66.96,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-27,spot_premium,67.34,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-28,spot_premium,-87.19,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-05-29,spot_premium,-18.85,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-06-01,spot_premium,39.74,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-06-02,spot_premium,58.06,USD/oz,derived,,2026-06-30T15:00:02.470740,daily,C,confirmed
+2026-06-03,spot_premium,48.4,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-04,spot_premium,13.25,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-05,spot_premium,133.95,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-08,spot_premium,-10.91,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-09,spot_premium,87.21,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-10,spot_premium,111.76,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-11,spot_premium,18.03,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-12,spot_premium,-30.38,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-15,spot_premium,-17.97,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-16,spot_premium,-8.11,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-17,spot_premium,-30.51,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-18,spot_premium,81.43,USD/oz,derived,,2026-06-30T15:00:02.471742,daily,C,confirmed
+2026-06-22,spot_premium,27.05,USD/oz,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-06-23,spot_premium,-8.26,USD/oz,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-06-24,spot_premium,122.8,USD/oz,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-06-25,spot_premium,-27.75,USD/oz,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-06-26,spot_premium,-24.08,USD/oz,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-06-29,spot_premium,57.2,USD/oz,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-05-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-05-28,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-05-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-05-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-06,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-17,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-20,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-23,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-06-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-01,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-02,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-07,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-08,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-14,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-17,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-21,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-23,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-28,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-07-31,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-01,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-06,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-07,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-08,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-14,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-20,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-21,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-28,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-08-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-01,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-02,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-08,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-17,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-23,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-09-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-14,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-17,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-20,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-21,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-23,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-28,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-10-31,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-06,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-07,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-14,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-17,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-20,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-21,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-11-28,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-01,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-02,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-08,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-17,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-23,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2025-12-31,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-06,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-07,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-08,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-14,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-20,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-21,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-23,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.472743,daily,C,confirmed
+2026-01-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-01-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-01-28,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-01-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-01-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-02,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-06,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-02-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-02,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-06,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-17,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-20,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-23,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-03-31,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-01,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-02,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-07,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-08,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-09,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-14,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-16,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-17,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-20,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-21,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-23,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-28,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-04-30,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-06,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-07,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-08,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-11,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-12,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-13,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-14,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-15,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-19,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-20,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-21,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-25,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-26,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-27,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-28,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-05-29,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-01,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-02,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-03,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-04,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-05,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-08,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-09,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-10,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-11,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-12,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-15,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-16,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-17,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-18,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-22,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-23,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-24,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-25,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-26,term_structure,contango,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2026-06-29,term_structure,backwardation,label,derived,,2026-06-30T15:00:02.473740,daily,C,confirmed
+2025-05-27,us_10y_real_rate,2.11,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.845736,daily,A,confirmed
+2025-05-28,us_10y_real_rate,2.15,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.845736,daily,A,confirmed
+2025-05-29,us_10y_real_rate,2.11,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-05-30,us_10y_real_rate,2.07,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-02,us_10y_real_rate,2.13,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-03,us_10y_real_rate,2.14,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-04,us_10y_real_rate,2.06,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-05,us_10y_real_rate,2.11,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-06,us_10y_real_rate,2.2,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-09,us_10y_real_rate,2.18,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-10,us_10y_real_rate,2.18,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-11,us_10y_real_rate,2.14,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-12,us_10y_real_rate,2.11,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-13,us_10y_real_rate,2.13,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-16,us_10y_real_rate,2.16,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.846734,daily,A,confirmed
+2025-06-17,us_10y_real_rate,2.08,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-18,us_10y_real_rate,2.07,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-20,us_10y_real_rate,2.05,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-23,us_10y_real_rate,2.04,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-24,us_10y_real_rate,2.01,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-25,us_10y_real_rate,2.01,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-26,us_10y_real_rate,1.98,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-27,us_10y_real_rate,2.0,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-06-30,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-07-01,us_10y_real_rate,1.97,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-07-02,us_10y_real_rate,2.0,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-07-03,us_10y_real_rate,2.02,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-07-07,us_10y_real_rate,2.05,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.847732,daily,A,confirmed
+2025-07-08,us_10y_real_rate,2.07,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-09,us_10y_real_rate,2.01,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-10,us_10y_real_rate,2.01,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-11,us_10y_real_rate,2.06,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-14,us_10y_real_rate,2.04,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-15,us_10y_real_rate,2.09,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-16,us_10y_real_rate,2.05,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-17,us_10y_real_rate,2.04,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-18,us_10y_real_rate,2.03,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-21,us_10y_real_rate,1.98,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-22,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-23,us_10y_real_rate,2.03,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.848735,daily,A,confirmed
+2025-07-24,us_10y_real_rate,1.98,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-07-25,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-07-28,us_10y_real_rate,1.98,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-07-29,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-07-30,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-07-31,us_10y_real_rate,1.98,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-01,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-04,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-05,us_10y_real_rate,1.86,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-06,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-07,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-08,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-11,us_10y_real_rate,1.87,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.849735,daily,A,confirmed
+2025-08-12,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-13,us_10y_real_rate,1.87,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-14,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-15,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-18,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-19,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-20,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-21,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-22,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-25,us_10y_real_rate,1.87,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-26,us_10y_real_rate,1.84,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-27,us_10y_real_rate,1.81,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-28,us_10y_real_rate,1.81,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.850733,daily,A,confirmed
+2025-08-29,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-02,us_10y_real_rate,1.87,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-03,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-04,us_10y_real_rate,1.79,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-05,us_10y_real_rate,1.73,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-08,us_10y_real_rate,1.7,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-09,us_10y_real_rate,1.72,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-10,us_10y_real_rate,1.69,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-11,us_10y_real_rate,1.67,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-12,us_10y_real_rate,1.7,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-15,us_10y_real_rate,1.68,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-16,us_10y_real_rate,1.67,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.851732,daily,A,confirmed
+2025-09-17,us_10y_real_rate,1.68,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-18,us_10y_real_rate,1.73,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-19,us_10y_real_rate,1.75,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-22,us_10y_real_rate,1.78,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-23,us_10y_real_rate,1.75,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-24,us_10y_real_rate,1.78,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-25,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-26,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-29,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-09-30,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-10-01,us_10y_real_rate,1.77,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-10-02,us_10y_real_rate,1.76,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-10-03,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.852733,daily,A,confirmed
+2025-10-06,us_10y_real_rate,1.84,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-07,us_10y_real_rate,1.79,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-08,us_10y_real_rate,1.78,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-09,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-10,us_10y_real_rate,1.75,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-14,us_10y_real_rate,1.73,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-15,us_10y_real_rate,1.76,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-16,us_10y_real_rate,1.71,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-17,us_10y_real_rate,1.75,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-20,us_10y_real_rate,1.74,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-21,us_10y_real_rate,1.7,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-22,us_10y_real_rate,1.68,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-23,us_10y_real_rate,1.71,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.853733,daily,A,confirmed
+2025-10-24,us_10y_real_rate,1.73,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-10-27,us_10y_real_rate,1.73,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-10-28,us_10y_real_rate,1.71,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-10-29,us_10y_real_rate,1.78,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-10-30,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-10-31,us_10y_real_rate,1.81,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-03,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-04,us_10y_real_rate,1.81,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-05,us_10y_real_rate,1.87,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-06,us_10y_real_rate,1.83,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-07,us_10y_real_rate,1.83,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-10,us_10y_real_rate,1.84,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-12,us_10y_real_rate,1.81,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.854733,daily,A,confirmed
+2025-11-13,us_10y_real_rate,1.83,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-14,us_10y_real_rate,1.86,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-17,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-18,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-19,us_10y_real_rate,1.86,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-20,us_10y_real_rate,1.86,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-21,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-24,us_10y_real_rate,1.81,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-25,us_10y_real_rate,1.79,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-26,us_10y_real_rate,1.77,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-11-28,us_10y_real_rate,1.79,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-12-01,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.855733,daily,A,confirmed
+2025-12-02,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-03,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-04,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-05,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-08,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-09,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-10,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-11,us_10y_real_rate,1.89,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-12,us_10y_real_rate,1.93,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-15,us_10y_real_rate,1.93,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-16,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-17,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-18,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.856735,daily,A,confirmed
+2025-12-19,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2025-12-22,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2025-12-23,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2025-12-24,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2025-12-26,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2025-12-29,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2025-12-30,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2025-12-31,us_10y_real_rate,1.93,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2026-01-02,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2026-01-05,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2026-01-06,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2026-01-07,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.857733,daily,A,confirmed
+2026-01-08,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-09,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-12,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-13,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-14,us_10y_real_rate,1.86,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-15,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-16,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-20,us_10y_real_rate,1.97,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-21,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.858732,daily,A,confirmed
+2026-01-22,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.859737,daily,A,confirmed
+2026-01-23,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.859737,daily,A,confirmed
+2026-01-26,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.859737,daily,A,confirmed
+2026-01-27,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-01-28,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-01-29,us_10y_real_rate,1.89,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-01-30,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-02-02,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-02-03,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-02-04,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-02-05,us_10y_real_rate,1.89,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860019,daily,A,confirmed
+2026-02-06,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-09,us_10y_real_rate,1.87,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-10,us_10y_real_rate,1.84,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-11,us_10y_real_rate,1.86,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-12,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-13,us_10y_real_rate,1.77,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-17,us_10y_real_rate,1.79,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-18,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-19,us_10y_real_rate,1.79,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-20,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-23,us_10y_real_rate,1.77,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-24,us_10y_real_rate,1.78,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-25,us_10y_real_rate,1.77,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.860734,daily,A,confirmed
+2026-02-26,us_10y_real_rate,1.74,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-02-27,us_10y_real_rate,1.72,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-02,us_10y_real_rate,1.76,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-03,us_10y_real_rate,1.77,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-04,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-05,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-06,us_10y_real_rate,1.8,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-09,us_10y_real_rate,1.78,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-10,us_10y_real_rate,1.82,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-11,us_10y_real_rate,1.85,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-12,us_10y_real_rate,1.89,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-13,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-16,us_10y_real_rate,1.87,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.861734,daily,A,confirmed
+2026-03-17,us_10y_real_rate,1.83,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-18,us_10y_real_rate,1.86,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-19,us_10y_real_rate,1.88,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-20,us_10y_real_rate,2.01,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-23,us_10y_real_rate,2.01,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-24,us_10y_real_rate,2.06,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-25,us_10y_real_rate,2.02,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-26,us_10y_real_rate,2.08,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-27,us_10y_real_rate,2.13,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-30,us_10y_real_rate,2.04,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-03-31,us_10y_real_rate,2.0,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-04-01,us_10y_real_rate,2.02,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.862734,daily,A,confirmed
+2026-04-02,us_10y_real_rate,1.97,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-03,us_10y_real_rate,1.99,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-06,us_10y_real_rate,1.98,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-07,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-08,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-09,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-10,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-13,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-14,us_10y_real_rate,1.89,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-15,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-16,us_10y_real_rate,1.93,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-17,us_10y_real_rate,1.9,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-20,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.863734,daily,A,confirmed
+2026-04-21,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-04-22,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-04-23,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-04-24,us_10y_real_rate,1.89,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-04-27,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-04-28,us_10y_real_rate,1.92,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-04-29,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-04-30,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-05-01,us_10y_real_rate,1.91,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-05-04,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-05-05,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-05-06,us_10y_real_rate,1.94,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.864734,daily,A,confirmed
+2026-05-07,us_10y_real_rate,1.96,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-08,us_10y_real_rate,1.93,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-11,us_10y_real_rate,1.95,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-12,us_10y_real_rate,1.99,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-13,us_10y_real_rate,1.99,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-14,us_10y_real_rate,2.0,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-15,us_10y_real_rate,2.1,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-18,us_10y_real_rate,2.13,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-19,us_10y_real_rate,2.18,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-20,us_10y_real_rate,2.13,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-21,us_10y_real_rate,2.18,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-22,us_10y_real_rate,2.16,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.865735,daily,A,confirmed
+2026-05-26,us_10y_real_rate,2.1,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-05-27,us_10y_real_rate,2.09,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-05-28,us_10y_real_rate,2.06,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-05-29,us_10y_real_rate,2.07,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-01,us_10y_real_rate,2.07,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-02,us_10y_real_rate,2.07,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-03,us_10y_real_rate,2.11,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-04,us_10y_real_rate,2.11,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-05,us_10y_real_rate,2.19,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-08,us_10y_real_rate,2.21,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-09,us_10y_real_rate,2.2,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-10,us_10y_real_rate,2.21,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-11,us_10y_real_rate,2.16,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.866734,daily,A,confirmed
+2026-06-12,us_10y_real_rate,2.17,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-15,us_10y_real_rate,2.15,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-16,us_10y_real_rate,2.14,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-17,us_10y_real_rate,2.23,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-18,us_10y_real_rate,2.21,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-22,us_10y_real_rate,2.28,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-23,us_10y_real_rate,2.29,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-24,us_10y_real_rate,2.23,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-25,us_10y_real_rate,2.19,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2026-06-26,us_10y_real_rate,2.18,pct,FRED,https://fred.stlouisfed.org/series/DFII10,2026-06-30T14:59:39.867734,daily,A,confirmed
+2025-06-01,us_cpi_yoy,2.680453865910226,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2025-07-01,us_cpi_yoy,2.742618052167134,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2025-08-01,us_cpi_yoy,2.9385917430316155,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2025-09-01,us_cpi_yoy,3.0225715847133294,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2025-11-01,us_cpi_yoy,2.988299628363511,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2025-12-01,us_cpi_yoy,3.00226204316838,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2026-01-01,us_cpi_yoy,2.8286797395498997,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2026-02-01,us_cpi_yoy,2.6645890876940914,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2026-03-01,us_cpi_yoy,3.3202055812236786,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2026-04-01,us_cpi_yoy,3.9470269087042764,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2026-05-01,us_cpi_yoy,4.270032656680245,pct,FRED,https://fred.stlouisfed.org/series/CPIAUCSL,2026-06-30T14:59:41.071777,monthly,A,confirmed
+2026-05-28,us_ism_manufacturing,48.5,index,ISM,https://www.ismworld.org/,2026-06-30T08:37:50.677325,monthly,A,confirmed

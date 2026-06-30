@@ -1,0 +1,234 @@
+[
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-01-26",
+    "line": 520,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-01-27",
+    "line": 521,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-01-28",
+    "line": 522,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-01-29",
+    "line": 523,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-09",
+    "line": 530,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-10",
+    "line": 531,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-11",
+    "line": 532,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-13",
+    "line": 534,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-20",
+    "line": 538,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-23",
+    "line": 539,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-24",
+    "line": 540,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-25",
+    "line": 541,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-26",
+    "line": 542,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-27",
+    "line": 543,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-02",
+    "line": 544,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-03",
+    "line": 545,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-04",
+    "line": 546,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-05",
+    "line": 547,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-06",
+    "line": 548,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-09",
+    "line": 549,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-10",
+    "line": 550,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-11",
+    "line": 551,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-12",
+    "line": 552,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-13",
+    "line": 553,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-17",
+    "line": 555,
+    "reason": "Gold price outside 800-5000 USD/oz range"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2025-10-21",
+    "line": 455,
+    "reason": "Gold price daily change > 5%"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-02",
+    "line": 525,
+    "reason": "Gold price daily change > 5%"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-02-03",
+    "line": 526,
+    "reason": "Gold price daily change > 5%"
+  },
+  {
+    "timestamp": "2026-06-30T15:09:07.641014",
+    "severity": "pending",
+    "indicator": "lme_gold_price",
+    "date": "2026-03-19",
+    "line": 557,
+    "reason": "Gold price daily change > 5%"
+  }
+]
