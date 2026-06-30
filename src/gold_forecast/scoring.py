@@ -315,7 +315,21 @@ def compute_forecast(
 
     data_health = compute_data_health(confirmed, validation, config_dir)
     factor_consistency = compute_factor_consistency(module_scores, active_threshold)
-    confidence = min(1.0, abs(total) * data_health * max(factor_consistency, 0.3))
+
+    # Fix: the original formula (abs(total) * data_health * factor_consistency)
+    # is a product of three sub-1 values, causing confidence to be
+    # systematically underestimated (e.g. 0.5 * 0.9 * 0.8 = 0.36 even for a
+    # strong, high-quality signal).  Instead, use a weighted average of the
+    # three components so each dimension contributes proportionally:
+    #   - signal_strength (40%): how decisive the total score is
+    #   - data_health (40%): quality and freshness of underlying data
+    #   - factor_consistency (20%): agreement across modules
+    signal_strength = min(1.0, abs(total))
+    confidence = (
+        0.40 * signal_strength
+        + 0.40 * data_health
+        + 0.20 * max(factor_consistency, 0.3)
+    )
     cross_validation = compute_cross_validation(
         module_scores,
         module_weights,

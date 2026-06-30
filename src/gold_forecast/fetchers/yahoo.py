@@ -18,25 +18,33 @@ def _smooth_daily_outliers(
     threshold: float = OUTLIER_DAILY_PCT,
     max_passes: int = 10,
 ) -> list[FetchedRecord]:
-    """Replace single-day spikes (e.g. COMEX roll bad ticks) via neighbor averaging."""
-    if len(records) < 2:
+    """Replace single-day spikes (e.g. COMEX roll bad ticks) via neighbor averaging.
+
+    The most-recent data point is intentionally excluded from smoothing: a large
+    move on the latest date may be a genuine market event and must not be silently
+    overwritten.  Only interior points that have both a preceding *and* a following
+    neighbour are eligible for replacement.
+    """
+    if len(records) < 3:
+        # Need at least 3 points to have an interior candidate.
         return records
 
     ordered = sorted(records, key=lambda r: r.date)
     values = [float(r.value) for r in ordered]
+    last_idx = len(values) - 1
 
     for _ in range(max_passes):
         changed = False
-        for i in range(1, len(values)):
+        # Fix: iterate only up to last_idx - 1 so the final (most-recent)
+        # data point is never smoothed away.
+        for i in range(1, last_idx):
             prev = values[i - 1]
             if not prev:
                 continue
             if abs((values[i] - prev) / prev) <= threshold:
                 continue
-            if i + 1 < len(values):
-                values[i] = round((prev + values[i + 1]) / 2, 4)
-            else:
-                values[i] = round(prev, 4)
+            # Interior spike: replace with average of neighbours.
+            values[i] = round((prev + values[i + 1]) / 2, 4)
             changed = True
         if not changed:
             break

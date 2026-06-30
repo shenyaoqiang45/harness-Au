@@ -98,22 +98,41 @@ def premium_to_curve(existing: list[FetchedRecord], lookback_days: int = LOOKBAC
     return result
 
 
+def composite_global_pmi(existing: list[FetchedRecord]) -> FetchResult:  # noqa: ARG001
+    """Placeholder for a future composite global PMI derived indicator.
+
+    This function is referenced in ``sources.yaml`` but has not been implemented
+    yet.  It returns an empty result with a warning so that the rest of the
+    pipeline continues to run without crashing.
+    """
+    result = FetchResult()
+    result.warnings.append(
+        "derived:composite_global_pmi: not yet implemented; skipping"
+    )
+    return result
+
+
 def fetch_derived(
     indicators_cfg: dict,
     existing: list[FetchedRecord],
     lookback_days: int,
 ) -> FetchResult:
     result = FetchResult()
+    _FUNC_MAP = {
+        "shfe_lme_premium": lambda cfg: shfe_lme_premium(lookback_days),
+        "premium_to_curve": lambda cfg: premium_to_curve(
+            existing + result.records, lookback_days
+        ),
+        "composite_global_pmi": lambda cfg: composite_global_pmi(
+            existing + result.records
+        ),
+    }
     for indicator, cfg in indicators_cfg.items():
-        func = cfg.get("func")
-        if func == "shfe_lme_premium":
-            part = shfe_lme_premium(lookback_days)
-        elif func == "premium_to_curve":
-            part = premium_to_curve(existing + result.records, lookback_days)
-        elif func == "composite_global_pmi":
-            part = composite_global_pmi(existing + result.records)
-        else:
-            result.errors.append(f"derived:{indicator}: unknown func {func}")
+        func_name = cfg.get("func")
+        handler = _FUNC_MAP.get(func_name)
+        if handler is None:
+            result.errors.append(f"derived:{indicator}: unknown func {func_name}")
             continue
+        part = handler(cfg)
         result.extend(part)
     return result

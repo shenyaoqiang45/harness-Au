@@ -117,6 +117,17 @@ def validate_rows(rows: list[DataRow], config_dir: Path) -> ValidationResult:
         result.confirmed.append(row)
 
     _check_time_series_anomalies(result, rules.get("anomaly_rules", []))
+
+    # Fix: _check_time_series_anomalies only sets status when pct_rules exist.
+    # Ensure every row in confirmed has status="confirmed" regardless of
+    # whether any daily_pct_change anomaly rules are configured.
+    for row in result.confirmed:
+        row.status = "confirmed"
+    for issue in result.pending:
+        issue.row.status = "pending"
+    for issue in result.rejected:
+        issue.row.status = "rejected"
+
     return result
 
 

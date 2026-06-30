@@ -107,6 +107,30 @@ def write_fetch_log(
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _load_existing_records(path: Path) -> list[FetchedRecord]:
+    """Load FetchedRecord list from a CSV file, returning empty list if not found."""
+    if not path.exists():
+        return []
+    from gold_forecast.data_loader import load_csv
+
+    records: list[FetchedRecord] = []
+    for row in load_csv(path):
+        records.append(
+            FetchedRecord(
+                date=row.date,
+                indicator=row.indicator,
+                value=row.value,
+                unit=row.unit,
+                source=row.source,
+                source_url=row.source_url,
+                frequency=row.frequency,
+                confidence=row.confidence,
+                updated_at=row.updated_at,
+            )
+        )
+    return records
+
+
 def run_fetch(
     config_dir: Path,
     project_root: Path,
@@ -116,25 +140,6 @@ def run_fetch(
     output_path = output_path or project_root / "data" / "raw" / "live.csv"
     history_path = project_root / "data" / "raw" / "history.csv"
 
-    existing: list[FetchedRecord] = []
-    if merge_history and output_path.exists():
-        from gold_forecast.data_loader import load_csv
-
-        for row in load_csv(output_path):
-            existing.append(
-                FetchedRecord(
-                    date=row.date,
-                    indicator=row.indicator,
-                    value=row.value,
-                    unit=row.unit,
-                    source=row.source,
-                    source_url=row.source_url,
-                    frequency=row.frequency,
-                    confidence=row.confidence,
-                    updated_at=row.updated_at,
-                )
-            )
-
     from gold_forecast.missing_sources import (
         compute_missing_sources,
         unwired_indicator_names,
@@ -142,14 +147,23 @@ def run_fetch(
     )
 
     unwired = unwired_indicator_names(config_dir)
-    existing = [r for r in existing if r.indicator not in unwired]
+
+    # Fix: read from history.csv (the true long-term archive) rather than
+    # live.csv, so historical rows are never lost when live.csv is refreshed.
+    existing: list[FetchedRecord] = []
+    if merge_history:
+        existing = _load_existing_records(history_path)
+        existing = [r for r in existing if r.indicator not in unwired]
 
     fetched = collect_all(config_dir, project_root)
     merged = merge_records(existing, fetched.records)
     merged = [r for r in merged if r.indicator not in unwired]
     present = {r.indicator for r in merged}
     missing = compute_missing_sources(config_dir, present, fetched.errors)
+
+    # Write live.csv with only the freshly-fetched (and merged) window.
     write_fetched_csv(output_path, merged)
+    # Write history.csv as the ever-growing archive of all records seen.
     if merge_history:
         write_fetched_csv(history_path, merged)
     audit_dir = project_root / "data" / "audit"

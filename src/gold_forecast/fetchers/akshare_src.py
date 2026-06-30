@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import calendar
 import re
 from datetime import date, datetime, timedelta
 
@@ -15,11 +16,18 @@ _CN_MONTH = re.compile(r"(\d{4})年(\d{1,2})月份")
 
 
 def parse_cn_month(text: str) -> date:
+    """Parse a Chinese month string such as '2024年3月份' to a date.
+
+    Fix: use the actual last day of the month (via ``calendar.monthrange``)
+    instead of the hard-coded 28th, which is incorrect for months with 30 or
+    31 days and ambiguous for February in leap years.
+    """
     match = _CN_MONTH.search(str(text))
     if not match:
         return pd.to_datetime(text).date()
     year, month = int(match.group(1)), int(match.group(2))
-    return date(year, month, 28)
+    last_day = calendar.monthrange(year, month)[1]
+    return date(year, month, last_day)
 
 
 def _records_from_frame(

@@ -51,9 +51,16 @@ def _latest_preferred_numeric(
 
 
 def _value_n_days_ago(series: list[DataRow], n: int) -> float | None:
+    """Return the value n positions before the latest observation.
+
+    Fix: when there are not enough observations to look back n steps, return
+    ``None`` instead of silently returning the first element.  Callers that
+    compare the result with the latest value would otherwise always see
+    ``current == prev`` and incorrectly conclude there is no change.
+    """
     nums = [(r.date, r.numeric_value) for r in series if r.numeric_value is not None]
     if len(nums) <= n:
-        return nums[0][1] if nums else None
+        return None
     return nums[-1 - n][1]
 
 
@@ -196,17 +203,21 @@ def score_inventory(grouped: dict[str, list[DataRow]]) -> ModuleScore:
 
     global_series = _global_inventory_series(grouped, inv_keys)
     if global_series:
+        from datetime import datetime as _dt
+
+        # Fix: use keyword arguments so that future changes to DataRow field
+        # order do not silently corrupt the constructed rows.
         global_rows = [
             DataRow(
-                d,
-                "global_inventory",
-                v,
-                "ton",
-                "",
-                "",
-                __import__("datetime").datetime.min,
-                "daily",
-                "B",
+                date=d,
+                indicator="global_inventory",
+                value=v,
+                unit="ton",
+                source="derived",
+                source_url="",
+                updated_at=_dt.min,
+                frequency="daily",
+                confidence="B",
             )
             for d, v in global_series
         ]
@@ -249,11 +260,16 @@ def score_inventory(grouped: dict[str, list[DataRow]]) -> ModuleScore:
         _, prem = _latest_numeric(premium_series)
         if prem is not None:
             score = 1.0 if prem > 0 else -1.0
+            # Fix: use correct financial terminology.
+            # prem > 0 means SHFE spot > COMEX futures => spot premium /
+            # backwardation-like structure => bullish.
+            # prem < 0 means SHFE spot < COMEX futures => contango => bearish.
+            structure_label = "spot premium (backwardation)" if prem > 0 else "contango (spot discount)"
             signals.append(
                 SignalDetail(
                     "spot_premium",
                     score,
-                    f"Spot premium {prem:+.1f} ({'contango/premium' if prem > 0 else 'discount'})",
+                    f"Spot premium {prem:+.1f} ({structure_label})",
                 )
             )
 
@@ -281,26 +297,41 @@ def score_physical_demand(grouped: dict[str, list[DataRow]]) -> ModuleScore:
 
     sf_series = grouped.get("social_financing", [])
     m1_series = grouped.get("m1", [])
-    sf_improved = False
+
+    # Fix: compute sf_signal and m1_signal independently, then average them.
+    # Previously M1 improvement could only push sf_improved to True but never
+    # to False, creating an asymmetric (always-bullish-biased) composite.
+    sf_signal: float | None = None
+    m1_signal: float | None = None
+
     if sf_series:
         _, sf = _latest_numeric(sf_series)
         prev_sf = _value_n_days_ago(sf_series, 1)
         if sf is not None and prev_sf is not None:
-            sf_improved = sf > prev_sf
+            sf_signal = 1.0 if sf > prev_sf else -1.0
+        else:
+            gaps.append("social_financing insufficient history for comparison")
+
     if m1_series:
         _, m1 = _latest_numeric(m1_series)
         prev_m1 = _value_n_days_ago(m1_series, 1)
-        if m1 is not None and prev_m1 is not None and m1 > prev_m1:
-            sf_improved = True
-    if sf_series or m1_series:
+        if m1 is not None and prev_m1 is not None:
+            m1_signal = 1.0 if m1 > prev_m1 else -1.0
+        else:
+            gaps.append("m1 insufficient history for comparison")
+
+    available = [s for s in (sf_signal, m1_signal) if s is not None]
+    if available:
+        composite_signal = sum(available) / len(available)
+        improving = composite_signal > 0
         signals.append(
             SignalDetail(
                 "credit_impulse",
-                1.0 if sf_improved else -1.0,
-                "Social financing / M1 improving" if sf_improved else "Credit/M1 not improving",
+                composite_signal,
+                "Social financing / M1 improving" if improving else "Credit/M1 not improving",
             )
         )
-    else:
+    elif not sf_series and not m1_series:
         gaps.append("social_financing / m1 missing")
 
     return ModuleScore(
