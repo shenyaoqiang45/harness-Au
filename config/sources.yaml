@@ -42,17 +42,10 @@ sources:
         note: "US CPI YoY derived from FRED CPIAUCSL index"
 
   eastmoney:
+    # lme_inventory removed: Eastmoney column '金-库存' no longer available.
+    # LME inventory is now loaded from inventory_csv source below.
     enabled: true
-    indicators:
-      lme_inventory:
-        report: RPT_METAL_LME
-        transform: lme_gold_stock
-        unit: ton
-        frequency: daily
-        source: 东方财富-LME
-        source_url: https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stock-reports
-        confidence: A
-        note: "LME gold warehouse stocks (metric ton); Eastmoney mirror of LME official daily report"
+    indicators: {}
 
   akshare:
     enabled: true
@@ -88,8 +81,11 @@ sources:
         source: 东方财富-货币供应
         source_url: https://data.eastmoney.com/cjsj/hbgyl.html
         confidence: A
+
   cme:
-    enabled: true
+    # CME XLS endpoint returns 403 Forbidden.
+    # COMEX inventory is now loaded from inventory_csv source below.
+    enabled: false
     indicators:
       comex_inventory:
         unit: ton
@@ -98,6 +94,26 @@ sources:
         source_url: https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls
         confidence: A
         note: "COMEX gold warehouse stocks; official report in troy oz, stored as metric ton"
+
+  # inventory_csv: load LME, SHFE, COMEX stocks from data/raw/gold_inventory.csv.
+  # Update the CSV file regularly (e.g. weekly) to keep inventory data current.
+  inventory_csv:
+    enabled: true
+    indicators:
+      lme_inventory:
+        unit: ton
+        frequency: daily
+        source: 手动维护-LME
+        source_url: https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stock-reports
+        confidence: B
+        note: "LME gold warehouse stocks loaded from gold_inventory.csv"
+      comex_inventory:
+        unit: ton
+        frequency: daily
+        source: 手动维护-COMEX
+        source_url: https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls
+        confidence: B
+        note: "COMEX gold warehouse stocks loaded from gold_inventory.csv"
 
   derived:
     enabled: true
@@ -118,8 +134,8 @@ sources:
         confidence: C
 
 # Optional indicators: tracked when available but excluded from completeness scoring.
-optional:
-  - lme_inventory
-  - comex_inventory
+# lme_inventory and comex_inventory removed from optional: they are now wired
+# to inventory_csv and should count toward completeness scoring.
+optional: []
 
 unwired: {}

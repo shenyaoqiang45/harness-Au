@@ -1,20 +1,21 @@
 {
-  "timestamp": "2026-06-30T16:11:01.821718",
-  "record_count": 1460,
+  "timestamp": "2026-06-30T10:01:13.511821",
+  "record_count": 1812,
   "warnings": [
-    "fred:us_10y_real_rate: loaded via API",
-    "fred:us_cpi_yoy: loaded via API"
+    "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
+    "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
+    "inventory_csv: loaded 365 records from gold_inventory.csv"
   ],
   "errors": [
-    "eastmoney:lme_inventory: LME gold inventory column '金-库存' not available. Available columns: 日期, 铜-库存, 铜-注册仓单, 铜-注销仓单, 锡-库存, 锡-注册仓单, 锡-注销仓单, 铅-库存, 铅-注册仓单, 铅-注销仓单, 锌-库存, 锌-注册仓单, 锌-注销仓单, 铝-库存, 铝-注册仓单, 铝-注销仓单, 镍-库存, 镍-注册仓单, 镍-注销仓单",
-    "cme:comex_inventory: 403 Client Error: Forbidden for url: https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls"
+    "akshare:social_financing: HTTPSConnectionPool(host='datacenter-web.eastmoney.com', port=443): Max retries exceeded with url: /api/data/v1/get?columns=REPORT_DATE%2CTIME%2CRMB_LOAN%2CRMB_LOAN_SAME%2CRMB_LOAN_SEQUENTIAL%2CRMB_LOAN_ACCUMULATE%2CLOAN_ACCUMULATE_SAME&pageNumber=1&pageSize=2000&sortColumns=REPORT_DATE&sortTypes=-1&source=WEB&client=WEB&reportName=RPT_ECONOMY_RMB_LOAN&p=1&pageNo=1&pageNum=1 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
   ],
   "indicators": [
+    "comex_inventory",
     "dxy",
     "lme_gold_price",
+    "lme_inventory",
     "m1",
     "shfe_inventory",
-    "social_financing",
     "spot_premium",
     "term_structure",
     "us_10y_real_rate",

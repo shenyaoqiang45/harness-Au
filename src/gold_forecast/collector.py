@@ -17,6 +17,7 @@ from gold_forecast.fetchers.comex import fetch_comex
 from gold_forecast.fetchers.derived import fetch_derived
 from gold_forecast.fetchers.eastmoney import fetch_eastmoney
 from gold_forecast.fetchers.fred import fetch_fred
+from gold_forecast.fetchers.inventory_csv import fetch_inventory_csv
 from gold_forecast.fetchers.yahoo import fetch_yahoo
 from gold_forecast.missing_sources import MissingSource
 
@@ -42,6 +43,13 @@ def collect_all(config_dir: Path, project_root: Path) -> FetchResult:
         merged.extend(fetch_akshare(sources["akshare"]["indicators"], lookback))
     if sources.get("cme", {}).get("enabled", True):
         merged.extend(fetch_comex(sources["cme"]["indicators"], lookback))
+
+    # inventory_csv: load LME / SHFE / COMEX stocks from local CSV.
+    # This replaces the broken Eastmoney LME mirror and CME XLS (403 Forbidden).
+    if sources.get("inventory_csv", {}).get("enabled", True):
+        inv_csv_path = project_root / "data" / "raw" / "gold_inventory.csv"
+        inv_cfg = sources.get("inventory_csv", {}).get("indicators", {})
+        merged.extend(fetch_inventory_csv(inv_csv_path, lookback, inv_cfg))
 
     if sources.get("derived", {}).get("enabled", True):
         merged.extend(

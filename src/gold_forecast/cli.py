@@ -210,8 +210,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "run":
         return cmd_run(args)
 
-    # legacy default
-    input_path = args.input or root / "data" / "raw" / "sample.csv"
+    # legacy default (sample.csv removed; use live.csv as the real data source)
+    input_path = args.input or root / "data" / "raw" / "live.csv"
     output_path = args.output or root / "reports" / "monthly.md"
     legacy = argparse.Namespace(
         input=input_path, output=output_path, config=args.config, horizon="month"
