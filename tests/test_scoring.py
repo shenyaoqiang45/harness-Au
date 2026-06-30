@@ -245,53 +245,37 @@ def test_macro_liquidity_scores_us_cpi_yoy():
     assert [signal.name for signal in score.signals] == ["us_cpi_yoy_level", "us_cpi_yoy_mom"]
 
 
-def test_physical_demand_central_bank_buying():
-    rows = [
-        DataRow(
-            date=date(2026, 5, 1),
-            indicator="central_bank_gold_net_buy",
-            value=12.5,
-            unit="ton",
-            source="WGC",
-            source_url="https://example.com",
-            updated_at=datetime(2026, 6, 29),
-            frequency="monthly",
-            confidence="A",
-            status="confirmed",
-        ),
-    ]
+def test_physical_demand_credit_impulse():
+    from gold_forecast.indicators import score_physical_demand
 
-    scores = compute_all_module_scores(rows, str(CONFIG_DIR))
-    cb_signal = next(
-        s for s in scores["physical_demand"].signals if s.name == "central_bank_buying"
-    )
-
-    assert cb_signal.score == 1.0
-    assert "+12.5 ton" in cb_signal.description
-
-
-def test_financial_flow_etf_inflow():
-    from gold_forecast.indicators import score_financial_flow
-
-    def _etf_row(d: date, value: float) -> DataRow:
+    def _row(d: date, indicator: str, value: float) -> DataRow:
         return DataRow(
             date=d,
-            indicator="gold_etf_holdings_chg",
+            indicator=indicator,
             value=value,
-            unit="ton",
-            source="WGC",
+            unit="CNY_bn",
+            source="test",
             source_url="https://example.com",
             updated_at=datetime.combine(d, datetime.min.time()),
-            frequency="weekly",
-            confidence="B",
+            frequency="monthly",
+            confidence="A",
             status="confirmed",
         )
 
     rows = [
-        _etf_row(date(2026, 6, 1), -5.0),
-        _etf_row(date(2026, 6, 8), 8.2),
+        _row(date(2026, 4, 1), "social_financing", 1000.0),
+        _row(date(2026, 5, 1), "social_financing", 1200.0),
     ]
-    result = score_financial_flow({"gold_etf_holdings_chg": rows})
+    result = score_physical_demand({"social_financing": rows})
 
-    etf_signal = next(s for s in result.signals if s.name == "etf_holdings_chg")
-    assert etf_signal.score == 1.0
+    signal = next(s for s in result.signals if s.name == "credit_impulse")
+    assert signal.score == 1.0
+    assert "improving" in signal.description
+
+
+def test_financial_flow_events_only():
+    from gold_forecast.indicators import score_financial_flow
+
+    result = score_financial_flow({})
+    assert result.score == 0.0
+    assert not result.signals

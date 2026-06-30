@@ -93,29 +93,6 @@ def compute_data_health(
     if not confirmed:
         return 0.0
 
-    source_scores = [conf_map.get(r.confidence, 0.5) for r in confirmed]
-    source_score = sum(source_scores) / len(source_scores)
-
-    latest_by_indicator: dict[str, DataRow] = {}
-    for row in confirmed:
-        current = latest_by_indicator.get(row.indicator)
-        if current is None or row.date > current.date:
-            latest_by_indicator[row.indicator] = row
-
-    today = date.today()
-    freshness_scores = []
-    for row in latest_by_indicator.values():
-        age_days = (today - row.date).days
-        if row.frequency == "daily":
-            freshness_scores.append(1.0 if age_days <= 3 else max(0.3, 1.0 - age_days / 30))
-        else:
-            freshness_scores.append(1.0 if age_days <= 45 else max(0.3, 1.0 - age_days / 90))
-    freshness_score = sum(freshness_scores) / len(freshness_scores)
-
-    total_issues = len(validation.rejected) + len(validation.pending)
-    total_rows = len(confirmed) + total_issues
-    cross_check_score = 1.0 if total_issues == 0 else max(0.4, 1.0 - total_issues / max(total_rows, 1))
-
     with (config_dir / "indicators.yaml").open(encoding="utf-8") as handle:
         indicators_cfg = yaml.safe_load(handle)
     expected = set()
@@ -126,6 +103,32 @@ def compute_data_health(
     unwired = set(sources_cfg.get("unwired", {}).keys())
     unwired |= set(sources_cfg.get("optional", []))
     expected -= unwired
+
+    latest_by_indicator: dict[str, DataRow] = {}
+    for row in confirmed:
+        if row.indicator not in expected:
+            continue
+        current = latest_by_indicator.get(row.indicator)
+        if current is None or row.date > current.date:
+            latest_by_indicator[row.indicator] = row
+
+    source_scores = [conf_map.get(r.confidence, 0.5) for r in latest_by_indicator.values()]
+    source_score = sum(source_scores) / len(source_scores) if source_scores else 0.5
+
+    today = date.today()
+    freshness_scores = []
+    for row in latest_by_indicator.values():
+        age_days = (today - row.date).days
+        if row.frequency == "daily":
+            freshness_scores.append(1.0 if age_days <= 5 else max(0.3, 1.0 - age_days / 30))
+        else:
+            freshness_scores.append(1.0 if age_days <= 60 else max(0.3, 1.0 - age_days / 90))
+    freshness_score = sum(freshness_scores) / len(freshness_scores) if freshness_scores else 0.5
+
+    total_issues = len(validation.rejected) + len(validation.pending)
+    total_rows = len(confirmed) + total_issues
+    cross_check_score = 1.0 if total_issues == 0 else max(0.4, 1.0 - total_issues / max(total_rows, 1))
+
     present = {r.indicator for r in confirmed}
     completeness_score = len(present & expected) / len(expected) if expected else 0.5
 

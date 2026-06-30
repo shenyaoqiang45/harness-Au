@@ -1,48 +1,5 @@
 {
-  "timestamp": "2026-06-30T15:09:07.672012",
-  "count": 6,
-  "missing": [
-    {
-      "indicator": "central_bank_gold_net_buy",
-      "expected_source": "WGC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.gold.org/",
-      "detail": "World Gold Council central bank demand report; no automated fetcher yet"
-    },
-    {
-      "indicator": "gold_etf_holdings_chg",
-      "expected_source": "WGC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.gold.org/",
-      "detail": "World Gold Council ETF holdings tracker; no automated fetcher yet"
-    },
-    {
-      "indicator": "gold_jewelry_demand_yoy",
-      "expected_source": "WGC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.gold.org/",
-      "detail": "World Gold Council jewelry demand statistics; no automated fetcher yet"
-    },
-    {
-      "indicator": "spec_net_long_gold",
-      "expected_source": "CFTC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.cftc.gov/",
-      "detail": "CFTC Commitments of Traders managed-money net long; no automated fetcher yet"
-    },
-    {
-      "indicator": "comex_inventory",
-      "expected_source": "CME Group",
-      "reason": "not_in_dataset",
-      "source_url": "https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls",
-      "detail": ""
-    },
-    {
-      "indicator": "lme_inventory",
-      "expected_source": "东方财富-LME",
-      "reason": "not_in_dataset",
-      "source_url": "https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stock-reports",
-      "detail": ""
-    }
-  ]
+  "timestamp": "2026-06-30T16:11:01.936715",
+  "count": 0,
+  "missing": []
 }

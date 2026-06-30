@@ -279,43 +279,6 @@ def score_physical_demand(grouped: dict[str, list[DataRow]]) -> ModuleScore:
     signals: list[SignalDetail] = []
     gaps: list[str] = []
 
-    pmi_series = grouped.get("china_pmi", [])
-    if pmi_series:
-        _, pmi = _latest_numeric(pmi_series)
-        prev = _value_n_days_ago(pmi_series, 1)
-        if pmi is not None:
-            signals.append(
-                SignalDetail(
-                    "china_pmi_level",
-                    1.0 if pmi > 50 else -1.0,
-                    f"China PMI {pmi:.1f}",
-                )
-            )
-        if pmi is not None and prev is not None:
-            signals.append(
-                SignalDetail(
-                    "china_pmi_mom",
-                    1.0 if pmi > prev else -1.0,
-                    f"China PMI mom {pmi - prev:+.1f}",
-                )
-            )
-    else:
-        gaps.append("china_pmi missing")
-
-    no_series = grouped.get("china_new_orders_pmi", [])
-    if no_series:
-        _, no_pmi = _latest_numeric(no_series)
-        if no_pmi is not None:
-            signals.append(
-                SignalDetail(
-                    "new_orders_pmi",
-                    1.0 if no_pmi > 50 else -1.0,
-                    f"New orders PMI {no_pmi:.1f}",
-                )
-            )
-    else:
-        gaps.append("china_new_orders_pmi missing")
-
     sf_series = grouped.get("social_financing", [])
     m1_series = grouped.get("m1", [])
     sf_improved = False
@@ -339,34 +302,6 @@ def score_physical_demand(grouped: dict[str, list[DataRow]]) -> ModuleScore:
         )
     else:
         gaps.append("social_financing / m1 missing")
-
-    cb_series = grouped.get("central_bank_gold_net_buy", [])
-    if cb_series:
-        _, cb_buy = _latest_numeric(cb_series)
-        if cb_buy is not None:
-            signals.append(
-                SignalDetail(
-                    "central_bank_buying",
-                    1.0 if cb_buy > 0 else -1.0,
-                    f"Central bank net gold buying {cb_buy:+.1f} ton",
-                )
-            )
-    else:
-        gaps.append("central_bank_gold_net_buy missing")
-
-    jewelry_series = grouped.get("gold_jewelry_demand_yoy", [])
-    if jewelry_series:
-        _, jewelry = _latest_numeric(jewelry_series)
-        if jewelry is not None:
-            signals.append(
-                SignalDetail(
-                    "jewelry_demand",
-                    1.0 if jewelry > 0 else -1.0,
-                    f"Gold jewelry demand YoY {jewelry:+.1f}%",
-                )
-            )
-    else:
-        gaps.append("gold_jewelry_demand_yoy missing")
 
     return ModuleScore(
         "physical_demand",
@@ -448,36 +383,6 @@ def score_financial_flow(
 ) -> ModuleScore:
     signals: list[SignalDetail] = []
     gaps: list[str] = []
-
-    etf_series = grouped.get("gold_etf_holdings_chg", [])
-    if etf_series:
-        delta = _abs_change(etf_series, 1)
-        if delta is not None:
-            score = 1.0 if delta > 0 else -1.0
-            signals.append(
-                SignalDetail(
-                    "etf_holdings_chg",
-                    score,
-                    f"Gold ETF holdings change {delta:+.1f} ton",
-                )
-            )
-    else:
-        gaps.append("gold_etf_holdings_chg missing")
-
-    spec_series = grouped.get("spec_net_long_gold", [])
-    if spec_series:
-        delta = _abs_change(spec_series, 1)
-        if delta is not None:
-            score = 1.0 if delta > 0 else -1.0
-            signals.append(
-                SignalDetail(
-                    "spec_net_long_chg",
-                    score,
-                    f"Spec net long change {delta:+.0f} contracts",
-                )
-            )
-    else:
-        gaps.append("spec_net_long_gold missing")
 
     if events_path:
         from pathlib import Path

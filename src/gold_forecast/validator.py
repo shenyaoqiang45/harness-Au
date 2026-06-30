@@ -163,6 +163,10 @@ def _check_time_series_anomalies(
         series_sorted = sorted(series, key=lambda r: r.date)
         flagged_dates: set[date] = set()
         for prev, curr in zip(series_sorted, series_sorted[1:]):
+            # Skip long calendar gaps (weekends/holidays) to avoid overstating
+            # the daily change when markets reopen.
+            if (curr.date - prev.date).days > 2:
+                continue
             prev_val = prev.numeric_value
             curr_val = curr.numeric_value
             if prev_val is None or curr_val is None or prev_val == 0:

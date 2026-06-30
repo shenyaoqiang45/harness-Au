@@ -7,7 +7,6 @@ date,indicator,value,unit,source,source_url,updated_at,frequency,confidence
 2026-02-01,us_10y_real_rate,2.1,pct,sample_feed,https://example.com,2026-02-01T00:00:00,daily,B
 2026-02-01,spot_premium,3.5,USD/oz,sample_feed,https://example.com,2026-02-01T00:00:00,daily,B
 2026-02-01,term_structure,backwardation,label,sample_feed,https://example.com,2026-02-01T00:00:00,daily,B
-2026-02-01,china_pmi,50.2,index,sample_feed,https://example.com,2026-02-01T00:00:00,monthly,B
 2026-02-01,social_financing,2100,CNY_bn,sample_feed,https://example.com,2026-02-01T00:00:00,monthly,B
 2026-02-01,m1,68000,CNY_bn,sample_feed,https://example.com,2026-02-01T00:00:00,monthly,B
 2026-02-02,lme_gold_price,2285.0,USD/oz,sample_feed,https://example.com,2026-02-02T00:00:00,daily,B
@@ -250,7 +249,6 @@ date,indicator,value,unit,source,source_url,updated_at,frequency,confidence
 2026-03-03,us_10y_real_rate,2.04,pct,sample_feed,https://example.com,2026-03-03T00:00:00,daily,B
 2026-03-03,spot_premium,3.5,USD/oz,sample_feed,https://example.com,2026-03-03T00:00:00,daily,B
 2026-03-03,term_structure,backwardation,label,sample_feed,https://example.com,2026-03-03T00:00:00,daily,B
-2026-03-03,china_pmi,50.2,index,sample_feed,https://example.com,2026-03-03T00:00:00,monthly,B
 2026-03-03,social_financing,2130,CNY_bn,sample_feed,https://example.com,2026-03-03T00:00:00,monthly,B
 2026-03-03,m1,68300,CNY_bn,sample_feed,https://example.com,2026-03-03T00:00:00,monthly,B
 2026-03-04,lme_gold_price,2360.0,USD/oz,sample_feed,https://example.com,2026-03-04T00:00:00,daily,B
@@ -493,7 +491,6 @@ date,indicator,value,unit,source,source_url,updated_at,frequency,confidence
 2026-04-02,us_10y_real_rate,1.98,pct,sample_feed,https://example.com,2026-04-02T00:00:00,daily,B
 2026-04-02,spot_premium,3.5,USD/oz,sample_feed,https://example.com,2026-04-02T00:00:00,daily,B
 2026-04-02,term_structure,backwardation,label,sample_feed,https://example.com,2026-04-02T00:00:00,daily,B
-2026-04-02,china_pmi,50.2,index,sample_feed,https://example.com,2026-04-02T00:00:00,monthly,B
 2026-04-02,social_financing,2160,CNY_bn,sample_feed,https://example.com,2026-04-02T00:00:00,monthly,B
 2026-04-02,m1,68600,CNY_bn,sample_feed,https://example.com,2026-04-02T00:00:00,monthly,B
 2026-04-03,lme_gold_price,2435.0,USD/oz,sample_feed,https://example.com,2026-04-03T00:00:00,daily,B
@@ -736,7 +733,6 @@ date,indicator,value,unit,source,source_url,updated_at,frequency,confidence
 2026-05-02,us_10y_real_rate,1.92,pct,sample_feed,https://example.com,2026-05-02T00:00:00,daily,B
 2026-05-02,spot_premium,3.5,USD/oz,sample_feed,https://example.com,2026-05-02T00:00:00,daily,B
 2026-05-02,term_structure,backwardation,label,sample_feed,https://example.com,2026-05-02T00:00:00,daily,B
-2026-05-02,china_pmi,50.2,index,sample_feed,https://example.com,2026-05-02T00:00:00,monthly,B
 2026-05-02,social_financing,2190,CNY_bn,sample_feed,https://example.com,2026-05-02T00:00:00,monthly,B
 2026-05-02,m1,68900,CNY_bn,sample_feed,https://example.com,2026-05-02T00:00:00,monthly,B
 2026-05-03,lme_gold_price,2510.0,USD/oz,sample_feed,https://example.com,2026-05-03T00:00:00,daily,B
@@ -979,7 +975,6 @@ date,indicator,value,unit,source,source_url,updated_at,frequency,confidence
 2026-06-01,us_10y_real_rate,1.86,pct,sample_feed,https://example.com,2026-06-01T00:00:00,daily,B
 2026-06-01,spot_premium,3.5,USD/oz,sample_feed,https://example.com,2026-06-01T00:00:00,daily,B
 2026-06-01,term_structure,backwardation,label,sample_feed,https://example.com,2026-06-01T00:00:00,daily,B
-2026-06-01,china_pmi,50.2,index,sample_feed,https://example.com,2026-06-01T00:00:00,monthly,B
 2026-06-01,social_financing,2220,CNY_bn,sample_feed,https://example.com,2026-06-01T00:00:00,monthly,B
 2026-06-01,m1,69200,CNY_bn,sample_feed,https://example.com,2026-06-01T00:00:00,monthly,B
 2026-06-02,lme_gold_price,2585.0,USD/oz,sample_feed,https://example.com,2026-06-02T00:00:00,daily,B

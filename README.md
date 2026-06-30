@@ -10,17 +10,14 @@ pip install -e ".[dev]"
 # 1) 拉取真实数据 → data/raw/live.csv
 python -m gold_forecast.cli fetch
 
-# 2) 生成报告（默认综合权重）
-python -m gold_forecast.cli report -i data/raw/live.csv -o reports/latest.md
+# 2) 生成 1 个月重点评估报告（默认）
+python -m gold_forecast.cli report -i data/raw/live.csv -o reports/monthly.md
 
-# 2b) 生成 1 个月重点评估报告（宏观/趋势权重更高，输出核心月度指标摘要）
-python -m gold_forecast.cli report -i data/raw/live.csv -o reports/monthly.md --horizon month
+# 2b) 生成综合权重报告
+python -m gold_forecast.cli report -i data/raw/live.csv -o reports/monthly.md --horizon aggregate
 
-# 或一步完成
+# 或一步完成（默认输出 reports/monthly.md，1 个月视角）
 python -m gold_forecast.cli run
-
-# 一步完成并输出 1 个月重点报告
-python -m gold_forecast.cli run -o reports/monthly.md --horizon month
 ```
 
 ### 数据源
@@ -31,15 +28,14 @@ python -m gold_forecast.cli run -o reports/monthly.md --horizon month
 | DXY | Yahoo `DX-Y.NYB` |
 | 美国 10Y 实际利率 | FRED `DFII10`（可用 `FRED_API_KEY`） |
 | 美国 CPI 同比 | FRED `CPIAUCSL` 衍生同比（可用 `FRED_API_KEY`） |
-| 中国 PMI / 社融 / M1 | 东方财富 / akshare |
+| 中国 社融 / M1 | 东方财富 / akshare |
 | LME / SHFE / COMEX 黄金库存 | 东方财富 LME 金库存、akshare 沪金仓单、CME `Gold_Stocks.xls` |
 | 现货升贴水 / 期限结构 | SHFE AU0 vs COMEX GC=F 衍生 |
-| 央行购金 / 首饰需求 / ETF / 投机持仓 | WGC / CFTC（**未接入自动抓取**，见 `data/audit/missing_sources.json`） |
-| ISM / 全球 PMI | ISM 待接入；全球 PMI 由已抓取 PMI 衍生 |
+| 地缘事件 | `data/raw/market_events.csv`（人工维护） |
 
 复制 `.env.example` 为 `.env` 并填入 `FRED_API_KEY`（可选）。
 
-黄金相对铜更依赖宏观流动性（美元、实际利率、美国通胀）与金融流动（ETF、投机持仓），实物需求模块侧重中国 PMI、社融及央行/首饰消费人工数据。
+黄金相对铜更依赖宏观流动性（美元、实际利率、美国通胀）。实物需求模块以中国社融/M1 为代表，金融流动模块目前以地缘事件为主。
 
 ### A/B 交叉验证
 
@@ -68,19 +64,19 @@ data/raw/        # 原始输入
 data/validated/  # 校验后数据
 data/clean/      # 模型使用的 confirmed 数据
 data/audit/      # 异常日志、抓取日志、缺失数据源清单
-reports/         # Markdown 报告
+reports/         # Markdown 报告（当前只保留 monthly.md）
 src/gold_forecast/
 tests/
 ```
 
-## 模块权重（默认）
+## 模块权重（默认 / 1 个月视角）
 
 | 模块 | 权重 | 说明 |
 |------|------|------|
-| 美元利率/通胀 | 40% | DXY、实际利率、美国 CPI 同比（黄金核心驱动） |
-| 金融流动 | 20% | ETF 持仓变化、投机净多、地缘事件 |
-| 实物需求 | 15% | 中国 PMI/社融、央行购金、首饰消费 |
-| 价格趋势 | 15% | 金价均线与动量 |
+| 美元利率/通胀 | 45% | DXY、实际利率、美国 CPI 同比（黄金核心驱动） |
+| 价格趋势 | 25% | 金价均线与动量 |
+| 金融流动 | 15% | 地缘事件 |
+| 实物需求 | 5% | 中国社融/M1 |
 | 库存现货 | 10% | 三所库存、升贴水、期限结构 |
 
 ## MVP 范围

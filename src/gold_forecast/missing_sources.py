@@ -89,12 +89,13 @@ def compute_missing_sources(
     cfg = _load_sources_config(config_dir)
     automated = _automated_indicators(cfg)
     unwired = _unwired_indicators(cfg)
+    optional = set(cfg.get("optional", []))
     error_map = parse_fetch_errors(fetch_errors or [])
 
     missing: list[MissingSource] = []
 
     for indicator, meta in automated.items():
-        if indicator in present:
+        if indicator in present or indicator in optional:
             continue
         detail = error_map.get(indicator, "")
         reason = "fetch_failed" if detail else "not_in_dataset"
@@ -109,7 +110,7 @@ def compute_missing_sources(
         )
 
     for indicator, meta in unwired.items():
-        if indicator in present:
+        if indicator in present or indicator in optional:
             continue
         missing.append(
             MissingSource(

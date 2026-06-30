@@ -34,6 +34,11 @@ def _em_get(report: str, page_size: int = 2000) -> pd.DataFrame:
 
 def _lme_gold_stock() -> pd.DataFrame:
     frame = ak.macro_euro_lme_stock()
+    if "金-库存" not in frame.columns:
+        available = ", ".join(frame.columns.tolist())
+        raise ValueError(
+            f"LME gold inventory column '金-库存' not available. Available columns: {available}"
+        )
     out = frame[["日期", "金-库存"]].copy()
     out.columns = ["date", "value"]
     out["date"] = pd.to_datetime(out["date"])

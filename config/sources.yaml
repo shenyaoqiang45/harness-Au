@@ -44,15 +44,6 @@ sources:
   eastmoney:
     enabled: true
     indicators:
-      china_pmi:
-        report: RPT_ECONOMY_PMI
-        date_col: REPORT_DATE
-        value_col: MAKE_INDEX
-        unit: index
-        frequency: monthly
-        source: 东方财富-国家统计局
-        source_url: https://data.eastmoney.com/cjsj/pmi.html
-        confidence: A
       lme_inventory:
         report: RPT_METAL_LME
         transform: lme_gold_stock
@@ -66,16 +57,6 @@ sources:
   akshare:
     enabled: true
     indicators:
-      china_new_orders_pmi:
-        func: index_pmi_man_cx
-        date_col: 日期
-        value_col: 制造业PMI
-        unit: index
-        frequency: monthly
-        source: 财新网
-        source_url: https://www.caixin.com/
-        confidence: C
-        note: "Caixin manufacturing PMI as new-orders proxy until NBS sub-index is wired"
       shfe_inventory:
         func: futures_inventory_em
         kwargs: { symbol: "沪金" }
@@ -136,20 +117,9 @@ sources:
         source_url: ""
         confidence: C
 
-unwired:
-  central_bank_gold_net_buy:
-    expected_source: WGC
-    source_url: https://www.gold.org/
-    note: "World Gold Council central bank demand report; no automated fetcher yet"
-  gold_jewelry_demand_yoy:
-    expected_source: WGC
-    source_url: https://www.gold.org/
-    note: "World Gold Council jewelry demand statistics; no automated fetcher yet"
-  gold_etf_holdings_chg:
-    expected_source: WGC
-    source_url: https://www.gold.org/
-    note: "World Gold Council ETF holdings tracker; no automated fetcher yet"
-  spec_net_long_gold:
-    expected_source: CFTC
-    source_url: https://www.cftc.gov/
-    note: "CFTC Commitments of Traders managed-money net long; no automated fetcher yet"
+# Optional indicators: tracked when available but excluded from completeness scoring.
+optional:
+  - lme_inventory
+  - comex_inventory
+
+unwired: {}

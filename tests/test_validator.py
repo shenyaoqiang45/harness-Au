@@ -51,8 +51,8 @@ def test_reject_unit_mismatch():
     assert "Unit mismatch" in result.rejected[0].reason
 
 
-def test_pending_pmi_out_of_range():
-    row = _row(indicator="china_pmi", value=70, unit="index", source="nbs")
+def test_pending_cpi_out_of_range():
+    row = _row(indicator="us_cpi_yoy", value=20, unit="pct", source="FRED")
     row.frequency = "monthly"
     result = validate_rows([row], CONFIG_DIR)
     assert len(result.pending) == 1

@@ -1,17 +1,15 @@
 {
-  "timestamp": "2026-06-30T15:00:02.535690",
-  "record_count": 1483,
+  "timestamp": "2026-06-30T16:11:01.821718",
+  "record_count": 1460,
   "warnings": [
-    "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
-    "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)"
+    "fred:us_10y_real_rate: loaded via API",
+    "fred:us_cpi_yoy: loaded via API"
   ],
   "errors": [
-    "eastmoney:lme_inventory: \"['金-库存'] not in index\"",
+    "eastmoney:lme_inventory: LME gold inventory column '金-库存' not available. Available columns: 日期, 铜-库存, 铜-注册仓单, 铜-注销仓单, 锡-库存, 锡-注册仓单, 锡-注销仓单, 铅-库存, 铅-注册仓单, 铅-注销仓单, 锌-库存, 锌-注册仓单, 锌-注销仓单, 铝-库存, 铝-注册仓单, 铝-注销仓单, 镍-库存, 镍-注册仓单, 镍-注销仓单",
     "cme:comex_inventory: 403 Client Error: Forbidden for url: https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls"
   ],
   "indicators": [
-    "china_new_orders_pmi",
-    "china_pmi",
     "dxy",
     "lme_gold_price",
     "m1",
@@ -22,49 +20,6 @@
     "us_10y_real_rate",
     "us_cpi_yoy"
   ],
-  "missing_sources": [
-    {
-      "indicator": "comex_inventory",
-      "expected_source": "CME Group",
-      "reason": "fetch_failed",
-      "source_url": "https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls",
-      "detail": "403 Client Error: Forbidden for url: https://www.cmegroup.com/delivery_reports/Gold_Stocks.xls"
-    },
-    {
-      "indicator": "lme_inventory",
-      "expected_source": "东方财富-LME",
-      "reason": "fetch_failed",
-      "source_url": "https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stock-reports",
-      "detail": "\"['金-库存'] not in index\""
-    },
-    {
-      "indicator": "central_bank_gold_net_buy",
-      "expected_source": "WGC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.gold.org/",
-      "detail": "World Gold Council central bank demand report; no automated fetcher yet"
-    },
-    {
-      "indicator": "gold_etf_holdings_chg",
-      "expected_source": "WGC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.gold.org/",
-      "detail": "World Gold Council ETF holdings tracker; no automated fetcher yet"
-    },
-    {
-      "indicator": "gold_jewelry_demand_yoy",
-      "expected_source": "WGC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.gold.org/",
-      "detail": "World Gold Council jewelry demand statistics; no automated fetcher yet"
-    },
-    {
-      "indicator": "spec_net_long_gold",
-      "expected_source": "CFTC",
-      "reason": "no_automated_fetcher",
-      "source_url": "https://www.cftc.gov/",
-      "detail": "CFTC Commitments of Traders managed-money net long; no automated fetcher yet"
-    }
-  ],
-  "missing_count": 6
+  "missing_sources": [],
+  "missing_count": 0
 }
