@@ -25,6 +25,26 @@ def _project_root() -> Path:
     return Path(__file__).resolve().parents[2]
 
 
+def _resolve_report_output_path(requested: Path, generated_at: datetime) -> Path:
+    """Archive report outputs by execution date to avoid overwriting files."""
+    root = _project_root()
+    reports_dir = (root / "reports").resolve()
+    try:
+        requested_abs = requested.resolve()
+    except FileNotFoundError:
+        requested_abs = requested.absolute()
+
+    # Keep non-report destinations unchanged for explicit external paths.
+    if reports_dir not in requested_abs.parents and requested_abs != reports_dir:
+        return requested
+
+    stamp_date = generated_at.strftime("%Y-%m-%d")
+    stamp_time = generated_at.strftime("%Y%m%d_%H%M%S")
+    stem = requested.stem or "report"
+    suffix = requested.suffix or ".md"
+    return reports_dir / stamp_date / f"{stem}_{stamp_time}{suffix}"
+
+
 def _write_audit_log(path: Path, validation: ValidationResult) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     entries = []
@@ -73,9 +93,10 @@ def run_pipeline(
         module_scores, validation, validation.confirmed, config_dir, horizon=horizon
     )
     report_text = render_report(forecast, validation, missing_sources)
-    write_report(output_path, report_text)
+    final_output = _resolve_report_output_path(output_path, forecast.generated_at)
+    write_report(final_output, report_text)
 
-    print(f"Report written to {output_path}")
+    print(f"Report written to {final_output}")
     print(f"Direction: {forecast.direction} | Score: {forecast.total_score:+.3f}")
     print(f"Confirmed rows: {len(validation.confirmed)}")
     print(f"Missing sources: {len(missing_sources)} (see {data_dir / 'audit' / 'missing_sources.json'})")

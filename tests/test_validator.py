@@ -63,3 +63,68 @@ def test_confirmed_valid_row():
     result = validate_rows([row], CONFIG_DIR)
     assert len(result.confirmed) == 1
     assert result.confirmed[0].status == "confirmed"
+
+
+def test_pending_abs_change_anomaly_rule(tmp_path):
+    config_dir = tmp_path / "config"
+    config_dir.mkdir()
+    (config_dir / "indicators.yaml").write_text(
+        (
+            "units:\n"
+            "  us_cpi_yoy: pct\n"
+            "frequencies:\n"
+            "  us_cpi_yoy: monthly\n"
+        ),
+        encoding="utf-8",
+    )
+    (config_dir / "validation_rules.yaml").write_text(
+        (
+            "required_columns:\n"
+            "  - date\n"
+            "  - indicator\n"
+            "  - value\n"
+            "  - unit\n"
+            "  - source\n"
+            "  - source_url\n"
+            "  - updated_at\n"
+            "  - frequency\n"
+            "  - confidence\n"
+            "source_confidence_map:\n"
+            "  A: 1.0\n"
+            "anomaly_rules:\n"
+            "  - indicator: us_cpi_yoy\n"
+            "    rule: abs_change\n"
+            "    threshold: 0.5\n"
+            "    message: CPI abs jump too large\n"
+        ),
+        encoding="utf-8",
+    )
+
+    rows = [
+        DataRow(
+            date=date(2026, 4, 1),
+            indicator="us_cpi_yoy",
+            value=2.0,
+            unit="pct",
+            source="FRED",
+            source_url="https://example.com",
+            updated_at=datetime(2026, 6, 29),
+            frequency="monthly",
+            confidence="A",
+        ),
+        DataRow(
+            date=date(2026, 5, 1),
+            indicator="us_cpi_yoy",
+            value=3.0,
+            unit="pct",
+            source="FRED",
+            source_url="https://example.com",
+            updated_at=datetime(2026, 6, 29),
+            frequency="monthly",
+            confidence="A",
+        ),
+    ]
+
+    result = validate_rows(rows, config_dir)
+    assert len(result.pending) == 1
+    assert result.pending[0].reason == "CPI abs jump too large"

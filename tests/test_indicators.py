@@ -3,7 +3,7 @@
 from datetime import date, datetime
 
 from gold_forecast.data_loader import DataRow
-from gold_forecast.indicators import _global_inventory_series
+from gold_forecast.indicators import _global_inventory_series, score_inventory
 
 
 def _inv_row(indicator: str, d: date, value: float) -> DataRow:
@@ -40,3 +40,79 @@ def test_global_inventory_forward_fills_stale_lme_on_newer_shfe_date():
     assert by_date[date(2026, 6, 26)] == 336_475.0 + 99_543.0
     assert by_date[date(2026, 6, 29)] == 336_475.0 + 73_289.0
     assert by_date[date(2026, 6, 29)] > 400_000.0
+
+
+def test_inventory_derived_term_structure_is_not_double_counted_with_premium():
+    grouped = {
+        "spot_premium": [
+            DataRow(
+                date=date(2026, 6, 29),
+                indicator="spot_premium",
+                value=10.0,
+                unit="USD/oz",
+                source="derived",
+                source_url="",
+                updated_at=datetime(2026, 6, 29),
+                frequency="daily",
+                confidence="C",
+                status="confirmed",
+            )
+        ],
+        "term_structure": [
+            DataRow(
+                date=date(2026, 6, 29),
+                indicator="term_structure",
+                value="backwardation",
+                unit="label",
+                source="derived",
+                source_url="",
+                updated_at=datetime(2026, 6, 29),
+                frequency="daily",
+                confidence="C",
+                status="confirmed",
+            )
+        ],
+    }
+
+    score = score_inventory(grouped)
+    names = [sig.name for sig in score.signals]
+    assert "spot_premium" in names
+    assert "term_structure" not in names
+
+
+def test_inventory_independent_term_structure_still_scored():
+    grouped = {
+        "spot_premium": [
+            DataRow(
+                date=date(2026, 6, 29),
+                indicator="spot_premium",
+                value=-8.0,
+                unit="USD/oz",
+                source="derived",
+                source_url="",
+                updated_at=datetime(2026, 6, 29),
+                frequency="daily",
+                confidence="C",
+                status="confirmed",
+            )
+        ],
+        "term_structure": [
+            DataRow(
+                date=date(2026, 6, 29),
+                indicator="term_structure",
+                value="contango",
+                unit="label",
+                source="exchange_api",
+                source_url="",
+                updated_at=datetime(2026, 6, 29),
+                frequency="daily",
+                confidence="A",
+                status="confirmed",
+            )
+        ],
+    }
+
+    score = score_inventory(grouped)
+    names = [sig.name for sig in score.signals]
+    assert "spot_premium" in names
+    assert "term_structure" in names

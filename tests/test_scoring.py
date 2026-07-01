@@ -131,6 +131,43 @@ def test_cross_validation_detects_group_divergence():
     assert [group.direction for group in result.groups] == ["看多", "看空"]
 
 
+def test_forecast_downgrades_outlook_when_cross_validation_diverges():
+    module_scores = {
+        "physical_demand": ModuleScore("physical_demand", 1.0),
+        "inventory": ModuleScore("inventory", 1.0),
+        "financial_flow": ModuleScore("financial_flow", 1.0),
+        "macro_liquidity": ModuleScore("macro_liquidity", -0.5),
+        "trend": ModuleScore("trend", 0.0),
+    }
+    row = DataRow(
+        date=date(2026, 6, 29),
+        indicator="lme_gold_price",
+        value=2350.0,
+        unit="USD/oz",
+        source="comex",
+        source_url="https://example.com",
+        updated_at=datetime(2026, 6, 29),
+        frequency="daily",
+        confidence="A",
+        status="confirmed",
+    )
+
+    forecast = compute_forecast(
+        module_scores,
+        ValidationResult(confirmed=[row]),
+        [row],
+        CONFIG_DIR,
+    )
+
+    assert forecast.direction == "偏多"
+    assert forecast.cross_validation is not None
+    assert forecast.cross_validation.agreement == "相互背离"
+    assert forecast.low_confidence is True
+    assert forecast.week_outlook == "中性偏多（低置信）"
+    assert forecast.month_outlook == "中性偏多（低置信）"
+    assert "A/B 交叉验证方向背离" in forecast.confidence_note
+
+
 def test_data_health_uses_latest_freshness_and_ignores_optional(tmp_path):
     config_dir = tmp_path / "config"
     config_dir.mkdir()

@@ -31,6 +31,8 @@ class ForecastResult:
     generated_at: datetime = field(default_factory=datetime.now)
     cross_validation: "CrossValidationResult | None" = None
     horizon: str | None = None
+    confidence_note: str = ""
+    low_confidence: bool = False
 
 
 @dataclass
@@ -78,6 +80,16 @@ def _outlook_from_direction(direction: str, horizon: str) -> str:
         "看空": "偏空",
     }
     return mapping.get(direction, "中性")
+
+
+def _hedge_outlook(outlook: str) -> str:
+    """Downgrade directional outlook text under low confidence."""
+    mapping = {
+        "偏多": "中性偏多（低置信）",
+        "偏空": "中性偏空（低置信）",
+        "中性": "中性",
+    }
+    return mapping.get(outlook, outlook)
 
 
 def compute_data_health(
@@ -337,6 +349,28 @@ def compute_forecast(
         weights_cfg.get("cross_validation"),
     )
 
+    low_conf_threshold = float(weights_cfg.get("low_confidence_threshold", 0.25))
+    diverged = bool(cross_validation and cross_validation.agreement == "相互背离")
+    low_confidence = confidence < low_conf_threshold or diverged
+    confidence_note = ""
+    if low_confidence:
+        reasons: list[str] = []
+        if diverged:
+            reasons.append("A/B 交叉验证方向背离")
+        if confidence < low_conf_threshold:
+            reasons.append(
+                f"置信度 {confidence:.0%} 低于 {low_conf_threshold:.0%} 阈值"
+            )
+        confidence_note = (
+            "方向为低置信信号，建议按中性偏"
+            + ("多" if total > 0 else "空" if total < 0 else "")
+            + "对待，不宜作为单边交易依据（"
+            + "；".join(reasons)
+            + "）"
+        )
+        week_outlook = _hedge_outlook(week_outlook)
+        month_outlook = _hedge_outlook(month_outlook)
+
     supporting, suppressing = _top_signals(module_scores)
     risks = _default_risks(module_scores, data_health)
     invalidation = _invalidation_conditions(module_scores, direction)
@@ -358,4 +392,6 @@ def compute_forecast(
         data_cutoff=cutoff,
         cross_validation=cross_validation,
         horizon=horizon,
+        confidence_note=confidence_note,
+        low_confidence=low_confidence,
     )

@@ -23,6 +23,7 @@ direction_thresholds:
   strong_bearish: -0.50
 
 module_active_threshold: 0.20
+low_confidence_threshold: 0.25
 
 confidence:
   data_quality_weights:

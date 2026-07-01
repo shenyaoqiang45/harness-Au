@@ -256,7 +256,10 @@ def score_inventory(grouped: dict[str, list[DataRow]]) -> ModuleScore:
                 )
 
     premium_series = grouped.get("spot_premium", [])
+    premium_is_derived = False
     if premium_series:
+        last_prem_row = premium_series[-1]
+        premium_is_derived = "derived" in (last_prem_row.source or "").lower()
         _, prem = _latest_numeric(premium_series)
         if prem is not None:
             score = 1.0 if prem > 0 else -1.0
@@ -275,15 +278,21 @@ def score_inventory(grouped: dict[str, list[DataRow]]) -> ModuleScore:
 
     term_series = grouped.get("term_structure", [])
     if term_series:
-        label = str(term_series[-1].value).lower()
-        if label == "backwardation":
-            signals.append(
-                SignalDetail("term_structure", 1.0, "Term structure: backwardation")
-            )
-        elif label == "contango":
-            signals.append(
-                SignalDetail("term_structure", -1.0, "Term structure: contango")
-            )
+        last_term_row = term_series[-1]
+        term_is_derived = "derived" in (last_term_row.source or "").lower()
+        # Avoid double-counting when term_structure is mechanically derived from
+        # spot_premium sign and both come from derived sources.
+        independent = not (term_is_derived and premium_is_derived and premium_series)
+        if independent:
+            label = str(last_term_row.value).lower()
+            if label == "backwardation":
+                signals.append(
+                    SignalDetail("term_structure", 1.0, "Term structure: backwardation")
+                )
+            elif label == "contango":
+                signals.append(
+                    SignalDetail("term_structure", -1.0, "Term structure: contango")
+                )
 
     if not signals:
         return ModuleScore("inventory", 0.0, data_gaps=gaps or ["no inventory data"])

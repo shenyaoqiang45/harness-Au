@@ -101,6 +101,9 @@ def render_report(
         "",
     ]
 
+    if forecast.confidence_note:
+        lines.extend([f"低置信说明：{forecast.confidence_note}", ""])
+
     if forecast.horizon == "month":
         lines.extend(_monthly_core_summary(forecast))
 

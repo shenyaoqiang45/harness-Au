@@ -10,13 +10,13 @@ pip install -e ".[dev]"
 # 1) 拉取真实数据 → data/raw/live.csv
 python -m gold_forecast.cli fetch
 
-# 2) 生成 1 个月重点评估报告（默认）
+# 2) 生成 1 个月重点评估报告（自动按执行日期归档）
 python -m gold_forecast.cli report -i data/raw/live.csv -o reports/monthly.md
 
 # 2b) 生成综合权重报告
 python -m gold_forecast.cli report -i data/raw/live.csv -o reports/monthly.md --horizon aggregate
 
-# 或一步完成（默认输出 reports/monthly.md，1 个月视角）
+# 或一步完成（报告自动归档到 reports/YYYY-MM-DD/）
 python -m gold_forecast.cli run
 ```
 
@@ -64,7 +64,7 @@ data/raw/        # 原始输入
 data/validated/  # 校验后数据
 data/clean/      # 模型使用的 confirmed 数据
 data/audit/      # 异常日志、抓取日志、缺失数据源清单
-reports/         # Markdown 报告（当前只保留 monthly.md）
+reports/         # Markdown 报告（按执行日期归档，避免覆盖）
 src/gold_forecast/
 tests/
 ```
