@@ -351,6 +351,29 @@ def score_physical_demand(grouped: dict[str, list[DataRow]]) -> ModuleScore:
     )
 
 
+def score_warsh_policy(config_dir: str | Path | None = None) -> ModuleScore:
+    """Score Fed chair Warsh policy stance from config/warsh_factor.yaml."""
+    from pathlib import Path
+
+    from gold_forecast.warsh_factor import compute_warsh_signals
+
+    if config_dir is None:
+        return ModuleScore("warsh_policy", 0.0, data_gaps=["warsh_factor config missing"])
+
+    signals = compute_warsh_signals(Path(config_dir))
+    if not signals:
+        return ModuleScore(
+            "warsh_policy",
+            0.0,
+            data_gaps=["warsh_factor inactive or not configured"],
+        )
+
+    composite = next((s for s in signals if s.name == "warsh_composite"), None)
+    module_score = composite.score if composite else _avg_signals(signals)
+    detail_signals = [s for s in signals if s.name != "warsh_composite"]
+    return ModuleScore("warsh_policy", module_score, detail_signals)
+
+
 def score_macro_liquidity(grouped: dict[str, list[DataRow]]) -> ModuleScore:
     signals: list[SignalDetail] = []
     gaps: list[str] = []
@@ -450,7 +473,7 @@ def compute_all_module_scores(
     confirmed_rows: list[DataRow],
     config_dir: str | None = None,
 ) -> dict[str, ModuleScore]:
-    """Compute scores for all six modules."""
+    """Compute scores for all modules including Warsh policy factor."""
     grouped = group_by_indicator(confirmed_rows)
     events_path = None
     if config_dir:
@@ -468,5 +491,6 @@ def compute_all_module_scores(
         "inventory": score_inventory(grouped),
         "physical_demand": score_physical_demand(grouped),
         "macro_liquidity": score_macro_liquidity(grouped),
+        "warsh_policy": score_warsh_policy(config_dir),
         "financial_flow": score_financial_flow(grouped, events_path),
     }

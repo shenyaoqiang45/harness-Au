@@ -1,6 +1,7 @@
 # Mid-term configuration weights (gold: macro/liquidity heavier than industrial copper)
 modules:
-  macro_liquidity: 0.40
+  macro_liquidity: 0.35
+  warsh_policy: 0.05
   financial_flow: 0.20
   physical_demand: 0.15
   trend: 0.15
@@ -10,7 +11,8 @@ modules:
 horizon_weights:
   month:
     modules:
-      macro_liquidity: 0.45
+      macro_liquidity: 0.40
+      warsh_policy: 0.05
       trend: 0.25
       financial_flow: 0.15
       inventory: 0.10
@@ -44,4 +46,5 @@ cross_validation:
       label: 宏观/价格组
       modules:
         - macro_liquidity
+        - warsh_policy
         - trend

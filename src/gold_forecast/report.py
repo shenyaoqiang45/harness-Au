@@ -12,6 +12,7 @@ MODULE_LABELS = {
     "physical_demand": "实物需求",
     "inventory": "库存现货",
     "macro_liquidity": "美元利率/通胀",
+    "warsh_policy": "沃什因子",
     "financial_flow": "金融流动",
     "trend": "价格趋势",
 }
@@ -64,6 +65,12 @@ def _monthly_core_summary(forecast: ForecastResult) -> list[str]:
             lines.append(f"- **CPI 同比**：{cpi_level.description}")
         if cpi_mom:
             lines.append(f"- **CPI 环比变化**：{cpi_mom.description}")
+
+    mod = forecast.module_scores.get("warsh_policy")
+    if mod and mod.signals:
+        lines.append(f"- **沃什因子**：{mod.score:+.2f}")
+        for s in mod.signals[:3]:
+            lines.append(f"  - {s.description}")
 
     mod = forecast.module_scores.get("physical_demand")
     if mod:

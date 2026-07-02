@@ -1,0 +1,55 @@
+# 沃什因子：美联储主席公开表态对黄金的多空影响（定性打分）
+# 分数区间 [-1, +1]：正值偏多金，负值偏空金
+# 每次主席重大讲话后更新 dimensions，并调整 meta 日期与失效日
+
+meta:
+  chair: Kevin Warsh
+  speech_date: 2026-07-01
+  venue: ECB Forum on Central Banking, Sintra
+  source: CNBC panel / domestic press summary
+  last_updated: 2026-07-02
+  valid_until: 2026-07-29
+  note: 辛特拉首秀；7月FOMC前主要政策沟通窗口
+
+dimensions:
+  inflation_hawkishness:
+    score: -0.50
+    weight: 1.5
+    label: 抗通胀强硬
+    description: 强调物价过高、坚守2%目标，企业/家庭勿指望更高通胀容忍度
+
+  inflation_risk_easing:
+    score: 0.35
+    weight: 1.0
+    label: 通胀风险缓和
+    description: 承认过去约四周通胀预期与风险回落
+
+  no_forward_guidance:
+    score: -0.25
+    weight: 0.8
+    label: 废除前瞻指引
+    description: 拒绝剧透7月及后续利率路径，市场降息预期定价难度上升
+
+  qt_commitment:
+    score: -0.40
+    weight: 1.0
+    label: 缩表立场
+    description: 资产负债表近财政工具属性，长期缩表、利率仍为政策主角
+
+  ai_supply_optimism:
+    score: 0.45
+    weight: 1.2
+    label: AI供给扩张预期
+    description: CapEx热潮或推升供给端，长期利于通胀回落与政策空间（QT-for-cuts框架）
+
+  fed_independence:
+    score: 0.10
+    weight: 0.3
+    label: 央行独立性
+    description: 明确不受政治施压影响政策独立性
+
+  communication_uncertainty:
+    score: -0.15
+    weight: 0.5
+    label: 沟通改革不确定性
+    description: 五大工作组重构沟通框架，新语法未定型，短期政策可预测性下降

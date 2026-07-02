@@ -19,6 +19,9 @@ modules:
       - dxy
       - us_10y_real_rate
       - us_cpi_yoy
+  warsh_policy:
+    indicators: []
+    config_file: config/warsh_factor.yaml
   financial_flow:
     indicators: []
     events_file: data/raw/market_events.csv

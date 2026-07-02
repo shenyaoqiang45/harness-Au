@@ -57,9 +57,9 @@ def test_total_score_weighted():
         CONFIG_DIR,
         horizon="month",
     )
-    # Monthly weights: macro 0.45, trend 0.25, fin 0.15, inv 0.10, phys 0.05
-    # 0.05*1 + 0.10*1 + 0.45*(-1) + 0.15*0 + 0.25*1 = -0.05
-    assert abs(forecast.total_score - (-0.05)) < 0.001
+    # Monthly weights: macro 0.40, warsh 0.05, trend 0.25, fin 0.15, inv 0.10, phys 0.05
+    # 0.05*1 + 0.10*1 + 0.40*(-1) + 0.15*0 + 0.25*1 = 0.00
+    assert abs(forecast.total_score - 0.00) < 0.001
     assert forecast.horizon == "month"
     assert forecast.month_outlook == forecast.direction
 
@@ -90,8 +90,8 @@ def test_total_score_weighted_aggregate():
         [row],
         CONFIG_DIR,
     )
-    # 0.15*1 + 0.10*1 + 0.40*(-1) + 0.20*0 + 0.15*1 = 0.00
-    assert abs(forecast.total_score - 0.00) < 0.001
+    # 0.15*1 + 0.10*1 + 0.35*(-1) + 0.20*0 + 0.15*1 = 0.05
+    assert abs(forecast.total_score - 0.05) < 0.001
     assert forecast.direction == "中性"
     assert forecast.cross_validation is not None
 

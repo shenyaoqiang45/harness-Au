@@ -268,6 +268,7 @@ def _invalidation_conditions(
     conditions = []
     inv = module_scores.get("inventory")
     macro = module_scores.get("macro_liquidity")
+    warsh = module_scores.get("warsh_policy")
     physical = module_scores.get("physical_demand")
 
     if direction in ("偏多", "看多"):
@@ -287,6 +288,8 @@ def _invalidation_conditions(
         conditions.append("现货贴水扩大且期限结构转为 contango")
     if macro and macro.score < -0.3:
         conditions.append("DXY 与实际利率同步走强超过 4 周")
+    if warsh and warsh.score < -0.2:
+        conditions.append("沃什因子转鹰（加息/缩表预期强化）且实际利率反弹")
     if physical and physical.score < -0.3:
         conditions.append("中国 PMI 跌破 50 且首饰消费同比走弱")
 
