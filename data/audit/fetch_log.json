@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-07-03T08:41:13.990563",
-  "record_count": 1826,
+  "timestamp": "2026-07-04T00:04:38.678724",
+  "record_count": 1825,
   "warnings": [
-    "fred:us_10y_real_rate: loaded via API",
-    "fred:us_cpi_yoy: loaded via API",
+    "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
+    "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
     "inventory_csv: loaded 365 records from gold_inventory.csv"
   ],
   "errors": [],
