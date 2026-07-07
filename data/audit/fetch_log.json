@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-06T00:04:40.300668",
+  "timestamp": "2026-07-07T00:05:25.160483",
   "record_count": 1818,
   "warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
