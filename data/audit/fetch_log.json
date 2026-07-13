@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-07-13T10:07:01.993195",
-  "record_count": 1837,
+  "timestamp": "2026-07-13T11:26:20.524308",
+  "record_count": 733,
   "warnings": [
     "fred:us_10y_real_rate: loaded via API",
-    "inventory_csv: loaded 393 records from gold_inventory.csv"
+    "fred:us_cpi_yoy: loaded via API",
+    "inventory_csv: loaded 360 records from gold_inventory.csv",
+    "derived:term_structure: no spot_premium available"
   ],
   "errors": [
-    "fred:us_cpi_yoy: HTTPSConnectionPool(host='api.stlouisfed.org', port=443): Max retries exceeded with url: /fred/series/observations?series_id=CPIAUCSL&api_key=b096f38b756c74e88c6b72f6bce6dddc&file_type=json&observation_start=2024-05-04 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)))"
+    "yahoo:lme_gold_price: Too Many Requests. Rate limited. Try after a while.",
+    "yahoo:dxy: Too Many Requests. Rate limited. Try after a while.",
+    "derived:spot_premium: Too Many Requests. Rate limited. Try after a while."
   ],
   "indicators": [
     "comex_inventory",
-    "dxy",
-    "lme_gold_price",
     "lme_inventory",
     "m1",
     "shfe_inventory",
     "social_financing",
-    "spot_premium",
-    "term_structure",
-    "us_10y_real_rate"
+    "us_10y_real_rate",
+    "us_cpi_yoy"
   ],
   "missing_sources": [],
   "missing_count": 0

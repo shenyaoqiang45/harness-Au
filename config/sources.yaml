@@ -103,10 +103,10 @@ sources:
       lme_inventory:
         unit: ton
         frequency: daily
-        source: 手动维护-LME
-        source_url: https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stock-reports
+        source: 手动维护-LBMA
+        source_url: https://www.lbma.org.uk/prices-and-data/london-vault-data
         confidence: B
-        note: "LME gold warehouse stocks loaded from gold_inventory.csv"
+        note: "LBMA London vault stocks loaded from gold_inventory.csv (legacy LME column still supported)"
       comex_inventory:
         unit: ton
         frequency: daily
