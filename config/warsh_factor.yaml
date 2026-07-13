@@ -7,13 +7,13 @@ meta:
   speech_date: 2026-07-01
   venue: ECB Forum on Central Banking, Sintra
   source: CNBC panel / domestic press summary
-  last_updated: 2026-07-02
+  last_updated: 2026-07-13
   valid_until: 2026-07-29
-  note: 辛特拉首秀；7月FOMC前主要政策沟通窗口
+  note: 辛特拉首秀；6/17 FOMC 纪要（7/8 发布）确认废除前瞻指引、委员对加息路径分歧加大
 
 dimensions:
   inflation_hawkishness:
-    score: -0.50
+    score: -0.60
     weight: 1.5
     label: 抗通胀强硬
     description: 强调物价过高、坚守2%目标，企业/家庭勿指望更高通胀容忍度
@@ -49,7 +49,7 @@ dimensions:
     description: 明确不受政治施压影响政策独立性
 
   communication_uncertainty:
-    score: -0.15
+    score: -0.25
     weight: 0.5
     label: 沟通改革不确定性
     description: 五大工作组重构沟通框架，新语法未定型，短期政策可预测性下降
