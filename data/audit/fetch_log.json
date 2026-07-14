@@ -1,23 +1,22 @@
 {
-  "timestamp": "2026-07-13T11:26:20.524308",
-  "record_count": 733,
+  "timestamp": "2026-07-14T00:03:21.298511",
+  "record_count": 1815,
   "warnings": [
-    "fred:us_10y_real_rate: loaded via API",
-    "fred:us_cpi_yoy: loaded via API",
-    "inventory_csv: loaded 360 records from gold_inventory.csv",
-    "derived:term_structure: no spot_premium available"
+    "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
+    "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
+    "inventory_csv: loaded 360 records from gold_inventory.csv"
   ],
-  "errors": [
-    "yahoo:lme_gold_price: Too Many Requests. Rate limited. Try after a while.",
-    "yahoo:dxy: Too Many Requests. Rate limited. Try after a while.",
-    "derived:spot_premium: Too Many Requests. Rate limited. Try after a while."
-  ],
+  "errors": [],
   "indicators": [
     "comex_inventory",
+    "dxy",
+    "lme_gold_price",
     "lme_inventory",
     "m1",
     "shfe_inventory",
     "social_financing",
+    "spot_premium",
+    "term_structure",
     "us_10y_real_rate",
     "us_cpi_yoy"
   ],
