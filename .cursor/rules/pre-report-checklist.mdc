@@ -1,0 +1,37 @@
+---
+description: 出 report 前必须先过事件 checklist（硬闸门）
+alwaysApply: true
+---
+
+# 出报告前 Checklist 硬闸门
+
+在执行下列任一动作**之前**，必须先读取并处理 `docs/events/checklist.md`：
+
+- `python -m gold_forecast.cli run`
+- `python -m gold_forecast.cli report`
+- `python -m gold_forecast.cli fetch` 且随后会出报告
+- 向 `reports/` 写入或归档新报告
+
+## 闸门步骤（按序）
+
+1. **读清单**：今日 / 已逾期未勾选事件；近 7 日未完成 **P0**；与本次跑批相关的「发布后动作」。
+2. **分级处理**：
+   - **P0 未完成**（今日或已逾期）：先执行清单动作（含必要配置），再出报告；无法完成则**停住**，向用户说明阻塞项，**禁止**跳过直接 `run`/`report`。
+   - **P1 未完成**且与本次主题相关：先执行或征得用户同意跳过后再出报告。
+   - **P2 / 无关待办**：可出报告，但须在回复中点名未处理项（1 句即可）。
+3. **出报告**：标准命令见 ADR-0001（优先 `cli run --horizon month`）。
+4. **收尾**：勾选已完成项，备注写报告路径、关键读数、是否改了 `warsh_factor.yaml` / `market_events.csv`。
+
+## 反例
+
+```text
+❌ 用户说「跑一下月报」→ 直接 cli run，不看 checklist
+❌ P0（如 CPI/FOMC）已过期待办仍未勾选 → 照样出报告且不告知
+✅ 先读 checklist → 处理到期 P0/相关 P1 → run → 勾选+备注
+```
+
+## 参考
+
+- 清单：`docs/events/checklist.md`
+- ADR：`docs/adr/0001-event-driven-report-checklist.md`
+- 对话开头的 pull + 扫描仍由 `pre-response-sync.mdc` 负责；本规则专管**出报告动作**。

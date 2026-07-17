@@ -30,8 +30,10 @@ git pull origin
 - 若 checklist 有与当前任务相关的待办，在回答开头**简要提示**（1–3 句），例如逾期 P0、今日应执行的 `cli run`。
 - 若用户明确要求执行清单动作（fetch / report / 改配置），按清单步骤执行，完成后在 checklist 中勾选并写备注。
 - 无相关待办时不必展开 checklist，继续正常回答。
+- **出报告硬闸门**不在本文件：见 `pre-report-checklist.mdc`（`run`/`report` 前必须过清单）。
 
 ## 参考
 
 - 事件分级与标准命令见 `docs/adr/0001-event-driven-report-checklist.md`
 - Checklist 路径：`docs/events/checklist.md`
+- 出报告前闸门：`.cursor/rules/pre-report-checklist.mdc`
