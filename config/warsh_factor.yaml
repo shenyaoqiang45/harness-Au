@@ -4,52 +4,56 @@
 
 meta:
   chair: Kevin Warsh
-  speech_date: 2026-07-01
-  venue: ECB Forum on Central Banking, Sintra
-  source: CNBC panel / domestic press summary
-  last_updated: 2026-07-13
-  valid_until: 2026-07-29
-  note: 辛特拉首秀；6/17 FOMC 纪要（7/8 发布）确认废除前瞻指引、委员对加息路径分歧加大
+  speech_date: 2026-07-29
+  venue: FOMC post-meeting press conference
+  source: Federal Reserve FOMC statement 2026-07-29 + Warsh press conference
+  last_updated: 2026-07-31
+  valid_until: 2026-08-21
+  note: >
+    7/29 决议：维持 3.50%–3.75%（9–3）；异议票 Hammack/Kashkari/Logan 主张加息 25bp。
+    声明称通胀仍高于 2%（部分因中东/能源供给冲击），将交付价格稳定；经济稳健、生产率与资本开支强。
+    记者会：拒称「暂停」，称「watchful thinking, not watchful waiting」；继续无前瞻指引；
+    「若预测期内通胀持续偏高，利率或为应对工具之一」；Jackson Hole（8/27–29）前有效。
 
 dimensions:
   inflation_hawkishness:
-    score: -0.60
+    score: -0.65
     weight: 1.5
     label: 抗通胀强硬
-    description: 强调物价过高、坚守2%目标，企业/家庭勿指望更高通胀容忍度
+    description: 声明「将交付价格稳定」；记者会重申 2% 目标、必要时不犹豫行动；3 票主张当场加息
 
   inflation_risk_easing:
-    score: 0.35
+    score: 0.25
     weight: 1.0
     label: 通胀风险缓和
-    description: 承认过去约四周通胀预期与风险回落
+    description: 6 月 CPI/PPI/PCE 月环比偏软，但声明仍定性通胀 elevated（供给冲击），缓和叙事弱于辛特拉
 
   no_forward_guidance:
-    score: -0.25
+    score: -0.35
     weight: 0.8
     label: 废除前瞻指引
-    description: 拒绝剧透7月及后续利率路径，市场降息预期定价难度上升
+    description: 记者会强调观察市场对数据的「直接、未过滤」反应，拒绝滚动预测与路径暗示
 
   qt_commitment:
-    score: -0.40
+    score: -0.30
     weight: 1.0
     label: 缩表立场
-    description: 资产负债表近财政工具属性，长期缩表、利率仍为政策主角
+    description: 声明延续 ample reserves；未强化新的缩表鹰派表述，利率仍为主要工具
 
   ai_supply_optimism:
-    score: 0.45
+    score: 0.50
     weight: 1.2
     label: AI供给扩张预期
-    description: CapEx热潮或推升供给端，长期利于通胀回落与政策空间（QT-for-cuts框架）
+    description: 声明强调生产率增长与资本投资强劲，供给端扩张叙事延续
 
   fed_independence:
-    score: 0.10
+    score: 0.15
     weight: 0.3
     label: 央行独立性
-    description: 明确不受政治施压影响政策独立性
+    description: 「good family fight」公开呈现委员分歧，显示讨论独立于政治施压
 
   communication_uncertainty:
-    score: -0.25
+    score: -0.35
     weight: 0.5
     label: 沟通改革不确定性
-    description: 五大工作组重构沟通框架，新语法未定型，短期政策可预测性下降
+    description: 9–3 罕见异议 + 无前瞻指引 + 「watchful thinking」新措辞，短端路径可预测性下降
