@@ -48,7 +48,7 @@ def _records_from_frame(
         value = row[value_col]
         if pd.isna(value):
             continue
-        num = float(value)
+        num = float(value) * float(cfg.get("value_scale", 1.0))
         rows.append(
             FetchedRecord(
                 date=row_date,

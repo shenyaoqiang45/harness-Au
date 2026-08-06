@@ -55,12 +55,14 @@ sources:
         kwargs: { symbol: "沪金" }
         date_col: 日期
         value_col: 库存
+        # Eastmoney「库存」为千克；统一换算为吨，避免与 COMEX/LBMA 加总时出现千倍跳变
+        value_scale: 0.001
         unit: ton
         frequency: daily
         source: 东方财富-SHFE
         source_url: https://www.shfe.com.cn/reports/businessdata/prmsummary/
         confidence: A
-        note: "SHFE gold warehouse receipt / inventory daily (ton); Eastmoney mirror of SHFE official"
+        note: "SHFE gold warehouse receipt daily; Eastmoney kg scaled to ton (value_scale=0.001)"
       social_financing:
         func: macro_china_new_financial_credit
         date_col: 月份
