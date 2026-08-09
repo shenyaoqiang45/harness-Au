@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-08T00:05:38.912791",
-  "record_count": 1872,
+  "timestamp": "2026-08-09T00:04:00.194950",
+  "record_count": 1869,
   "warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
