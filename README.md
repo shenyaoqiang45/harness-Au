@@ -27,7 +27,7 @@ python -m gold_forecast.cli run
 | 金价（COMEX 代理） | Yahoo `GC=F`（USD/oz） |
 | DXY | Yahoo `DX-Y.NYB` |
 | 美国 10Y 实际利率 | FRED `DFII10`（可用 `FRED_API_KEY`） |
-| 美国 CPI 同比 | FRED `CPIAUCSL` 衍生同比（可用 `FRED_API_KEY`） |
+| 美国 CPI 同比 | FRED `CPIAUCNS` 未季调同比（对齐 BLS headline；可用 `FRED_API_KEY`） |
 | 中国 社融 / M1 | 东方财富 / akshare |
 | LME / SHFE / COMEX 黄金库存 | 东方财富 LME 金库存、akshare 沪金仓单、CME `Gold_Stocks.xls` |
 | 现货升贴水 / 期限结构 | SHFE AU0 vs COMEX GC=F 衍生 |

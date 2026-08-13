@@ -413,7 +413,7 @@ def score_macro_liquidity(grouped: dict[str, list[DataRow]]) -> ModuleScore:
                 SignalDetail(
                     "us_cpi_yoy_level",
                     level_score,
-                    f"US CPI YoY {cpi:.2f}%",
+                    f"US CPI YoY {cpi:.1f}%",
                 )
             )
         if cpi is not None and prev_cpi is not None:

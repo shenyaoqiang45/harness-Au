@@ -32,14 +32,15 @@ sources:
         source_url: https://fred.stlouisfed.org/series/DFII10
         confidence: A
       us_cpi_yoy:
-        series_id: CPIAUCSL
+        series_id: CPIAUCNS
         transform: yoy_pct
         unit: pct
         frequency: monthly
         source: FRED
-        source_url: https://fred.stlouisfed.org/series/CPIAUCSL
+        source_url: https://fred.stlouisfed.org/series/CPIAUCNS
         confidence: A
-        note: "US CPI YoY derived from FRED CPIAUCSL index"
+        lookback_days: 800
+        note: "US CPI-U NSA YoY from FRED CPIAUCNS (matches BLS headline 12-month change)"
 
   eastmoney:
     # lme_inventory removed: Eastmoney column '金-库存' no longer available.

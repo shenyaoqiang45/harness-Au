@@ -75,8 +75,13 @@ def fetch_fred_series(
 
     frame = frame.sort_values("date")
     if cfg.get("transform") == "yoy_pct":
-        frame["value"] = frame["value"].pct_change(12) * 100
-        frame = frame.dropna(subset=["value"])
+        # Calendar-month YoY: pct_change(12) on a gappy series compares
+        # 12 observations, not 12 months (e.g. missing 2025-10).
+        frame["date"] = pd.to_datetime(frame["date"])
+        frame = frame.set_index("date").asfreq("MS")
+        prev = frame["value"].shift(12)
+        frame["value"] = frame["value"] / prev * 100 - 100
+        frame = frame.dropna(subset=["value"]).reset_index()
 
     cutoff = (datetime.now() - timedelta(days=lookback_days)).date()
     for _, row in frame.iterrows():
@@ -102,6 +107,7 @@ def fetch_fred_series(
 def fetch_fred(indicators_cfg: dict, lookback_days: int) -> FetchResult:
     result = FetchResult()
     for indicator, cfg in indicators_cfg.items():
-        part = fetch_fred_series(cfg["series_id"], indicator, cfg, lookback_days)
+        series_lookback = int(cfg.get("lookback_days", lookback_days))
+        part = fetch_fred_series(cfg["series_id"], indicator, cfg, series_lookback)
         result.extend(part)
     return result

@@ -166,7 +166,7 @@
 - [x] 若 CPI 反弹：考虑调高 `inflation_hawkishness` 权重或分数（未触发）
 - [x] 扩展 `warsh_factor.meta.valid_until` 至 7/29 FOMC 前（若尚未延长）
 
-**备注**：BLS 官方——季调环比 **-0.4%**（2020-04 以来最大单月降幅）、同比 **+3.5%**（前值约 4.2%）；核心环比 **0.0%**、同比 **+2.6%**；均低于预期。FRED `CPIAUCSL` 推导入库 `us_cpi_yoy`（2026-06）**= 3.73%**（mom **-0.54pp**）。晨批报告：`reports/2026-07-15/monthly_20260715_000518.md`（总分 -0.500 看空）。软读数支持上调 `inflation_risk_easing`，**暂未改 yaml**（`valid_until` 已是 2026-07-29；composite 仍 -0.11）——议息前如需再调可单独开一轮。
+**备注**：BLS 官方——季调环比 **-0.4%**（2020-04 以来最大单月降幅）、同比 **+3.5%**（前值约 4.2%）；核心环比 **0.0%**、同比 **+2.6%**；均低于预期。当时 FRED `CPIAUCSL` 推导入库 `us_cpi_yoy`（2026-06）**= 3.73%**（mom **-0.54pp**；季调+行数 YoY，已于 2026-08-13 改为 `CPIAUCNS` 未季调日历月同比 **3.53%≈3.5%**）。晨批报告：`reports/2026-07-15/monthly_20260715_000518.md`（总分 -0.500 看空）。软读数支持上调 `inflation_risk_easing`，**暂未改 yaml**（`valid_until` 已是 2026-07-29；composite 仍 -0.11）——议息前如需再调可单独开一轮。
 
 ---
 
@@ -415,7 +415,7 @@
 
 ## 2026-08-12（周三）
 
-### [ ] 美国 7 月 CPI — **P0**
+### [x] 美国 7 月 CPI — **P0**
 
 | 项 | 内容 |
 |----|------|
@@ -425,12 +425,12 @@
 
 **发布后动作**
 
-- [ ] `python -m gold_forecast.cli run --horizon month`（**必做**）
-- [ ] 若 CPI 明显低于预期：考虑调高 `warsh_factor.yaml` → `inflation_risk_easing.score`
-- [ ] 若核心反弹：考虑调高 `inflation_hawkishness`
-- [ ] 对照入库 `us_cpi_yoy` 与 BLS 发布稿同比（注意 FRED 与 BLS 口径差）
+- [x] `python -m gold_forecast.cli run --horizon month`（**必做**）
+- [x] 若 CPI 明显低于预期：考虑调高 `warsh_factor.yaml` → `inflation_risk_easing.score`
+- [x] 若核心反弹：考虑调高 `inflation_hawkishness`
+- [x] 对照入库 `us_cpi_yoy` 与 BLS 发布稿同比（应对齐未季调 headline）
 
-**备注**：_
+**备注**：BLS [CPI — July 2026](https://www.bls.gov/news.release/cpi.nr0.htm)——季调环比 **+0.1%**、同比 **+3.4%**（6 月同比 +3.5%）；核心环比 **+0.2%**、同比 **+2.5%**（前值 2.6%）；均与共识一致，非「明显低于预期」，核心同比未反弹。**未改** `warsh_factor.yaml`（composite 仍 **-0.133**，`valid_until` 08-21）。2026-08-13 将 `us_cpi_yoy` 改为 FRED **`CPIAUCNS` 未季调同比**（日历月 YoY，避免 2025-10 缺口把 `pct_change(12)` 错位）；入库 7 月 **3.36% ≈ BLS 3.4%**，6 月 **3.53% ≈ BLS 3.5%**（mom **-0.17pp**）。报告：`reports/2026-08-13/monthly_20260813_091628.md`（总分 **+0.199** 中性；趋势 +1.0、库存 -0.333）。
 
 ---
 
@@ -633,6 +633,7 @@
 | 2026-07-31 | 沃什失效检查 + 事件驱动跑批 | `monthly_20260731_084801.md`（-0.168 中性） |
 | 2026-08-06 | 库存维护 + SHFE 单位修复 | CSV→08-05；`value_scale=0.001`；`monthly_20260806_085917.md`（-0.068） |
 | 2026-08-10 | 补勾逾期 P1：官方 PMI、美 NFP、中 CPI/PPI | NFP -2.3 万 / 失业 4.1%；CPI +0.5% / PPI +3.5%；`monthly_20260810_085552.md`（-0.068） |
+| 2026-08-13 | 补勾 08-12 美 7 月 CPI P0；CPI 口径改 NSA | BLS 同比 +3.4% / 核心 +2.5%；`CPIAUCNS` 入库 3.36%≈3.4%；`monthly_20260813_091628.md`（+0.199） |
 
 ---
 
@@ -649,3 +650,4 @@
 | 2026-07-31 | 滚动扩展 8 月窗口（→09-02）：增补财新 PMI、中美 CPI/PPI/社融、NFP、FOMC 纪要、PCE/GDP 二次、Jackson Hole P0、9 月议息前瞻；沃什失效检查对齐 `valid_until` 08-21 |
 | 2026-08-06 | 库存维护：CSV→08-05；修复 SHFE kg→ton（`value_scale=0.001`）；Global inv 20d +1201%→+0.50%；`monthly_20260806_085917.md` |
 | 2026-08-10 | 补勾：官方 7 月 PMI、美 7 月 NFP、中 7 月 CPI/PPI；6 月社融入库确认至 06-30；财新 7 月 PMI / 7 月社融仍待发布；`run` → `monthly_20260810_085552.md`（-0.068） |
+| 2026-08-13 | 勾选 08-12 美 CPI P0（BLS 同比 +3.4% / 核心 +2.5%）；`us_cpi_yoy` 改 FRED `CPIAUCNS` 未季调日历月同比（对齐 headline；修 2025-10 缺口错位）；入库 3.36%≈3.4%；未改 warsh yaml；`monthly_20260813_091628.md`（+0.199） |
