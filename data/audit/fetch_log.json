@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-08-18T00:09:45.535827",
-  "record_count": 1891,
+  "timestamp": "2026-08-18T00:13:43.103493",
+  "record_count": 1604,
   "warnings": [
-    "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
     "inventory_csv: loaded 411 records from gold_inventory.csv"
   ],
-  "errors": [],
+  "errors": [
+    "fred:us_10y_real_rate: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out.",
+    "akshare:m1: ('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  ],
   "indicators": [
     "comex_inventory",
     "dxy",
     "lme_gold_price",
     "lme_inventory",
-    "m1",
     "shfe_inventory",
     "social_financing",
     "spot_premium",
     "term_structure",
-    "us_10y_real_rate",
     "us_cpi_yoy"
   ],
   "missing_sources": [],
