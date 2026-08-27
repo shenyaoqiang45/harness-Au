@@ -374,6 +374,50 @@ def score_warsh_policy(config_dir: str | Path | None = None) -> ModuleScore:
     return ModuleScore("warsh_policy", module_score, detail_signals)
 
 
+def _score_inflation_yoy(
+    grouped: dict[str, list[DataRow]],
+    indicator: str,
+    label: str,
+    signals: list[SignalDetail],
+    gaps: list[str],
+) -> float | None:
+    """Score YoY inflation level (>=3% gold-bullish) and month-to-month YoY momentum."""
+    series = grouped.get(indicator, [])
+    if not series:
+        gaps.append(f"{indicator} missing")
+        return None
+    _, latest = _latest_numeric(series)
+    prev = _value_n_days_ago(series, 1)
+    if latest is not None:
+        if latest >= 3.0:
+            level_score = 1.0
+        elif latest <= 1.5:
+            level_score = -1.0
+        else:
+            level_score = 0.0
+        signals.append(
+            SignalDetail(
+                f"{indicator}_level",
+                level_score,
+                f"{label} YoY {latest:.1f}%",
+            )
+        )
+    if latest is not None and prev is not None:
+        delta = latest - prev
+        if abs(delta) < 0.05:
+            momentum_score = 0.0
+        else:
+            momentum_score = 1.0 if delta > 0 else -1.0
+        signals.append(
+            SignalDetail(
+                f"{indicator}_mom",
+                momentum_score,
+                f"{label} YoY mom {delta:+.2f}pp",
+            )
+        )
+    return latest
+
+
 def score_macro_liquidity(grouped: dict[str, list[DataRow]]) -> ModuleScore:
     signals: list[SignalDetail] = []
     gaps: list[str] = []
@@ -398,43 +442,23 @@ def score_macro_liquidity(grouped: dict[str, list[DataRow]]) -> ModuleScore:
                 )
             )
 
-    cpi_series = grouped.get("us_cpi_yoy", [])
-    if cpi_series:
-        _, cpi = _latest_numeric(cpi_series)
-        prev_cpi = _value_n_days_ago(cpi_series, 1)
-        if cpi is not None:
-            if cpi >= 3.0:
-                level_score = 1.0
-            elif cpi <= 1.5:
-                level_score = -1.0
-            else:
-                level_score = 0.0
-            signals.append(
-                SignalDetail(
-                    "us_cpi_yoy_level",
-                    level_score,
-                    f"US CPI YoY {cpi:.1f}%",
-                )
-            )
-        if cpi is not None and prev_cpi is not None:
-            delta = cpi - prev_cpi
-            if abs(delta) < 0.05:
-                momentum_score = 0.0
-            else:
-                momentum_score = 1.0 if delta > 0 else -1.0
-            signals.append(
-                SignalDetail(
-                    "us_cpi_yoy_mom",
-                    momentum_score,
-                    f"US CPI YoY mom {delta:+.2f}pp",
-                )
-            )
-    else:
-        gaps.append("us_cpi_yoy missing")
+    cpi = _score_inflation_yoy(grouped, "us_cpi_yoy", "US CPI", signals, gaps)
+    pce = _score_inflation_yoy(grouped, "us_pce_yoy", "US PCE", signals, gaps)
+    _score_inflation_yoy(grouped, "us_core_pce_yoy", "US core PCE", signals, gaps)
 
+    if cpi is not None and pce is not None and abs(pce - cpi) >= 0.3:
+        signals.append(
+            SignalDetail(
+                "pce_cpi_headline_gap",
+                0.0,
+                f"PCE vs CPI YoY gap {pce - cpi:+.1f}pp",
+            )
+        )
+
+    scored = [s for s in signals if s.name != "pce_cpi_headline_gap"]
     return ModuleScore(
         "macro_liquidity",
-        _avg_signals(signals) if signals else 0.0,
+        _avg_signals(scored) if scored else 0.0,
         signals,
         gaps,
     )

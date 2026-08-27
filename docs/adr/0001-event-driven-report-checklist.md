@@ -10,7 +10,7 @@
 
 伦敦金报告由五模块打分 + **沃什因子**合成，数据源分三类：
 
-1. **自动抓取**（`python -m gold_forecast.cli fetch`）：金价、DXY、实际利率、CPI、社融/M1、库存等
+1. **自动抓取**（`python -m gold_forecast.cli fetch`）：金价、DXY、实际利率、CPI、PCE/核心 PCE、社融/M1、库存等
 2. **配置文件**（人工）：`config/warsh_factor.yaml`、权重与阈值
 3. **事件表**（人工）：`data/raw/market_events.csv`（地缘/突发）
 

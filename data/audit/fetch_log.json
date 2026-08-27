@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-08-25T08:48:03.296150",
-  "record_count": 1891,
+  "timestamp": "2026-08-27T09:48:42.279059",
+  "record_count": 1919,
   "warnings": [
     "fred:us_10y_real_rate: loaded via API",
     "fred:us_cpi_yoy: loaded via API",
+    "fred:us_pce_yoy: loaded via API",
+    "fred:us_core_pce_yoy: loaded via API",
     "inventory_csv: loaded 411 records from gold_inventory.csv"
   ],
   "errors": [],
@@ -18,7 +20,9 @@
     "spot_premium",
     "term_structure",
     "us_10y_real_rate",
-    "us_cpi_yoy"
+    "us_core_pce_yoy",
+    "us_cpi_yoy",
+    "us_pce_yoy"
   ],
   "missing_sources": [],
   "missing_count": 0

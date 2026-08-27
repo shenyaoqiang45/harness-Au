@@ -503,21 +503,21 @@
 
 ## 2026-08-26（周三）
 
-### [ ] 美国 7 月 PCE + Q2 GDP（二次估计）— **P0**
+### [x] 美国 7 月 PCE + Q2 GDP（二次估计）— **P0**
 
 | 项 | 内容 |
 |----|------|
 | 时间 | 美东 08:30（BEA；与 6 月 PCE 同窗口节奏） |
 | 影响模块 | 宏观流动性（PCE = Fed 首选通胀）；沃什「2% 目标」验证 |
-| 自动入库 | PCE 部分经 FRED CPI 代理；核心 PCE 需人工关注发布稿 |
+| 自动入库 | PCE 经 FRED `PCEPI`/`PCEPILFE` → `us_pce_yoy`、`us_core_pce_yoy`；CPI 仍为 `CPIAUCNS` |
 
 **发布后动作**
 
-- [ ] `python -m gold_forecast.cli run --horizon month`
-- [ ] 对照 PCE 与 CPI（7 月）模块信号是否一致；背离则在报告风险提示中注明
-- [ ] 记录 GDP 二次估计相对初值（+1.5%）的修订方向
+- [x] `python -m gold_forecast.cli run --horizon month`
+- [x] 对照 PCE 与 CPI（7 月）模块信号是否一致；背离则在报告风险提示中注明
+- [x] 记录 GDP 二次估计相对初值（+1.5%）的修订方向
 
-**备注**：_
+**备注**：BEA [7 月个人收入与支出](https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026)（BEA 26–39）——PCE 物价环比 **+0.2%**、同比 **+3.7%**；核心环比 **+0.2%**、同比 **+3.3%**；名义 PCE +0.2%，实际 PCE 约 **0.0%**。BEA [Q2 GDP 二次估计](https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-2nd-quarter-2026)（BEA 26–38）——实际 GDP **+1.5%**（相对初值**未修订**）；PCE 物价年化 **5.1%→5.3%**、核心 **3.4%→3.6%**；对私人国内购买者的实际最终销售 **3.9%→4.2%**。对照 7 月 CPI：headline 同比 **+3.4%** / 核心 **+2.5%**。**背离**：PCE headline 高 CPI 0.3pp、核心高 0.8pp。2026-08-27 已将 PCE 接入管道：FRED `PCEPI`/`PCEPILFE` 入库 7 月 **3.70%/3.34%** ≈ BEA 3.7%/3.3%；宏观 **+0.333→+0.400**。报告：`reports/2026-08-27/monthly_20260827_094842.md`（总分 **+0.392** 偏多）。
 
 ---
 
@@ -533,8 +533,8 @@
 
 **会前（建议 8/26 PCE 后或 8/27 晨）**
 
-- [ ] 确认 `valid_until` 已覆盖演讲日
-- [ ] `fetch` 拉最新 DXY、实际利率、金价
+- [x] 确认 `valid_until` 已覆盖演讲日
+- [x] `fetch` 拉最新 DXY、实际利率、金价
 
 **发布后（演讲当日/次日）— 必做**
 
@@ -543,7 +543,7 @@
 - [ ] `python -m gold_forecast.cli run --horizon month`
 - [ ] 若讲话强化年内加息/再通胀风险：评估 `market_events.csv` 条目
 
-**备注**：_报告路径 · 演讲要点 · warsh composite_
+**备注**：会前已确认 `valid_until: 2026-08-29` 覆盖周五演讲；08-27 接入 PCE 后 `cli run` → `monthly_20260827_094842.md`（+0.392）。KC Fed：主席演讲 **08-28 10:00 ET**（YouTube 直播）。演讲后必须重写 dimensions 并延至 09-15。
 
 ---
 
@@ -636,6 +636,7 @@
 | 2026-08-13 | 补勾 08-12 美 7 月 CPI P0；CPI 口径改 NSA | BLS 同比 +3.4% / 核心 +2.5%；`CPIAUCNS` 入库 3.36%≈3.4%；`monthly_20260813_091628.md`（+0.199） |
 | 2026-08-24 | 补勾逾期 P1：PPI、FOMC 纪要、沃什延期；P2 零售 | PPI 同比 +4.7% / 环比 0；零售 −0.6%；纪要确认 9–3；`valid_until`→08-29；`monthly_20260824_084904.md`（+0.299） |
 | 2026-08-25 | 补勾 7 月社融/信贷 P1 | 央行 8/14：社融增量约 +1.41 万亿 / 贷款约 −0.34 万亿；live 07-31 信贷 −5896、M1 1154623；`monthly_20260825_084803.md`（+0.299） |
+| 2026-08-27 | 勾选 08-26 PCE/GDP P0；Jackson Hole 会前 fetch | 7 月 PCE 同比 +3.7%/核心 +3.3%；Q2 GDP 二次仍 +1.5%；接入 `us_pce_yoy`/`us_core_pce_yoy`；`monthly_20260827_094842.md`（+0.392）；沃什演讲待 08-28 |
 
 ---
 
@@ -655,3 +656,4 @@
 | 2026-08-13 | 勾选 08-12 美 CPI P0（BLS 同比 +3.4% / 核心 +2.5%）；`us_cpi_yoy` 改 FRED `CPIAUCNS` 未季调日历月同比（对齐 headline；修 2025-10 缺口错位）；入库 3.36%≈3.4%；未改 warsh yaml；`monthly_20260813_091628.md`（+0.199） |
 | 2026-08-24 | 补勾 08-13 PPI（同比 +4.7% / 环比 0.0）、08-14 零售（−0.6%）、08-19 FOMC 纪要（9–3，未改维度）；沃什 `valid_until` 08-21→08-29 避免 Jackson Hole 前静默归零；`fetch`+`run` → `monthly_20260824_084904.md`（+0.299） |
 | 2026-08-25 | 勾选 7 月社融/信贷 P1（央行 8/14：存量同比 +7.4%，单月增量约 +1.41 万亿，贷款约 −0.34 万亿；live 已到 07-31）；实物需求仍 −1.0；`run` → `monthly_20260825_084803.md`（+0.299，金价 4751） |
+| 2026-08-27 | 勾选 08-26 PCE/GDP P0（7 月 PCE 同比 3.7%/核心 3.3%；Q2 GDP 二次未修订 +1.5%，季调 PCE 上修）；Jackson Hole 会前 fetch；将 PCE 接入 FRED `PCEPI`/`PCEPILFE`；维度分未改；`run` → `monthly_20260827_094842.md`（+0.392，宏观 +0.400） |

@@ -19,6 +19,8 @@ modules:
       - dxy
       - us_10y_real_rate
       - us_cpi_yoy
+      - us_pce_yoy
+      - us_core_pce_yoy
   warsh_policy:
     indicators: []
     config_file: config/warsh_factor.yaml
@@ -38,6 +40,8 @@ units:
   dxy: index
   us_10y_real_rate: pct
   us_cpi_yoy: pct
+  us_pce_yoy: pct
+  us_core_pce_yoy: pct
 
 frequencies:
   lme_gold_price: daily
@@ -51,3 +55,5 @@ frequencies:
   dxy: daily
   us_10y_real_rate: daily
   us_cpi_yoy: monthly
+  us_pce_yoy: monthly
+  us_core_pce_yoy: monthly

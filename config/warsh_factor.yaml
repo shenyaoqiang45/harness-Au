@@ -7,7 +7,7 @@ meta:
   speech_date: 2026-07-29
   venue: FOMC post-meeting press conference
   source: Federal Reserve FOMC statement 2026-07-29 + Warsh press conference
-  last_updated: 2026-08-24
+  last_updated: 2026-08-27
   valid_until: 2026-08-29
   note: >
     7/29 决议：维持 3.50%–3.75%（9–3）；异议票 Hammack/Kashkari/Logan 主张加息 25bp。
@@ -16,7 +16,8 @@ meta:
     「若预测期内通胀持续偏高，利率或为应对工具之一」。
     2026-08-24：valid_until 由 08-21 延至 08-29（Jackson Hole 演讲日），维度分未改。
     08-19 纪要确认 9–3 及「若通胀不回落则可能需收紧」；沃什提议 2027 年起改为一年六次议息，未决。
-    Jackson Hole（8/27–29）演讲后须重写 dimensions。
+    2026-08-27：补记 08-26 PCE/GDP。7 月 PCE 同比 3.7%/核心 3.3%（环比均 +0.2%）；
+    Q2 GDP 二次仍 +1.5%，季调 PCE 物价上修至 5.3%/核心 3.6%。维度分仍等 08-28 演讲后重写。
 
 dimensions:
   inflation_hawkishness:
@@ -29,7 +30,7 @@ dimensions:
     score: 0.25
     weight: 1.0
     label: 通胀风险缓和
-    description: 6 月 CPI/PPI/PCE 月环比偏软，但声明仍定性通胀 elevated（供给冲击），缓和叙事弱于辛特拉
+    description: 6 月环比偏软；7 月 PCE 环比 +0.2%/同比 3.7%、核心 3.3%，Q2 季调 PCE 上修 5.3%/3.6%。声明仍定性通胀 elevated，缓和叙事未强化
 
   no_forward_guidance:
     score: -0.35

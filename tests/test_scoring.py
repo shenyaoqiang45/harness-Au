@@ -280,6 +280,46 @@ def test_macro_liquidity_scores_us_cpi_yoy():
 
     assert score.score == 1.0
     assert [signal.name for signal in score.signals] == ["us_cpi_yoy_level", "us_cpi_yoy_mom"]
+    assert "us_pce_yoy missing" in score.data_gaps
+    assert "us_core_pce_yoy missing" in score.data_gaps
+
+
+def test_macro_liquidity_scores_pce_and_headline_gap():
+    def _inf(indicator: str, month: int, value: float) -> DataRow:
+        return DataRow(
+            date=date(2026, month, 1),
+            indicator=indicator,
+            value=value,
+            unit="pct",
+            source="FRED",
+            source_url="https://example.com",
+            updated_at=datetime(2026, 8, 26),
+            frequency="monthly",
+            confidence="A",
+            status="confirmed",
+        )
+
+    grouped = {
+        "us_cpi_yoy": [_inf("us_cpi_yoy", 6, 3.5), _inf("us_cpi_yoy", 7, 3.4)],
+        "us_pce_yoy": [_inf("us_pce_yoy", 6, 3.7), _inf("us_pce_yoy", 7, 3.7)],
+        "us_core_pce_yoy": [
+            _inf("us_core_pce_yoy", 6, 3.3),
+            _inf("us_core_pce_yoy", 7, 3.3),
+        ],
+    }
+    score = score_macro_liquidity(grouped)
+    names = [signal.name for signal in score.signals]
+    assert "us_pce_yoy_level" in names
+    assert "us_core_pce_yoy_level" in names
+    assert "pce_cpi_headline_gap" in names
+    gap = next(s for s in score.signals if s.name == "pce_cpi_headline_gap")
+    assert gap.score == 0.0
+    assert "0.3pp" in gap.description
+    # Gap is display-only and must not dilute the inflation average.
+    scored = [s for s in score.signals if s.name != "pce_cpi_headline_gap"]
+    assert score.score == sum(s.score for s in scored) / len(scored)
+    assert "us_pce_yoy missing" not in score.data_gaps
+    assert "us_core_pce_yoy missing" not in score.data_gaps
 
 
 def test_physical_demand_credit_impulse():

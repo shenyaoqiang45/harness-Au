@@ -33,6 +33,16 @@ anomaly_rules:
     min: -5
     max: 15
     message: "US CPI YoY outside -5% to 15% range"
+  - indicator: us_pce_yoy
+    rule: range
+    min: -5
+    max: 15
+    message: "US PCE YoY outside -5% to 15% range"
+  - indicator: us_core_pce_yoy
+    rule: range
+    min: -5
+    max: 15
+    message: "US core PCE YoY outside -5% to 15% range"
   - indicator: lme_gold_price
     rule: range
     min: 800

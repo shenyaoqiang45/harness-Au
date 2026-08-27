@@ -41,6 +41,26 @@ sources:
         confidence: A
         lookback_days: 800
         note: "US CPI-U NSA YoY from FRED CPIAUCNS (matches BLS headline 12-month change)"
+      us_pce_yoy:
+        series_id: PCEPI
+        transform: yoy_pct
+        unit: pct
+        frequency: monthly
+        source: FRED
+        source_url: https://fred.stlouisfed.org/series/PCEPI
+        confidence: A
+        lookback_days: 800
+        note: "US PCE price index SA YoY from FRED PCEPI (matches BEA headline 12-month change)"
+      us_core_pce_yoy:
+        series_id: PCEPILFE
+        transform: yoy_pct
+        unit: pct
+        frequency: monthly
+        source: FRED
+        source_url: https://fred.stlouisfed.org/series/PCEPILFE
+        confidence: A
+        lookback_days: 800
+        note: "US core PCE (ex food & energy) SA YoY from FRED PCEPILFE (Fed preferred)"
 
   eastmoney:
     # lme_inventory removed: Eastmoney column '金-库存' no longer available.

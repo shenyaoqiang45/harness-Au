@@ -253,6 +253,11 @@ def _default_risks(module_scores: dict[str, ModuleScore], data_health: float) ->
         )
         if both_sides:
             risks.append("多空模块严重分裂，方向判断不确定性较高")
+    macro = module_scores.get("macro_liquidity")
+    if macro:
+        gap = next((s for s in macro.signals if s.name == "pce_cpi_headline_gap"), None)
+        if gap:
+            risks.append(f"通胀口径背离：{gap.description}（PCE 为 Fed 首选）")
     for mod in module_scores.values():
         if mod.data_gaps:
             risks.append(f"{mod.module} 存在数据缺口: {', '.join(mod.data_gaps[:2])}")

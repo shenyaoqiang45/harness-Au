@@ -55,16 +55,18 @@ def _monthly_core_summary(forecast: ForecastResult) -> list[str]:
         for s in mod.signals:
             if "20d" in s.name:
                 lines.append(f"- **{s.description}**")
-        cpi_level = next(
-            (s for s in mod.signals if s.name == "us_cpi_yoy_level"), None
-        )
-        cpi_mom = next(
-            (s for s in mod.signals if s.name == "us_cpi_yoy_mom"), None
-        )
-        if cpi_level:
-            lines.append(f"- **CPI 同比**：{cpi_level.description}")
-        if cpi_mom:
-            lines.append(f"- **CPI 环比变化**：{cpi_mom.description}")
+        for name, title in (
+            ("us_cpi_yoy_level", "CPI 同比"),
+            ("us_cpi_yoy_mom", "CPI 同比环比"),
+            ("us_pce_yoy_level", "PCE 同比"),
+            ("us_pce_yoy_mom", "PCE 同比环比"),
+            ("us_core_pce_yoy_level", "核心 PCE 同比"),
+            ("us_core_pce_yoy_mom", "核心 PCE 同比环比"),
+            ("pce_cpi_headline_gap", "PCE vs CPI"),
+        ):
+            sig = next((s for s in mod.signals if s.name == name), None)
+            if sig:
+                lines.append(f"- **{title}**：{sig.description}")
 
     mod = forecast.module_scores.get("warsh_policy")
     if mod and mod.signals:
