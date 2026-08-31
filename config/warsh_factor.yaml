@@ -4,60 +4,60 @@
 
 meta:
   chair: Kevin Warsh
-  speech_date: 2026-07-29
-  venue: FOMC post-meeting press conference
-  source: Federal Reserve FOMC statement 2026-07-29 + Warsh press conference
-  last_updated: 2026-08-27
-  valid_until: 2026-08-29
+  speech_date: 2026-08-28
+  venue: Jackson Hole Economic Policy Symposium keynote
+  source: https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm
+  last_updated: 2026-08-31
+  valid_until: 2026-09-15
   note: >
-    7/29 决议：维持 3.50%–3.75%（9–3）；异议票 Hammack/Kashkari/Logan 主张加息 25bp。
-    声明称通胀仍高于 2%（部分因中东/能源供给冲击），将交付价格稳定；经济稳健、生产率与资本开支强。
-    记者会：拒称「暂停」，称「watchful thinking, not watchful waiting」；继续无前瞻指引；
-    「若预测期内通胀持续偏高，利率或为应对工具之一」。
-    2026-08-24：valid_until 由 08-21 延至 08-29（Jackson Hole 演讲日），维度分未改。
-    08-19 纪要确认 9–3 及「若通胀不回落则可能需收紧」；沃什提议 2027 年起改为一年六次议息，未决。
-    2026-08-27：补记 08-26 PCE/GDP。7 月 PCE 同比 3.7%/核心 3.3%（环比均 +0.2%）；
-    Q2 GDP 二次仍 +1.5%，季调 PCE 物价上修至 5.3%/核心 3.6%。维度分仍等 08-28 演讲后重写。
+    08-28 Jackson Hole 主旨演讲《In Our Time》。相对 7/29 记者会明显偏鹰：
+    通胀为「当下首要焦点」；PCE 同比 3.7%、六个月年化 4.1%；夏季 CPI/PCE 好于预期
+    「并不表明潜在趋势已实质改善」；2% PCE 为「firm, fixed target」，物价稳定不会自动回归；
+    「若无法确信潜在通胀正以足够速度朝目标前进，我们就还有工作要做」。
+    金融条件「很难称为限制性」；短期利率为双使命主要工具；非常规政策仅限危机。
+    继续拒绝前瞻指引与显式反应函数；「committed to a discipline, not to a decision」。
+    市场：2 年期国债大涨，CME 9 月加息概率约 35%→55–63%。未改利率路径承诺。
+    未新增 market_events 行（加息/再通胀风险已由本因子覆盖，避免双计）。
 
 dimensions:
   inflation_hawkishness:
-    score: -0.65
+    score: -0.80
     weight: 1.5
     label: 抗通胀强硬
-    description: 声明「将交付价格稳定」；记者会重申 2% 目标、必要时不犹豫行动；3 票主张当场加息
+    description: 「价格是当下首要焦点」；2% PCE 为固定目标、不会自动回归；「we have work to do」打开加息门；金融条件「很难称为限制性」
 
   inflation_risk_easing:
-    score: 0.25
+    score: 0.10
     weight: 1.0
     label: 通胀风险缓和
-    description: 6 月环比偏软；7 月 PCE 环比 +0.2%/同比 3.7%、核心 3.3%，Q2 季调 PCE 上修 5.3%/3.6%。声明仍定性通胀 elevated，缓和叙事未强化
+    description: 承认夏季读数好于预期，但明确否定「潜在趋势已实质改善」；PCE 3.7%/六个月 4.1%；54% 分项同比>3%（疫情前约 32%）
 
   no_forward_guidance:
-    score: -0.35
+    score: -0.40
     weight: 0.8
     label: 废除前瞻指引
-    description: 记者会强调观察市场对数据的「直接、未过滤」反应，拒绝滚动预测与路径暗示
+    description: 开场即「不要叫前瞻指引」；拒绝显式反应函数与泰勒规则路径；主张 quieter Fed，避免市场把联储当下一笔交易的对手方
 
   qt_commitment:
-    score: -0.30
+    score: -0.25
     weight: 1.0
     label: 缩表立场
-    description: 声明延续 ample reserves；未强化新的缩表鹰派表述，利率仍为主要工具
+    description: 短期利率为双使命主要工具；非常规政策仅限真正危机、应少用；未强化新的缩表鹰派，但「money matters」把基础货币重新拉回视野
 
   ai_supply_optimism:
-    score: 0.50
+    score: 0.40
     weight: 1.2
     label: AI供给扩张预期
-    description: 声明强调生产率增长与资本投资强劲，供给端扩张叙事延续
+    description: 长段 AI/生产率叙事；设备与无形资产投资同比约 9%、半数以上与 AI 相关；但任务组成果「与当前政策窗口无关」，近月加息判断不绑供给乐观
 
   fed_independence:
-    score: 0.15
+    score: 0.30
     weight: 0.3
     label: 央行独立性
-    description: 「good family fight」公开呈现委员分歧，显示讨论独立于政治施压
+    description: 「65 个月持续偏高通胀的责任在央行」；市场相信将交付物价稳定「I can assure you they're right」；未回应白宫降息偏好，机构问责叙事强化
 
   communication_uncertainty:
-    score: -0.35
+    score: -0.25
     weight: 0.5
     label: 沟通改革不确定性
-    description: 9–3 罕见异议 + 无前瞻指引 + 「watchful thinking」新措辞，短端路径可预测性下降
+    description: 方向比 7/29 更清楚（偏鹰、价格优先），但仍「committed to a discipline, not to a decision」；9 月路径未承诺，无反应函数，短端定价仍易跳变

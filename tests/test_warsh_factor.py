@@ -12,12 +12,12 @@ CONFIG_DIR = Path(__file__).resolve().parents[1] / "config"
 def test_warsh_config_loads():
     cfg = load_warsh_config(CONFIG_DIR)
     speech_date = cfg.get("meta", {}).get("speech_date")
-    assert str(speech_date) == "2026-07-01"
+    assert str(speech_date) == "2026-08-28"
     assert len(cfg.get("dimensions", {})) >= 5
 
 
 def test_warsh_signals_active_on_speech_date():
-    signals = compute_warsh_signals(CONFIG_DIR, as_of=date(2026, 7, 2))
+    signals = compute_warsh_signals(CONFIG_DIR, as_of=date(2026, 8, 28))
     names = [s.name for s in signals]
     assert "warsh_inflation_hawkishness" in names
     assert "warsh_composite" in names
@@ -25,14 +25,14 @@ def test_warsh_signals_active_on_speech_date():
 
 
 def test_warsh_composite_is_weighted_average():
-    signals = compute_warsh_signals(CONFIG_DIR, as_of=date(2026, 7, 2))
+    signals = compute_warsh_signals(CONFIG_DIR, as_of=date(2026, 8, 28))
     composite = next(s for s in signals if s.name == "warsh_composite")
     assert -1.0 <= composite.score <= 1.0
     assert composite.score < 0
 
 
 def test_warsh_inactive_after_valid_until():
-    signals = compute_warsh_signals(CONFIG_DIR, as_of=date(2026, 8, 15))
+    signals = compute_warsh_signals(CONFIG_DIR, as_of=date(2026, 9, 16))
     assert signals == []
 
 

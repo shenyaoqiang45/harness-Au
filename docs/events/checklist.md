@@ -523,7 +523,7 @@
 
 ## 2026-08-27 ~ 08-29（周四~周六）
 
-### [ ] Jackson Hole 经济政策研讨会 + 沃什演讲 — **P0**
+### [x] Jackson Hole 经济政策研讨会 + 沃什演讲 — **P0**
 
 | 项 | 内容 |
 |----|------|
@@ -538,12 +538,12 @@
 
 **发布后（演讲当日/次日）— 必做**
 
-- [ ] **重写沃什因子**：据演讲全文/要点更新全部 `dimensions` 与 `meta`（`speech_date`、来源链接）
-- [ ] 将 `valid_until` 延至 **9 月 FOMC（建议 2026-09-15）** 或下次重大沟通
-- [ ] `python -m gold_forecast.cli run --horizon month`
-- [ ] 若讲话强化年内加息/再通胀风险：评估 `market_events.csv` 条目
+- [x] **重写沃什因子**：据演讲全文/要点更新全部 `dimensions` 与 `meta`（`speech_date`、来源链接）
+- [x] 将 `valid_until` 延至 **9 月 FOMC（建议 2026-09-15）** 或下次重大沟通
+- [x] `python -m gold_forecast.cli run --horizon month`
+- [x] 若讲话强化年内加息/再通胀风险：评估 `market_events.csv` 条目
 
-**备注**：会前已确认 `valid_until: 2026-08-29` 覆盖周五演讲；08-27 接入 PCE 后 `cli run` → `monthly_20260827_094842.md`（+0.392）。KC Fed：主席演讲 **08-28 10:00 ET**（YouTube 直播）。演讲后必须重写 dimensions 并延至 09-15。
+**备注**：演讲 [In Our Time](https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm)（08-28）。相对 7/29 记者会偏鹰：价格为「当下首要焦点」；夏季读数好于预期「并不表明潜在趋势已实质改善」；「we have work to do」；金融条件「很难称为限制性」；2% PCE 为 firm, fixed target。继续无前瞻指引、无显式反应函数。CME 9 月加息概率约 35%→55–63%。沃什 yaml 重写，composite **−0.133 → −0.194**，`speech_date: 2026-08-28`，`valid_until: 2026-09-15`。**未增** `market_events` 行（加息/再通胀风险已由因子覆盖）。报告：`reports/2026-08-31/monthly_20260831_083705.md`（总分 **+0.389** 偏多；金价 4506，20d +6.23%）。
 
 ---
 
@@ -560,7 +560,7 @@
 - [ ] 记录 PMI；与 7 月对照
 - [ ] 弱于 50 且走弱时评估 `physical_demand` 解读
 
-**备注**：_
+**备注**：2026-08-31 08:35 跑批时统计局数据发布页尚无 8 月 PMI（通常约 09:30）。本项暂不勾，发布后补读数。
 
 ---
 
@@ -637,6 +637,7 @@
 | 2026-08-24 | 补勾逾期 P1：PPI、FOMC 纪要、沃什延期；P2 零售 | PPI 同比 +4.7% / 环比 0；零售 −0.6%；纪要确认 9–3；`valid_until`→08-29；`monthly_20260824_084904.md`（+0.299） |
 | 2026-08-25 | 补勾 7 月社融/信贷 P1 | 央行 8/14：社融增量约 +1.41 万亿 / 贷款约 −0.34 万亿；live 07-31 信贷 −5896、M1 1154623；`monthly_20260825_084803.md`（+0.299） |
 | 2026-08-27 | 勾选 08-26 PCE/GDP P0；Jackson Hole 会前 fetch | 7 月 PCE 同比 +3.7%/核心 +3.3%；Q2 GDP 二次仍 +1.5%；接入 `us_pce_yoy`/`us_core_pce_yoy`；`monthly_20260827_094842.md`（+0.392）；沃什演讲待 08-28 |
+| 2026-08-31 | 勾选 Jackson Hole P0；重写沃什因子 | 《In Our Time》偏鹰；composite −0.133→**−0.194**；`valid_until`→09-15；未增 market_events；`monthly_20260831_083705.md`（+0.389，金价 4506） |
 
 ---
 
@@ -657,3 +658,4 @@
 | 2026-08-24 | 补勾 08-13 PPI（同比 +4.7% / 环比 0.0）、08-14 零售（−0.6%）、08-19 FOMC 纪要（9–3，未改维度）；沃什 `valid_until` 08-21→08-29 避免 Jackson Hole 前静默归零；`fetch`+`run` → `monthly_20260824_084904.md`（+0.299） |
 | 2026-08-25 | 勾选 7 月社融/信贷 P1（央行 8/14：存量同比 +7.4%，单月增量约 +1.41 万亿，贷款约 −0.34 万亿；live 已到 07-31）；实物需求仍 −1.0；`run` → `monthly_20260825_084803.md`（+0.299，金价 4751） |
 | 2026-08-27 | 勾选 08-26 PCE/GDP P0（7 月 PCE 同比 3.7%/核心 3.3%；Q2 GDP 二次未修订 +1.5%，季调 PCE 上修）；Jackson Hole 会前 fetch；将 PCE 接入 FRED `PCEPI`/`PCEPILFE`；维度分未改；`run` → `monthly_20260827_094842.md`（+0.392，宏观 +0.400） |
+| 2026-08-31 | 勾选 Jackson Hole P0：据 08-28 演讲重写 `warsh_factor.yaml`（composite −0.133→−0.194，`valid_until` 08-29→09-15）；评估后未改 `market_events.csv`；`fetch`+`run` → `monthly_20260831_083705.md`（+0.389）；8 月官方 PMI 待 09:30 |
