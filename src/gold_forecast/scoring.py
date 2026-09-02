@@ -96,6 +96,7 @@ def compute_data_health(
     confirmed: list[DataRow],
     validation: ValidationResult,
     config_dir: Path,
+    as_of: date | None = None,
 ) -> float:
     """Compute data_quality component (0-1)."""
     with (config_dir / "validation_rules.yaml").open(encoding="utf-8") as handle:
@@ -127,10 +128,10 @@ def compute_data_health(
     source_scores = [conf_map.get(r.confidence, 0.5) for r in latest_by_indicator.values()]
     source_score = sum(source_scores) / len(source_scores) if source_scores else 0.5
 
-    today = date.today()
+    as_of_date = as_of or date.today()
     freshness_scores = []
     for row in latest_by_indicator.values():
-        age_days = (today - row.date).days
+        age_days = (as_of_date - row.date).days
         if row.frequency == "daily":
             freshness_scores.append(1.0 if age_days <= 5 else max(0.3, 1.0 - age_days / 30))
         else:
@@ -318,6 +319,7 @@ def compute_forecast(
     confirmed: list[DataRow],
     config_dir: Path,
     horizon: str | None = None,
+    as_of: date | None = None,
 ) -> ForecastResult:
     weights_cfg = load_weights(config_dir)
     module_weights = _module_weights_for_horizon(weights_cfg, horizon)
@@ -333,7 +335,7 @@ def compute_forecast(
     week_outlook = _outlook_from_direction(direction, "week")
     month_outlook = _outlook_from_direction(direction, "month")
 
-    data_health = compute_data_health(confirmed, validation, config_dir)
+    data_health = compute_data_health(confirmed, validation, config_dir, as_of=as_of)
     factor_consistency = compute_factor_consistency(module_scores, active_threshold)
 
     # Fix: the original formula (abs(total) * data_health * factor_consistency)

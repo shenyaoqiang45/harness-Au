@@ -129,6 +129,46 @@ def cmd_report(args: argparse.Namespace) -> int:
     return run_pipeline(args.input, args.output, args.config, horizon=args.horizon)
 
 
+def cmd_backtest(args: argparse.Namespace) -> int:
+    from gold_forecast.backtest import run_backtest, write_backtest_outputs
+
+    root = _project_root()
+    if not args.input.exists():
+        print(f"Input file not found: {args.input}", file=sys.stderr)
+        return 1
+    horizons = tuple(h.strip() for h in str(args.horizons).split(",") if h.strip())
+    unknown = [h for h in horizons if h not in ("week", "month")]
+    if unknown:
+        print(f"Unknown horizons: {unknown} (use week,month)", file=sys.stderr)
+        return 1
+    config_dir = args.config or root / "config"
+    result = run_backtest(
+        args.input,
+        config_dir,
+        reports_dir=root / "reports",
+        horizons=horizons or ("week", "month"),
+        apply_publication_lag=not args.no_lag,
+    )
+    stamp = result.generated_at
+    output = _resolve_report_output_path(args.output, stamp)
+    md_path, json_path = write_backtest_outputs(result, output)
+    month = next((h for h in result.horizons if h.horizon == "month"), None)
+    week = next((h for h in result.horizons if h.horizon == "week"), None)
+    print(f"Backtest written to {md_path}")
+    print(f"JSON: {json_path}")
+    if week:
+        print(
+            f"Week hit-rate: {week.hit_rate if week.hit_rate is None else f'{week.hit_rate:.1%}'} "
+            f"| Spearman {week.spearman if week.spearman is None else f'{week.spearman:+.3f}'}"
+        )
+    if month:
+        print(
+            f"Month hit-rate: {month.hit_rate if month.hit_rate is None else f'{month.hit_rate:.1%}'} "
+            f"| Spearman {month.spearman if month.spearman is None else f'{month.spearman:+.3f}'}"
+        )
+    return 0
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     root = _project_root()
     fetch_args = argparse.Namespace(
@@ -214,6 +254,33 @@ def main(argv: list[str] | None = None) -> int:
         help="Continue to report even if fetch returns no rows",
     )
 
+    backtest_p = sub.add_parser(
+        "backtest",
+        help="Walk-forward: score with data as of t, grade against future gold",
+    )
+    backtest_p.add_argument(
+        "--input",
+        "-i",
+        type=Path,
+        default=root / "data" / "raw" / "history.csv",
+    )
+    backtest_p.add_argument(
+        "--output",
+        "-o",
+        type=Path,
+        default=root / "reports" / "backtest.md",
+    )
+    backtest_p.add_argument(
+        "--horizons",
+        default="week,month",
+        help="Comma-separated horizons: week (5 bars), month (21 bars)",
+    )
+    backtest_p.add_argument(
+        "--no-lag",
+        action="store_true",
+        help="Do not delay monthly prints by publication_lag.yaml",
+    )
+
     # backward compatible: no subcommand => report with --input/--output
     parser.add_argument("--input", "-i", type=Path, default=None)
     parser.add_argument("--output", "-o", type=Path, default=None)
@@ -230,6 +297,8 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_report(args)
     if args.command == "run":
         return cmd_run(args)
+    if args.command == "backtest":
+        return cmd_backtest(args)
 
     # legacy default (sample.csv removed; use live.csv as the real data source)
     input_path = args.input or root / "data" / "raw" / "live.csv"

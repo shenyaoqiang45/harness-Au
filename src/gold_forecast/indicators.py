@@ -351,7 +351,10 @@ def score_physical_demand(grouped: dict[str, list[DataRow]]) -> ModuleScore:
     )
 
 
-def score_warsh_policy(config_dir: str | Path | None = None) -> ModuleScore:
+def score_warsh_policy(
+    config_dir: str | Path | None = None,
+    as_of: date | None = None,
+) -> ModuleScore:
     """Score Fed chair Warsh policy stance from config/warsh_factor.yaml."""
     from pathlib import Path
 
@@ -360,7 +363,7 @@ def score_warsh_policy(config_dir: str | Path | None = None) -> ModuleScore:
     if config_dir is None:
         return ModuleScore("warsh_policy", 0.0, data_gaps=["warsh_factor config missing"])
 
-    signals = compute_warsh_signals(Path(config_dir))
+    signals = compute_warsh_signals(Path(config_dir), as_of=as_of)
     if not signals:
         return ModuleScore(
             "warsh_policy",
@@ -467,6 +470,7 @@ def score_macro_liquidity(grouped: dict[str, list[DataRow]]) -> ModuleScore:
 def score_financial_flow(
     grouped: dict[str, list[DataRow]],
     events_path: str | None = None,
+    as_of: date | None = None,
 ) -> ModuleScore:
     signals: list[SignalDetail] = []
     gaps: list[str] = []
@@ -475,6 +479,8 @@ def score_financial_flow(
         from pathlib import Path
 
         for event in load_supply_events(Path(events_path)):
+            if as_of is not None and event["date"] > as_of:
+                continue
             conf_mult = {"A": 1.0, "B": 0.8, "C": 0.6}.get(event["confidence"], 0.5)
             adj_score = max(-1.0, min(1.0, event["score"] * conf_mult))
             signals.append(
@@ -496,8 +502,15 @@ def score_financial_flow(
 def compute_all_module_scores(
     confirmed_rows: list[DataRow],
     config_dir: str | None = None,
+    as_of: date | None = None,
 ) -> dict[str, ModuleScore]:
-    """Compute scores for all modules including Warsh policy factor."""
+    """Compute scores for all modules including Warsh policy factor.
+
+    When ``as_of`` is set, rows after that date are dropped so callers can
+    score a historical snapshot without lookahead.
+    """
+    if as_of is not None:
+        confirmed_rows = [row for row in confirmed_rows if row.date <= as_of]
     grouped = group_by_indicator(confirmed_rows)
     events_path = None
     if config_dir:
@@ -515,6 +528,6 @@ def compute_all_module_scores(
         "inventory": score_inventory(grouped),
         "physical_demand": score_physical_demand(grouped),
         "macro_liquidity": score_macro_liquidity(grouped),
-        "warsh_policy": score_warsh_policy(config_dir),
-        "financial_flow": score_financial_flow(grouped, events_path),
+        "warsh_policy": score_warsh_policy(config_dir, as_of=as_of),
+        "financial_flow": score_financial_flow(grouped, events_path, as_of=as_of),
     }

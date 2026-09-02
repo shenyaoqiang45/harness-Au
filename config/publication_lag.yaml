@@ -1,0 +1,19 @@
+# Calendar days after CSV `date` before a print is treated as known in backtest.
+# Daily series default to 0 (omitted). Monthly dating conventions differ:
+#   - US CPI/PCE stored as 1st of the reference month (July CPI → 2026-07-01, released ~Aug 12)
+#   - China credit/M1 stored as month-end (July → 2026-07-31, released ~Aug 14)
+# Live scoring does not apply these lags: live.csv only contains already-published rows.
+lags:
+  us_cpi_yoy: 42
+  us_pce_yoy: 56
+  us_core_pce_yoy: 56
+  social_financing: 14
+  m1: 14
+  china_pmi: 30
+  china_new_orders_pmi: 30
+  global_manufacturing_pmi: 35
+  korea_exports_yoy: 31
+  us_ism_manufacturing: 0
+
+default_monthly_lag: 40
+default_daily_lag: 0

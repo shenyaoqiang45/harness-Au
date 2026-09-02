@@ -24,3 +24,9 @@ def test_non_reports_output_path_is_unchanged():
     out = _resolve_report_output_path(requested, ts)
 
     assert out == requested
+
+
+def test_backtest_cli_rejects_unknown_horizon():
+    from gold_forecast.cli import main
+
+    assert main(["backtest", "--horizons", "year"]) == 1
