@@ -15,29 +15,58 @@ TROY_OZ_PER_GRAM = 31.1034768
 
 
 def _latest_fx() -> float:
-    frame = yf.Ticker("USDCNY=X").history(period="10d")
+    try:
+        frame = yf.Ticker("USDCNY=X").history(period="10d")
+        if not frame.empty:
+            return float(frame["Close"].iloc[-1])
+    except Exception:  # noqa: BLE001
+        frame = pd.DataFrame()
     if frame.empty:
-        return 7.2
-    return float(frame["Close"].iloc[-1])
+        try:
+            from gold_forecast.fetchers.yahoo import _history_chart_api
+
+            chart = _history_chart_api("USDCNY=X", 30)
+            if not chart.empty:
+                return float(chart["Close"].iloc[-1])
+        except Exception:  # noqa: BLE001
+            pass
+    return 7.2
 
 
-def shfe_lme_premium(lookback_days: int = LOOKBACK) -> FetchResult:
+def shfe_lme_premium(
+    lookback_days: int = LOOKBACK,
+    existing: list[FetchedRecord] | None = None,
+) -> FetchResult:
     result = FetchResult()
     try:
         end = datetime.now().strftime("%Y%m%d")
         start = (datetime.now() - timedelta(days=lookback_days)).strftime("%Y%m%d")
         shfe = ak.futures_main_sina(symbol="AU0", start_date=start, end_date=end)
-        comex = yf.Ticker("GC=F").history(
-            start=(datetime.now() - timedelta(days=lookback_days)).strftime("%Y-%m-%d")
-        )
+        gold_rows = [
+            r for r in (existing or []) if r.indicator == "lme_gold_price"
+        ]
+        if gold_rows:
+            comex = pd.DataFrame(
+                {
+                    "Date": [datetime.combine(r.date, datetime.min.time()) for r in gold_rows],
+                    "Close": [float(r.value) for r in gold_rows],
+                }
+            )
+        else:
+            comex = yf.Ticker("GC=F").history(
+                start=(datetime.now() - timedelta(days=lookback_days)).strftime("%Y-%m-%d")
+            )
+            comex = comex.reset_index()
+            comex["Date"] = pd.to_datetime(comex["Date"]).dt.tz_localize(None)
         if shfe.empty or comex.empty:
             result.errors.append("derived:spot_premium: missing SHFE or COMEX history")
             return result
 
         shfe = shfe.rename(columns={"日期": "date", "收盘价": "shfe_close"})
         shfe["date"] = pd.to_datetime(shfe["date"])
-        comex = comex.reset_index()
-        comex["Date"] = pd.to_datetime(comex["Date"]).dt.tz_localize(None)
+        if "Date" not in comex.columns:
+            comex = comex.reset_index()
+            comex["Date"] = pd.to_datetime(comex["Date"]).dt.tz_localize(None)
         fx = _latest_fx()
 
         merged = pd.merge_asof(
@@ -119,7 +148,7 @@ def fetch_derived(
 ) -> FetchResult:
     result = FetchResult()
     _FUNC_MAP = {
-        "shfe_lme_premium": lambda cfg: shfe_lme_premium(lookback_days),
+        "shfe_lme_premium": lambda cfg: shfe_lme_premium(lookback_days, existing),
         "premium_to_curve": lambda cfg: premium_to_curve(
             existing + result.records, lookback_days
         ),

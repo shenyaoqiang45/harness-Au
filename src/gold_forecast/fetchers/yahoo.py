@@ -2,12 +2,20 @@
 
 from __future__ import annotations
 
+import json
 from datetime import date, datetime, timedelta
+from urllib.parse import quote
+from urllib.request import Request, urlopen
 
 import pandas as pd
 import yfinance as yf
 
 from gold_forecast.fetchers import FetchedRecord, FetchResult
+
+_CHART_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+)
 
 LB_TO_TON = 2204.6226218488
 OUTLIER_DAILY_PCT = 0.08
@@ -76,32 +84,82 @@ def _smooth_daily_outliers(
     return smoothed
 
 
-def _history(ticker: str, lookback_days: int) -> pd.DataFrame:
-    frame = pd.DataFrame()
-    for period in ("2y", "1y", "6mo", "3mo", "1mo"):
-        if lookback_days > 365 and period in ("3mo", "1mo"):
-            continue
-        frame = yf.Ticker(ticker).history(period=period, auto_adjust=False)
-        if not frame.empty:
-            break
+def _history_chart_api(ticker: str, lookback_days: int) -> pd.DataFrame:
+    """v8 chart API fallback when yfinance is rate-limited."""
+    period = "2y" if lookback_days > 365 else "1y"
+    url = (
+        "https://query1.finance.yahoo.com/v8/finance/chart/"
+        f"{quote(ticker, safe='')}?range={period}&interval=1d"
+    )
+    req = Request(url, headers={"User-Agent": _CHART_UA, "Accept": "application/json"})
+    with urlopen(req, timeout=30) as resp:
+        payload = json.loads(resp.read().decode())
+    results = (payload.get("chart") or {}).get("result") or []
+    if not results:
+        return pd.DataFrame()
+    timestamps = results[0].get("timestamp") or []
+    closes = ((results[0].get("indicators") or {}).get("quote") or [{}])[0].get(
+        "close"
+    ) or []
+    idx = pd.to_datetime(timestamps, unit="s", utc=True).tz_convert(
+        "America/New_York"
+    )
+    rows = [
+        {
+            "Date": ts.to_pydatetime().replace(tzinfo=None).replace(
+                hour=0, minute=0, second=0, microsecond=0
+            ),
+            "Close": float(close),
+        }
+        for ts, close in zip(idx, closes)
+        if close is not None
+    ]
+    return pd.DataFrame(rows)
 
-    if frame.empty:
-        period = "2y" if lookback_days > 365 else "1y"
-        downloaded = yf.download(
-            ticker,
-            period=period,
-            progress=False,
-            auto_adjust=False,
-        )
-        if not downloaded.empty:
-            frame = downloaded
 
+def _normalize_history(frame: pd.DataFrame) -> pd.DataFrame:
     if frame.empty:
         return frame
     frame = frame.reset_index()
     date_col = "Date" if "Date" in frame.columns else frame.columns[0]
     frame["Date"] = pd.to_datetime(frame[date_col]).dt.tz_localize(None)
     return frame
+
+
+def _history(ticker: str, lookback_days: int) -> pd.DataFrame:
+    frame = pd.DataFrame()
+    yf_error: Exception | None = None
+    try:
+        for period in ("2y", "1y", "6mo", "3mo", "1mo"):
+            if lookback_days > 365 and period in ("3mo", "1mo"):
+                continue
+            frame = yf.Ticker(ticker).history(period=period, auto_adjust=False)
+            if not frame.empty:
+                break
+
+        if frame.empty:
+            period = "2y" if lookback_days > 365 else "1y"
+            downloaded = yf.download(
+                ticker,
+                period=period,
+                progress=False,
+                auto_adjust=False,
+            )
+            if not downloaded.empty:
+                frame = downloaded
+    except Exception as exc:  # noqa: BLE001
+        yf_error = exc
+        frame = pd.DataFrame()
+
+    if not frame.empty:
+        return _normalize_history(frame)
+
+    chart = _history_chart_api(ticker, lookback_days)
+    if not chart.empty:
+        return chart
+    if yf_error is not None:
+        raise yf_error
+    return chart
 
 
 def fetch_yahoo(

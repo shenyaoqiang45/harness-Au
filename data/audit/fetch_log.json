@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-02T09:02:09.261651",
-  "record_count": 1942,
+  "timestamp": "2026-09-17T09:12:33.330943",
+  "record_count": 1939,
   "warnings": [
     "fred:us_10y_real_rate: loaded via API",
     "fred:us_cpi_yoy: loaded via API",
