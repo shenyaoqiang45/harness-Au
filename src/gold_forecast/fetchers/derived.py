@@ -14,6 +14,32 @@ LOOKBACK = 120
 TROY_OZ_PER_GRAM = 31.1034768
 
 
+def _naive_datetime(series: pd.Series) -> pd.Series:
+    """Normalize to naive nanoseconds so merge_asof can join both sides.
+
+    Pandas 2.3+ may store a date-only SHFE column as datetime64[s] and a
+    Python-datetime COMEX column as datetime64[us]. merge_asof rejects that.
+    """
+    converted = pd.to_datetime(series, errors="coerce")
+    if getattr(converted.dtype, "tz", None) is not None:
+        converted = converted.dt.tz_convert("UTC").dt.tz_localize(None)
+    return converted.astype("datetime64[ns]")
+
+
+def _merge_shfe_comex(shfe: pd.DataFrame, comex: pd.DataFrame) -> pd.DataFrame:
+    left = shfe.copy()
+    right = comex.copy()
+    left["date"] = _naive_datetime(left["date"])
+    right["Date"] = _naive_datetime(right["Date"])
+    return pd.merge_asof(
+        left.sort_values("date"),
+        right[["Date", "Close"]].sort_values("Date"),
+        left_on="date",
+        right_on="Date",
+        direction="backward",
+    )
+
+
 def _latest_fx() -> float:
     try:
         frame = yf.Ticker("USDCNY=X").history(period="10d")
@@ -63,19 +89,10 @@ def shfe_lme_premium(
             return result
 
         shfe = shfe.rename(columns={"日期": "date", "收盘价": "shfe_close"})
-        shfe["date"] = pd.to_datetime(shfe["date"])
         if "Date" not in comex.columns:
             comex = comex.reset_index()
-            comex["Date"] = pd.to_datetime(comex["Date"]).dt.tz_localize(None)
         fx = _latest_fx()
-
-        merged = pd.merge_asof(
-            shfe.sort_values("date"),
-            comex[["Date", "Close"]].sort_values("Date"),
-            left_on="date",
-            right_on="Date",
-            direction="backward",
-        )
+        merged = _merge_shfe_comex(shfe, comex)
         merged["comex_usd_oz"] = merged["Close"]
         merged["shfe_usd_oz"] = merged["shfe_close"] * TROY_OZ_PER_GRAM / fx
         merged["premium"] = merged["shfe_usd_oz"] - merged["comex_usd_oz"]
