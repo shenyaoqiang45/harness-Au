@@ -1,0 +1,24 @@
+# Gate for `python -m gold_forecast.cli run --unattended`.
+# Daily prices settle after the COMEX session. The workflow runs at 00:30 UTC
+# (08:30 Asia/Shanghai), when the previous US session close is available.
+# A second run the same day, or a weekend run with no new bar, must not publish.
+
+critical_daily:
+  - lme_gold_price
+  - dxy
+  - us_10y_real_rate
+
+# New pending anomalies at or above this count set notify=true.
+# They stay out of clean data; an overwrite of a trusted row is reverted.
+anomaly_surge_min: 3
+
+# Calendar-day age allowed for a critical daily series before the run is stale.
+# Monday covers Friday; Sunday covers Friday; Tuesday allows a one-day holiday.
+freshness_max_age_days:
+  0: 3
+  1: 2
+  2: 2
+  3: 2
+  4: 2
+  5: 1
+  6: 2

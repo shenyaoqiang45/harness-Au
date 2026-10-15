@@ -1,0 +1,104 @@
+name: Unattended gold data
+
+on:
+  schedule:
+    # 00:30 UTC = 08:30 Asia/Shanghai, after the previous COMEX gold settlement.
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: gold-unattended
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+
+      - name: Restore failure streak
+        uses: actions/cache/restore@v4
+        with:
+          path: .unattended-state
+          key: gold-unattended-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            gold-unattended-state-
+
+      - name: Fetch, validate, and report
+        id: fetch
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python -m gold_forecast.cli run --unattended
+
+      - name: Notify
+        if: always()
+        continue-on-error: true
+        env:
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: python scripts/notify_unattended.py
+
+      - name: Upload run status
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-status
+          path: data/audit/run_status.json
+          if-no-files-found: warn
+
+      - name: Commit only when confirmed data changed
+        if: steps.fetch.outcome == 'success'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path("data/audit/run_status.json")
+          status = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+          Path(".unattended-publish").write_text("1" if status.get("publish") else "0", encoding="utf-8")
+          PY
+          if [ "$(cat .unattended-publish)" != "1" ]; then
+            echo "No confirmed data change; skip commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            data/raw/live.csv \
+            data/raw/history.csv \
+            data/validated/latest.csv \
+            data/clean/latest.csv \
+            data/audit/fetch_log.json \
+            data/audit/missing_sources.json \
+            data/audit/anomalies.json \
+            data/audit/run_status.json \
+            reports
+          if git diff --cached --quiet; then
+            echo "Publish flag set but no file diff; skip commit"
+            exit 0
+          fi
+          stamp=$(python -c 'import json; print(json.load(open("data/audit/run_status.json", encoding="utf-8"))["as_of"])')
+          state=$(python -c 'import json; print(json.load(open("data/audit/run_status.json", encoding="utf-8"))["status"])')
+          git commit -m "data: unattended ${stamp} ${state}"
+          git push origin HEAD
+
+      - name: Save failure streak
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: .unattended-state
+          key: gold-unattended-state-${{ github.run_id }}-${{ github.run_attempt }}

@@ -99,4 +99,6 @@ tests/
 
 未实现：机器学习、Web 前端、自动交易、自动改权重。
 
+无人值守抓数的工作流和门禁见 [docs/unattended.md](docs/unattended.md)。GitHub Secret 和工作流推到默认分支之前，云端还不会自己跑。
+
 基于 [harness-Cu](../harness-Cu) 铜价预测系统改造，保留相同流水线架构，替换为黄金专用指标与数据源。
