@@ -1,17 +1,14 @@
 {
-  "timestamp": "2026-10-15T09:51:59.397711",
-  "record_count": 1401,
+  "timestamp": "2026-10-15T10:18:09.299174",
+  "record_count": 1923,
   "warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_pce_yoy: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_core_pce_yoy: loaded via public CSV (set FRED_API_KEY for API)",
-    "inventory_csv: loaded 411 records from gold_inventory.csv",
-    "derived:term_structure: no spot_premium available"
+    "inventory_csv: loaded 411 records from gold_inventory.csv"
   ],
-  "errors": [
-    "derived:spot_premium: incompatible merge keys [0] dtype('<M8[s]') and dtype('<M8[us]'), must be the same type"
-  ],
+  "errors": [],
   "indicators": [
     "comex_inventory",
     "dxy",
@@ -20,6 +17,8 @@
     "m1",
     "shfe_inventory",
     "social_financing",
+    "spot_premium",
+    "term_structure",
     "us_10y_real_rate",
     "us_core_pce_yoy",
     "us_cpi_yoy",
