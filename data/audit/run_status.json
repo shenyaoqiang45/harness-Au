@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-28T08:51:47",
+  "timestamp": "2026-10-29T08:51:14",
   "status": "success",
   "publish": true,
   "notify": false,
@@ -20,8 +20,8 @@
       "duplicates_dropped=13"
     ]
   },
-  "as_of": "2026-10-28",
-  "record_count": 2559,
+  "as_of": "2026-10-29",
+  "record_count": 2565,
   "fetch_errors": [],
   "fetch_warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
