@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-05T08:44:20.621864",
-  "record_count": 1911,
+  "timestamp": "2026-11-06T08:43:51.486869",
+  "record_count": 1925,
   "warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
@@ -8,14 +8,13 @@
     "fred:us_core_pce_yoy: loaded via public CSV (set FRED_API_KEY for API)",
     "inventory_csv: loaded 411 records from gold_inventory.csv"
   ],
-  "errors": [
-    "akshare:m1: Response ended prematurely"
-  ],
+  "errors": [],
   "indicators": [
     "comex_inventory",
     "dxy",
     "lme_gold_price",
     "lme_inventory",
+    "m1",
     "shfe_inventory",
     "social_financing",
     "spot_premium",

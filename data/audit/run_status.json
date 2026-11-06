@@ -1,33 +1,28 @@
 {
-  "timestamp": "2026-11-05T08:44:20",
-  "status": "partial",
+  "timestamp": "2026-11-06T08:43:51",
+  "status": "success",
   "publish": true,
   "notify": false,
   "exit_code": 0,
   "reasons": [
-    "duplicates_collapsed:8",
-    "source_groups_failed:akshare",
-    "published_with_gaps"
+    "duplicates_collapsed:7",
+    "published"
   ],
   "categories": {
-    "fetch_failed": [
-      "m1"
-    ],
+    "fetch_failed": [],
     "not_published": [],
     "anomaly": [],
     "market_closed": [],
     "rejected": [],
     "summary": [
-      "source_success_rate=0.83",
+      "source_success_rate=1.00",
       "pending_new=0",
-      "duplicates_dropped=8"
+      "duplicates_dropped=7"
     ]
   },
-  "as_of": "2026-11-05",
-  "record_count": 2597,
-  "fetch_errors": [
-    "akshare:m1: Response ended prematurely"
-  ],
+  "as_of": "2026-11-06",
+  "record_count": 2603,
+  "fetch_errors": [],
   "fetch_warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
