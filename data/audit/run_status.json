@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-11-06T08:43:51",
+  "timestamp": "2026-11-11T08:44:03",
   "status": "success",
   "publish": true,
   "notify": false,
   "exit_code": 0,
   "reasons": [
-    "duplicates_collapsed:7",
+    "duplicates_collapsed:3",
     "published"
   ],
   "categories": {
@@ -17,11 +17,11 @@
     "summary": [
       "source_success_rate=1.00",
       "pending_new=0",
-      "duplicates_dropped=7"
+      "duplicates_dropped=3"
     ]
   },
-  "as_of": "2026-11-06",
-  "record_count": 2603,
+  "as_of": "2026-11-11",
+  "record_count": 2621,
   "fetch_errors": [],
   "fetch_warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
