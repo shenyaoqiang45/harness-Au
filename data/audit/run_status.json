@@ -1,28 +1,32 @@
 {
-  "timestamp": "2026-11-11T08:44:03",
-  "status": "success",
+  "timestamp": "2026-11-18T08:45:58",
+  "status": "partial",
   "publish": true,
   "notify": false,
   "exit_code": 0,
   "reasons": [
-    "duplicates_collapsed:3",
-    "published"
+    "source_groups_failed:akshare",
+    "published_with_gaps"
   ],
   "categories": {
-    "fetch_failed": [],
+    "fetch_failed": [
+      "m1"
+    ],
     "not_published": [],
     "anomaly": [],
     "market_closed": [],
     "rejected": [],
     "summary": [
-      "source_success_rate=1.00",
+      "source_success_rate=0.83",
       "pending_new=0",
-      "duplicates_dropped=3"
+      "duplicates_dropped=0"
     ]
   },
-  "as_of": "2026-11-11",
-  "record_count": 2621,
-  "fetch_errors": [],
+  "as_of": "2026-11-18",
+  "record_count": 2651,
+  "fetch_errors": [
+    "akshare:m1: macro_china_money_supply 已在 1.20.42 更名为 macro_china_money_supply_em，请改用 ak.macro_china_money_supply_em；参数与返回的列也可能有调整，用 ak.interface_info(\"macro_china_money_supply_em\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename"
+  ],
   "fetch_warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
