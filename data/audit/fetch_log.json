@@ -1,15 +1,17 @@
 {
-  "timestamp": "2026-11-19T08:45:30.516263",
-  "record_count": 1921,
+  "timestamp": "2026-11-20T08:44:30.217103",
+  "record_count": 1387,
   "warnings": [
     "fred:us_10y_real_rate: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_cpi_yoy: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_pce_yoy: loaded via public CSV (set FRED_API_KEY for API)",
     "fred:us_core_pce_yoy: loaded via public CSV (set FRED_API_KEY for API)",
-    "inventory_csv: loaded 411 records from gold_inventory.csv"
+    "inventory_csv: loaded 411 records from gold_inventory.csv",
+    "derived:term_structure: no spot_premium available"
   ],
   "errors": [
-    "akshare:m1: macro_china_money_supply 已在 1.20.42 更名为 macro_china_money_supply_em，请改用 ak.macro_china_money_supply_em；参数与返回的列也可能有调整，用 ak.interface_info(\"macro_china_money_supply_em\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename"
+    "akshare:m1: macro_china_money_supply 已在 1.20.42 更名为 macro_china_money_supply_em，请改用 ak.macro_china_money_supply_em；参数与返回的列也可能有调整，用 ak.interface_info(\"macro_china_money_supply_em\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename",
+    "derived:spot_premium: HTTPSConnectionPool(host='stock2.finance.sina.com.cn', port=443): Read timed out. (read timeout=10)"
   ],
   "indicators": [
     "comex_inventory",
@@ -18,8 +20,6 @@
     "lme_inventory",
     "shfe_inventory",
     "social_financing",
-    "spot_premium",
-    "term_structure",
     "us_10y_real_rate",
     "us_core_pce_yoy",
     "us_cpi_yoy",
